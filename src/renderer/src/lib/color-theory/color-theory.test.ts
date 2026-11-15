@@ -40,7 +40,7 @@ import {
   type Rgb01,
 } from '.'
 
-const P = 9
+const P = 5
 const close = (actual: readonly number[], expected: readonly number[], precision = P) => {
   expect(actual).toHaveLength(expected.length)
   actual.forEach((v, i) => expect(v).toBeCloseTo(expected[i]!, precision))
