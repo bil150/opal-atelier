@@ -1,0 +1,11 @@
+out/
+dist/
+dist-web/
+release/
+coverage/
+node_modules/
+package-lock.json
+LICENSE
+LICENSE-CONTENT
+build/*.svg
+src/renderer/public/icons/

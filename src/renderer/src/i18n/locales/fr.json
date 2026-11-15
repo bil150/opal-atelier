@@ -1,0 +1,1172 @@
+{
+  "app": {
+    "name": "Opal Atelier",
+    "tagline": "Apprendre, simuler, chercher, étudier : des outils d’atelier pour les arts plastiques."
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "nav": {
+    "breadcrumb": "Fil d’Ariane",
+    "home": "Accueil",
+    "main": "Menu principal",
+    "menu": "Ouvrir le menu",
+    "close": "Fermer le menu",
+    "settings": "Paramètres"
+  },
+  "theme": {
+    "toLight": "Passer en thème clair",
+    "toDark": "Passer en thème sombre"
+  },
+  "footer": {
+    "privacy": "Cette application ne collecte aucune donnée : tout reste sur votre appareil.",
+    "license": "Code sous GPL-3.0, textes sous CC BY-NC-SA 4.0"
+  },
+  "install": {
+    "action": "Installer l’application",
+    "iosHint": "Dans Safari, touchez Partager, puis « Sur l’écran d’accueil »."
+  },
+  "status": {
+    "offline": "Hors ligne : tout continue de fonctionner."
+  },
+  "home": {
+    "sections": {
+      "imageStudy": "Étude d’image",
+      "color": "Couleur",
+      "mannequin": "Pantin",
+      "reference": "Référence"
+    },
+    "tiles": {
+      "grid": {
+        "title": "Mise en grille",
+        "description": "Quadriller une image en carreaux carrés pour dessiner."
+      },
+      "values": {
+        "title": "Perception des valeurs",
+        "description": "Voir l’image en niveaux de gris."
+      },
+      "picker": {
+        "title": "Aperçu & pipette",
+        "description": "Pointer une couleur, obtenir la recette de mélange."
+      },
+      "paints": {
+        "title": "Couleurs physiques – Peinture",
+        "description": "Saisir vos tubes et charger le nuancier du fabricant."
+      },
+      "wheel": {
+        "title": "Cercle chromatique",
+        "description": "Complémentaires, triades, analogues : cercle du peintre (RYB) ou de la lumière (RGB)."
+      },
+      "mix": {
+        "title": "Simulateur de mélange",
+        "description": "2 ou 3 couleurs, leurs parts, le résultat et toute la gamme."
+      },
+      "palette": {
+        "title": "Palette limitée",
+        "description": "De 2 à 8 tubes + blanc : tout ce qu’ils permettent, et ce qui leur échappe."
+      },
+      "temperature": {
+        "title": "Températures et neutres",
+        "description": "Rendre une couleur plus chaude, plus froide ou plus grise, avec la recette."
+      },
+      "theory": {
+        "title": "Théorie des couleurs",
+        "description": "Primaires, complémentaires, chaud et froid, valeur, les 7 contrastes."
+      },
+      "poses": {
+        "title": "Poses",
+        "description": "Le mannequin d’atelier en bois, en 3D, masculin ou féminin : 28 poses à dessiner sous tous les angles."
+      },
+      "sketch": {
+        "title": "Croquis chronométré",
+        "description": "De 30 s à 5 min par pose ; la pose suivante arrive toute seule."
+      },
+      "light": {
+        "title": "Lumière et valeurs",
+        "description": "Éclairer le pantin et voir ses valeurs en 2 ou 3 tons."
+      },
+      "glossary": {
+        "title": "Glossaire",
+        "description": "Les mots de l’atelier : couleur, techniques, matériaux, dessin, composition."
+      }
+    },
+    "welcome": "Bienvenue à l’atelier",
+    "badges": {
+      "offline": "Fonctionne hors ligne",
+      "private": "Rien ne quitte votre appareil",
+      "free": "Libre et gratuit"
+    },
+    "intros": {
+      "imageStudy": "Décortiquer une image de référence : la mettre au carreau, lire ses valeurs, trouver ses couleurs en peinture.",
+      "color": "Comprendre et mélanger les couleurs : cercle, harmonies, mélanges, palettes, températures.",
+      "mannequin": "Un pantin de bois en 3D à dessiner sous tous les angles, en temps limité ou sous la lumière choisie.",
+      "reference": "Les mots de l’atelier, expliqués simplement."
+    },
+    "tools_one": "{{count}} outil",
+    "tools_other": "{{count}} outils"
+  },
+  "glossary": {
+    "title": "Glossaire",
+    "searchLabel": "Rechercher dans le glossaire",
+    "searchPlaceholder": "Rechercher un terme ou une définition",
+    "themesLabel": "Thèmes",
+    "allThemes": "Tous",
+    "count_one": "{{count}} terme",
+    "count_other": "{{count}} termes",
+    "empty": "Aucun terme trouvé.",
+    "seeInTool": "Voir dans l’outil →",
+    "themes": {
+      "colour": "Couleur",
+      "techniques": "Méthodes et techniques",
+      "materials": "Matériaux et produits",
+      "supports-and-tools": "Supports et outils",
+      "drawing": "Dessin",
+      "composition": "Composition",
+      "subjects-and-genres": "Sujets et genres"
+    }
+  },
+  "studio": {
+    "sections": "Sections",
+    "layout": "Disposition",
+    "layouts": {
+      "above": "Réglages au-dessus",
+      "below": "Réglages dessous",
+      "right": "Réglages à droite",
+      "focus": "Vue principale seule"
+    },
+    "backdrop": "Thème",
+    "backdrops": {
+      "neutral": "Neutre",
+      "grey": "Gris neutre",
+      "paper": "Papier",
+      "contrast": "Contraste",
+      "opal": "Opale"
+    },
+    "greyView": "Voir en valeurs (gris)",
+    "indicative": "Indicatif : modèle de mélange simplifié, à vérifier sur la palette.",
+    "backdropCurrent": "Thème : {{name}}"
+  },
+  "paints": {
+    "source": "Source des couleurs",
+    "sources": {
+      "generic": "Couleurs génériques",
+      "inventory": "Mon inventaire"
+    },
+    "genericNote": "Couleurs courantes, nom générique et code pigment ; teintes approximatives.",
+    "noTubes": "Vos tubes de Couleurs physiques apparaîtront ici.",
+    "noTube": "Aucun tube",
+    "families": {
+      "white": "Blanc",
+      "primaries": "Primaires",
+      "yellows-and-oranges": "Jaunes et orangés",
+      "reds-and-violets": "Rouges et violets",
+      "blues": "Bleus",
+      "greens": "Verts",
+      "earths": "Terres",
+      "greys-and-black": "Gris et noir"
+    },
+    "picker": {
+      "label": "Choisir une couleur",
+      "search": "Rechercher : nom, pigment, groupe",
+      "list": "Couleurs",
+      "owned": "Je l’ai",
+      "others": "Autres tubes",
+      "emptyInventory": "Aucun tube dans l’inventaire.",
+      "none": "Aucune couleur trouvée."
+    }
+  },
+  "color": {
+    "title": "Couleur",
+    "tabs": {
+      "wheel": "Cercle chromatique",
+      "mix": "Simulateur de mélange",
+      "temperature": "Températures et neutres",
+      "theory": "Théorie des couleurs"
+    },
+    "hues": {
+      "ryb": [
+        "Jaune",
+        "Jaune orangé",
+        "Orange",
+        "Rouge orangé",
+        "Rouge",
+        "Rouge violacé",
+        "Violet",
+        "Violet bleuté",
+        "Bleu",
+        "Vert bleuté",
+        "Vert",
+        "Jaune verdâtre"
+      ],
+      "rgb": [
+        "Rouge",
+        "Orange",
+        "Jaune",
+        "Chartreuse",
+        "Vert",
+        "Vert d’eau",
+        "Cyan",
+        "Azur",
+        "Bleu",
+        "Violet",
+        "Magenta",
+        "Rose"
+      ]
+    },
+    "ranks": {
+      "primary": "primaire",
+      "secondary": "secondaire",
+      "tertiary": "tertiaire"
+    },
+    "wheel": {
+      "label": "Cercle chromatique, {{harmony}} : {{colors}}. Glissez sur l’anneau ou utilisez les flèches pour tourner.",
+      "fixedLabel": "Disques superposés : {{colors}}.",
+      "settings": "Réglages du cercle",
+      "type": "Type de cercle",
+      "types": {
+        "ryb": "Peintre : synthèse soustractive",
+        "rgb": "Lumière : synthèse additive"
+      },
+      "style": "Style",
+      "styles": {
+        "ring": "Anneau",
+        "centre": "Primaires au centre",
+        "discs": "Disques superposés"
+      },
+      "segments": "Découpage",
+      "segmentsCount": "{{count}} secteurs",
+      "continuous": "Continu",
+      "harmony": "Harmonie",
+      "harmonies": {
+        "comp": "Complémentaire",
+        "fausse": "Fausse complémentaire (une)",
+        "split": "Fausses complémentaires (deux)",
+        "triade": "Triade",
+        "analogue": "Analogue",
+        "carre": "Carré",
+        "rect": "Rectangle"
+      },
+      "start": "Couleur de départ",
+      "saturation": "Saturation",
+      "colours": "Couleurs",
+      "coloursSub": "et valeurs vers le blanc (indicatif)",
+      "tints": "{{name}}, valeurs de plus en plus claires",
+      "white": "Blanc",
+      "blackTop": "Noir",
+      "blackBottom": "chromatique",
+      "synthesis": {
+        "ryb": {
+          "title": "Synthèse soustractive · peinture",
+          "text": "Chaque pigment absorbe une part de la lumière : plus on mélange, plus c’est sombre, et les trois primaires donnent un noir chromatique. Les complémentaires se neutralisent en gris ou en brun. L’imprimerie utilise cyan, magenta et jaune ; le peintre, rouge, jaune et bleu."
+        },
+        "rgb": {
+          "title": "Synthèse additive · lumière",
+          "text": "On ajoute des lumières : rouge + vert = jaune, et les trois primaires donnent du blanc. Les complémentaires s’additionnent en blanc. Écrans, projecteurs, éclairage de scène."
+        }
+      },
+      "screenNote": "Sur écran : les relations entre couleurs, pas la teinte exacte d’un tube."
+    },
+    "mix": {
+      "modes": "Mode du simulateur",
+      "single": "Un mélange",
+      "singleSub": "Doser une teinte précise",
+      "palette": "Toute la palette",
+      "paletteSub": "Ce que vos tubes permettent",
+      "result": "Résultat",
+      "resultLabel": "Résultat du mélange, {{ratio}}",
+      "chart": "Proportions du mélange",
+      "bandHelp": "Glissez sur la bande pour doser.",
+      "triangleHelp": "Glissez dans le triangle pour doser : plus le repère est près d’une couleur, plus elle domine.",
+      "moreOf": "Plus de {{name}}",
+      "settings": "Réglages du mélange",
+      "count": "Nombre de couleurs",
+      "colours_one": "{{count}} couleur",
+      "colours_other": "{{count}} couleurs",
+      "fewer": "Une couleur de moins",
+      "more": "Une couleur de plus",
+      "white": "+ blanc",
+      "whiteTitle": "Ajouter le blanc à la palette",
+      "presets": "Palettes connues",
+      "presetNames": {
+        "cmy": "Primaires CMJ",
+        "ryb": "Primaires RJB",
+        "earths": "Terres"
+      },
+      "presetTitles": {
+        "cmy": "Cyan, magenta et jaune primaires + blanc",
+        "ryb": "Jaune, rouge et bleu primaires + blanc",
+        "earths": "Ocre jaune, terre de Sienne brûlée, outremer + blanc"
+      },
+      "slot": "Couleur {{n}} : {{name}}. Changer",
+      "partFewer": "Une part de moins de {{name}}",
+      "partMore": "Une part de plus de {{name}}",
+      "parts_one": "{{count}} part",
+      "parts_other": "{{count}} parts",
+      "value": "Valeur",
+      "valueOf": "{{value}} / 100",
+      "paletteTitle": "Palette limitée",
+      "paletteIntro": "Peu de tubes, toutes les teintes par mélange : le tableau reste harmonieux, car tout vient des mêmes couleurs.",
+      "vivid": "Teintes franches : {{list}}.",
+      "noVivid": "Aucune teinte franche : une palette sourde.",
+      "missing": "Hors d’atteinte ou très ternes : {{list}}.",
+      "allReachable": "Toutes les teintes sont atteignables, au moins ternes.",
+      "plate": "Planche des mélanges de {{list}}",
+      "plateWithWhite": "Planche des mélanges de {{list}} et du blanc",
+      "plateHelp": "Chaque bande mélange deux couleurs ; dessous, de plus en plus de blanc.",
+      "reach": "Zone atteignable sur le cercle",
+      "reachHelp": "Les points : tout ce que la palette permet. Hors de la forme : hors d’atteinte.",
+      "sectors": [
+        "jaune",
+        "jaune orangé",
+        "orange",
+        "rouge",
+        "carmin",
+        "magenta",
+        "violet",
+        "bleu",
+        "azur",
+        "bleu vert",
+        "vert bleu",
+        "vert"
+      ]
+    },
+    "temperature": {
+      "actions": "Action",
+      "warm": "Réchauffer",
+      "warmSub": "Vers l’orange",
+      "cool": "Refroidir",
+      "coolSub": "Vers le bleu",
+      "grey": "Griser",
+      "greySub": "Par la complémentaire",
+      "verbs": {
+        "warm": "réchauffer",
+        "cool": "refroidir",
+        "grey": "griser"
+      },
+      "dose": "Dose",
+      "aLittle": "Un peu",
+      "aLot": "Beaucoup",
+      "coolEnd": "Froide",
+      "warmEnd": "Chaude",
+      "kinds": {
+        "warm": "chaude",
+        "cool": "froide",
+        "intermediate": "intermédiaire",
+        "neutral": "grise"
+      },
+      "yourColour": "Votre couleur",
+      "pick": "Votre couleur : {{name}}. Changer",
+      "result": "Résultat",
+      "sentence": "Pour la {{verb}} : ajoutez {{added}} de {{agent}} pour {{base}} de votre couleur.",
+      "impossible": {
+        "warm": "Impossible de réchauffer cette couleur.",
+        "cool": "Impossible de refroidir cette couleur.",
+        "grey": "Impossible de griser cette couleur."
+      },
+      "reasons": {
+        "already-warmest": "Elle est déjà du côté le plus chaud.",
+        "already-coolest": "Elle est déjà du côté le plus froid.",
+        "already-neutral": "Elle est déjà neutre.",
+        "no-complement": "Pas de complémentaire dans cette liste."
+      },
+      "step": "{{added}} de {{agent}} pour {{base}}",
+      "noInventory": "Aucun tube dans l’inventaire",
+      "settings": "Réglages",
+      "infoTitle": "Chaud, froid, neutre",
+      "info": "Réchauffer, c’est pousser la couleur vers l’orange ; la refroidir, vers le bleu. Pour la griser sans la salir, on ajoute un peu de sa complémentaire."
+    },
+    "theory": {
+      "primaries": {
+        "title": "Primaires, secondaires, tertiaires",
+        "text": "En peinture, trois couleurs ne s’obtiennent pas par mélange : le jaune, le rouge et le bleu, les <b>primaires</b>. Deux primaires mélangées donnent une <b>secondaire</b> (orange, violet, vert) ; une primaire et sa secondaire voisine, une <b>tertiaire</b>.",
+        "rank": "Rang à montrer",
+        "ranks": {
+          "primary": "Primaires",
+          "secondary": "Secondaires",
+          "tertiary": "Tertiaires"
+        },
+        "lines": {
+          "primary": ["Jaune, rouge, bleu", "ne s’obtiennent par aucun mélange"],
+          "secondary": ["Jaune + rouge = orange", "Rouge + bleu = violet", "Bleu + jaune = vert"],
+          "tertiary": ["Primaire + secondaire voisine", "ex. jaune + orange = jaune orangé"]
+        },
+        "figure": "Cercle du peintre ; en évidence : {{list}}"
+      },
+      "complements": {
+        "title": "Le dilemme des complémentaires",
+        "intro": "Face à une couleur, du contraste le plus fort au plus doux :",
+        "items": {
+          "complementary": "<b>Complémentaire</b> : la couleur opposée. Contraste maximal, parfois criard.",
+          "near": "<b>Fausse complémentaire</b> : sa voisine. Contraste fort, mais plus doux.",
+          "shifted": "<b>Décalée</b> : encore plus loin, en pastel ou grisée. Contraste léger, harmonieux."
+        },
+        "note": "Rayures et damier : plus les couleurs s’entremêlent finement, plus elles vibrent.",
+        "colour": "Couleur",
+        "pattern": "Motif",
+        "patterns": {
+          "square": "Carré",
+          "stripes": "Rayures",
+          "checks": "Damier"
+        },
+        "shift": "Décalage",
+        "shiftLabel": "Décalage de la fausse complémentaire décalée",
+        "nuance": "Nuance",
+        "nuanceLabel": "Nuance de la fausse complémentaire décalée",
+        "nuances": {
+          "pure": "Pure",
+          "pastel": "Pastel",
+          "broken": "Rompue"
+        },
+        "pale": "{{name}} pâle",
+        "broken": "{{name}} rompu",
+        "complementary": "Complémentaire",
+        "near": "Fausse complémentaire",
+        "shifted": "Fausse complémentaire décalée",
+        "pair": "{{a}} et {{b}}"
+      },
+      "temperature": {
+        "title": "Chaud et froid, une affaire de voisinage",
+        "text": "Les couleurs proches de l’orange sont <b>chaudes</b>, celles proches du bleu <b>froides</b>. Mais la température est relative : la même couleur paraît plus froide à côté d’une plus chaude, et plus chaude à côté d’une plus froide.",
+        "colour": "Couleur du milieu",
+        "amongWarmer": "Entourée d’une couleur plus chaude, elle paraît plus froide.",
+        "amongCooler": "Entourée d’une couleur plus froide, elle paraît plus chaude.",
+        "warmest": "C’est déjà la couleur la plus chaude.",
+        "coolest": "C’est déjà la couleur la plus froide."
+      },
+      "values": {
+        "title": "Valeur et saturation",
+        "text": "Une couleur a une <b>teinte</b> (rouge, bleu…), une <b>valeur</b> (claire ou foncée) et une <b>saturation</b> (vive ou terne). Deux couleurs de même valeur se confondent en noir et blanc : c’est la valeur qui construit un tableau.",
+        "hue": "Teinte",
+        "figure": "Valeur de haut en bas, saturation de gauche à droite",
+        "lighter": "↑ plus clair · ↓ plus foncé",
+        "duller": "← plus terne · plus vive →"
+      },
+      "contrasts": {
+        "title": "Les 7 contrastes de couleur",
+        "intro": "Sept façons de faire dialoguer les couleurs.",
+        "hue": {
+          "title": "De la couleur en soi",
+          "text": "Des couleurs pures et franches, côte à côte : le contraste le plus simple, le plus éclatant."
+        },
+        "lightDark": {
+          "title": "Clair-obscur",
+          "text": "L’opposition du clair et du foncé ; il fonctionne même sans couleur."
+        },
+        "warmCool": {
+          "title": "Chaud-froid",
+          "text": "Une couleur chaude face à une froide : l’une avance, l’autre recule."
+        },
+        "complementary": {
+          "title": "Des complémentaires",
+          "text": "Deux opposées du cercle : elles s’exaltent côte à côte et se neutralisent en mélange."
+        },
+        "saturation": {
+          "title": "De qualité",
+          "text": "Une couleur vive entourée de ses versions ternies paraît plus lumineuse encore."
+        },
+        "extension": {
+          "title": "De quantité",
+          "text": "L’équilibre vient des surfaces : une couleur lumineuse en petite quantité tient tête à une sombre plus étendue."
+        },
+        "simultaneous": {
+          "title": "Simultané",
+          "lead": "L’œil ne voit jamais une couleur seule : il la compare à ce qui l’entoure et ajoute de lui-même la complémentaire du fond.",
+          "text": "Un même gris posé sur du rouge semble verdir ; posé sur du vert, il semble rosir. Cochez « Relier » : c’est bien le même gris.",
+          "extra": "Entre complémentaires, l’effet s’additionne : l’orange posé sur le bleu gagne en éclat.",
+          "onRed": "Gris sur rouge vif : il tire vers le vert",
+          "onGreen": "Le même gris sur vert vif : il tire vers le rouge",
+          "orangeOnBlue": "Orange sur bleu profond : plus éclatant",
+          "connect": "Relier les deux gris"
+        }
+      },
+      "source": "Pour aller plus loin : Johannes Itten, <i>L’Art de la couleur</i> (1961), dont s’inspirent les 7 contrastes. Textes et illustrations de cette page originaux."
+    }
+  },
+  "imageStudy": {
+    "title": "Étude d’image",
+    "tabs": {
+      "grid": "Mise en grille",
+      "values": "Perception des valeurs",
+      "picker": "Aperçu et pipette",
+      "paints": "Couleurs physiques – Peinture",
+      "settings": "Configuration"
+    },
+    "image": {
+      "label": "Image de référence",
+      "drop": "Déposez une image",
+      "choose": "Choisir une image",
+      "change": "Changer d’image",
+      "export": "Exporter en PNG",
+      "paintsOfImage": "Peintures de l’image",
+      "notImage": "Ce fichier n’est pas une image.",
+      "unreadable": "Impossible de lire cette image.",
+      "info": "{{name}} — {{width}} × {{height}} px",
+      "infoReduced": "{{name}} — {{width}} × {{height}} px (réduite à {{w}} × {{h}})",
+      "canvas": "Image de référence"
+    },
+    "grid": {
+      "title": "Mise en grille",
+      "columns": "Colonnes",
+      "columnsUnit": "colonnes",
+      "fewer": "Moins de colonnes",
+      "more": "Plus de colonnes",
+      "rows_one": "× {{count}} ligne",
+      "rows_other": "× {{count}} lignes",
+      "cell": "Carreau",
+      "cellLabel": "Taille du carreau",
+      "smaller": "Carreau plus petit (Maj : ×10)",
+      "bigger": "Carreau plus grand (Maj : ×10)",
+      "shift": "Décalage",
+      "shiftLabel": "Décaler la grille",
+      "left": "Décaler à gauche (Maj : ×10)",
+      "right": "Décaler à droite (Maj : ×10)",
+      "up": "Décaler vers le haut (Maj : ×10)",
+      "down": "Décaler vers le bas (Maj : ×10)",
+      "letters": "Lettres",
+      "reset": "Réinitialiser",
+      "colour": "Couleur",
+      "line": "Trait",
+      "width": "Épaisseur du trait",
+      "style": "Style du trait",
+      "styles": {
+        "solid": "Trait plein",
+        "dash": "Tirets",
+        "dot": "Points"
+      }
+    },
+    "cells": {
+      "title": "Carreaux",
+      "refs": "Carreaux sélectionnés",
+      "placeholder": "A1, B2, C1:C3",
+      "chosen_one": "{{count}} carreau choisi sur {{total}}",
+      "chosen_other": "{{count}} carreaux choisis sur {{total}}",
+      "none": "Aucun carreau choisi sur {{total}}",
+      "unknown": "Référence inconnue : {{refs}}",
+      "clear": "Effacer",
+      "exportSelection": "Exporter sélection",
+      "exportSelectionTitle": "Exporter la sélection en PNG",
+      "exportAll": "Exporter tout",
+      "tooMany": "Trop de carreaux ({{max}} au maximum) : réduisez le nombre de colonnes.",
+      "failed": "L’export des carreaux a échoué.",
+      "zipName": "carreaux"
+    },
+    "nav": {
+      "title": "Navigation",
+      "empty": "Aucune image.",
+      "map": "Miniature : touchez ou glissez pour vous déplacer dans l’image",
+      "zoom": "Zoom de l’image",
+      "zoomOut": "Zoom arrière (−)",
+      "zoomIn": "Zoom avant (+, molette ou deux doigts)",
+      "fit": "Image entière (0)"
+    },
+    "target": {
+      "title": "Couleur cible",
+      "empty": "Cliquez ou touchez l’image.",
+      "swatch": "Aperçu de la couleur cible",
+      "pixel": "Pixel",
+      "note": "CMJ et CMJN : repères indicatifs."
+    },
+    "recipe": {
+      "title": "Recette",
+      "pickColour": "Fixez une couleur.",
+      "addTubes": "Ajoutez des tubes.",
+      "activateTubes": "Activez des tubes.",
+      "noBlacksNoEffects": "Ni noirs ni effets (métallisés, irisés, fluorescents) : cochez des couleurs.",
+      "noBlacks": "Pas de tubes noirs : cochez des couleurs.",
+      "noEffects": "Pas de métallisés, irisés ni fluorescents : cochez des couleurs.",
+      "openPaints": "Ouvrir Couleurs physiques",
+      "target": "Cible",
+      "mix": "Mélange",
+      "targetLabel": "Couleur cible",
+      "mixLabel": "Couleur du mélange",
+      "quality": {
+        "excellent": "Excellent",
+        "very-good": "Très bon",
+        "good": "Bon",
+        "approximate": "Approximatif",
+        "far": "Éloigné"
+      },
+      "lightfastness": "Durabilité {{rating}}",
+      "lightfastnessTitle": "Celle du tube le moins durable du mélange ({{label}})",
+      "lightfastnessPartial": " ; * certains tubes n’ont pas d’indication",
+      "parts_one": "{{count}} part",
+      "parts_other": "{{count}} parts",
+      "next": "Proposer une autre composition",
+      "nextNone": "Aucune autre composition avec vos peintures cochées",
+      "nextTitle": "Composition {{n}} sur {{total}} : cliquer pour la suivante",
+      "edit": "Modifier la composition",
+      "editTitle": "Changer les peintures et les parts à la main",
+      "done": "Terminer",
+      "doneTitle": "Terminer la modification",
+      "addPaint": "Ajouter une peinture…",
+      "addPaintLabel": "Ajouter une peinture à la composition",
+      "reset": "Rétablir",
+      "row": "Peinture de la ligne {{n}}",
+      "remove": "Retirer « {{name}} » de la composition",
+      "fewerParts": "Moins de parts",
+      "moreParts": "Plus de parts",
+      "partsOf": "Parts de {{name}}",
+      "modified": "Modifiée",
+      "count": "{{n}} sur {{total}}",
+      "note": "Valeurs indicatives (voir Configuration)."
+    },
+    "advice": {
+      "title": "Conseil",
+      "import": "Importez un nuancier pour recevoir un conseil.",
+      "importHelp": "Les peintures de vos nuanciers que vous n’avez pas cochées sont comparées à la couleur cible.",
+      "searching": "Recherche de peintures…",
+      "progress": "Recherche de peintures… {{percent}} %",
+      "none": "Aucune peinture de vos nuanciers ne rapproche la couleur.",
+      "best": "Ajoutez « {{name}} » : ΔE {{from}} → {{to}}",
+      "note": "Indicatif : même calcul que la recette, avec une peinture de plus."
+    },
+    "actions": {
+      "copy": "Copier le nom",
+      "copyLabel": "Copier « {{name}} »",
+      "copied": "Copié",
+      "copyFailed": "Copie impossible",
+      "addInventory": "Ajouter inventaire",
+      "addInventoryLabel": "Ajouter « {{name}} » à l’inventaire : l’utiliser dans la recette",
+      "addShopping": "Ajouter à la liste de courses",
+      "addShoppingLabel": "Ajouter « {{name}} » à la liste de courses"
+    },
+    "tags": {
+      "blackExcluded": "Noir exclu",
+      "blackExcludedTitle": "Pas de tubes noirs (Configuration) : ce tube n’est ni utilisé ni proposé",
+      "metal": "Métallisé",
+      "iri": "Irisé",
+      "fluo": "Fluorescent",
+      "excluded": "{{effect}} exclu",
+      "effectTitle": "Aspect qui dépend de la lumière : une couleur unique ne peut pas le représenter",
+      "effectExcludedTitle": "Aspect qui dépend de la lumière : une couleur unique ne peut pas le représenter (Configuration : pas de tubes métallisés, irisés ni fluorescents) — ce tube n’est ni utilisé ni proposé",
+      "wanted": "À acquérir",
+      "wantedTitle": "Peinture à acquérir : elle ne sert pas au calcul tant qu’elle n’est pas cochée",
+      "astm": "ASTM {{rating}}",
+      "lightfastnessTitle": "Durabilité : ASTM {{rating}} – {{label}}",
+      "opacityTitle": "Transparence / opacité : {{label}}"
+    },
+    "lightfastness": {
+      "I": "Excellente",
+      "II": "Très bonne",
+      "III": "Insuffisante",
+      "none": "Non indiquée"
+    },
+    "opacity": {
+      "T": "Transparente",
+      "ST": "Semi-transparente",
+      "SO": "Semi-opaque",
+      "O": "Opaque",
+      "none": "Non indiquée"
+    },
+    "effect": {
+      "auto": "Automatique",
+      "none": "Aucun effet",
+      "metal": "Métallisé",
+      "iri": "Irisé",
+      "fluo": "Fluorescent"
+    },
+    "status": {
+      "owned": "Je l’ai",
+      "wanted": "À acquérir",
+      "catalogue": "Catalogue seulement"
+    },
+    "paints": {
+      "title": "Couleurs physiques – Peinture",
+      "storageWarning": "Stockage du navigateur indisponible : les tubes ne seront pas conservés.",
+      "add": "Ajouter un tube",
+      "charts": "Nuanciers",
+      "count": "{{tubes}} · {{owned}}",
+      "countWanted": "{{tubes}} · {{owned}} · {{wanted}} à acquérir",
+      "tubes_one": "{{count}} tube",
+      "tubes_other": "{{count}} tubes",
+      "owned_one": "{{count}} activé",
+      "owned_other": "{{count}} activés",
+      "noTubes": "Aucun tube pour l’instant.",
+      "limit": "Limite de {{max}} tubes atteinte.",
+      "search": "Rechercher : nom, groupe, pigment, code",
+      "searchLabel": "Rechercher une peinture",
+      "filter": "Filtrer les peintures",
+      "filters": {
+        "all": "Tous",
+        "owned": "Je les ai",
+        "wanted": "À acquérir",
+        "catalogue": "Catalogue"
+      },
+      "copyOwned": "Copier mes peintures",
+      "copyWanted": "Copier la liste à acquérir",
+      "noMatch": "Aucune peinture ne correspond à la recherche.",
+      "emptyList": "Aucun tube dans cette liste.",
+      "noGroup": "Sans groupe",
+      "useGroup": "Utiliser tous les tubes de « {{group}} »",
+      "groupCount": "{{owned}} / {{total}}",
+      "groupWanted": " · {{count}} à acquérir",
+      "exportGroup": "Exporter",
+      "exportGroupLabel": "Exporter le nuancier « {{group}} »",
+      "use": "Je possède « {{name}} » : l’utiliser dans le calcul",
+      "want": "À acquérir",
+      "wantOn": "Marquer « {{name}} » à acquérir",
+      "wantOff": "Retirer « {{name}} » des peintures à acquérir",
+      "rebuy": "À racheter",
+      "rebuyTitle": "Tube terminé : le mettre dans la liste à acquérir",
+      "rebuyLabel": "« {{name}} » est terminé : le mettre à acquérir",
+      "edit": "Modifier",
+      "editLabel": "Modifier « {{name}} »",
+      "delete": "Supprimer",
+      "deleteLabel": "Supprimer « {{name}} »",
+      "deleteConfirm": "Supprimer le tube « {{name}} » ?",
+      "imported": "{{added}}, {{updated}} mis à jour.",
+      "importedRemoved": "{{added}}, {{updated}} mis à jour, {{removed}}.",
+      "added_one": "{{count}} tube ajouté",
+      "added_other": "{{count}} tubes ajoutés",
+      "removed_one": "{{count}} retiré",
+      "removed_other": "{{count}} retirés",
+      "checkOwned": " Cochez ceux que vous possédez."
+    },
+    "form": {
+      "new": "Nouveau tube",
+      "edit": "Modifier le tube",
+      "name": "Nom",
+      "group": "Groupe (marque)",
+      "optional": "Facultatif",
+      "pigment": "Pigment CI",
+      "pigmentPlaceholder": "PB29 (facultatif)",
+      "lightfastness": "Durabilité (échelle ASTM)",
+      "status": "Statut",
+      "opacity": "Transparence / opacité",
+      "effect": "Effet",
+      "colour": "Couleur",
+      "hex": "HEX",
+      "r": "R",
+      "g": "V",
+      "b": "B",
+      "save": "Enregistrer",
+      "add": "Ajouter le tube",
+      "cancel": "Annuler",
+      "nameMissing": "Indiquez le nom du tube.",
+      "colourInvalid": "La couleur n’est pas valide."
+    },
+    "chart": {
+      "title": "Nuancier du fabricant",
+      "drop": "Déposez le nuancier",
+      "dropHint": "Image ou PDF",
+      "choose": "Choisir le nuancier",
+      "change": "Changer de nuancier",
+      "canvas": "Nuancier du fabricant",
+      "pages": "Pages du PDF",
+      "previous": "Page précédente",
+      "nextPage": "Page suivante",
+      "zoom": "Zoom du nuancier",
+      "zoomOut": "Zoom arrière",
+      "zoomIn": "Zoom avant (Ctrl + molette, ou deux doigts)",
+      "fit": "Ajuster à la fenêtre",
+      "zone": "Lire une zone : remplit le tube en cours",
+      "zoneTitle": "Lire une zone : remplit le tube en cours d’ajout",
+      "wide": "Agrandir le nuancier",
+      "reading": "Lecture du PDF…",
+      "notChart": "Ce fichier n’est ni une image ni un PDF.",
+      "tooBig": "PDF trop volumineux (60 Mo au maximum).",
+      "password": "Ce PDF est protégé par un mot de passe.",
+      "invalid": "Ce fichier n’est pas un PDF valide.",
+      "unreadable": "Impossible de lire ce PDF.",
+      "pageUnreadable": "Impossible de lire cette page.",
+      "zoneHelp": "Entourez un tube. Un clic lit toujours la couleur.",
+      "zonePdfOnly": "Lecture automatique : réservée aux PDF contenant du texte.",
+      "zoneNoText": "Cette image n’a pas de texte que l’outil sache lire : la lecture automatique ne fonctionne que sur un PDF contenant du texte.",
+      "zoneFailed": "Impossible de lire le texte de cette zone.",
+      "zoneNothing": "Aucun nom de tube ni code reconnu dans cette zone.",
+      "zoneEmpty": "Aucun texte dans cette zone.",
+      "zoneRead": "Lu : {{text}}"
+    },
+    "charts": {
+      "title": "Nuanciers",
+      "close": "Fermer",
+      "intro": "Un nuancier regroupe les tubes d’une marque (le « groupe »). Il s’échange en JSON.",
+      "tabs": {
+        "import": "Importer",
+        "export": "Exporter",
+        "format": "Format et prompt"
+      },
+      "pick": "Choisir un fichier JSON",
+      "orDrop": "ou déposez-le ici",
+      "paste": "Ou collez le JSON",
+      "markOwned": "Cocher les tubes importés",
+      "replace": "Remplacer les tubes de ces groupes",
+      "import": "Importer",
+      "importCount_one": "Importer {{count}} tube",
+      "importCount_other": "Importer {{count}} tubes",
+      "clear": "Effacer",
+      "tooBig": "Fichier trop volumineux (4 Mo au maximum).",
+      "unreadable": "Impossible de lire ce fichier.",
+      "failures": {
+        "empty": "Rien à importer.",
+        "invalid-json": "JSON invalide.",
+        "no-tube-list": "Aucune liste « tubes » dans ce JSON.",
+        "too-many-tubes": "Trop de tubes ({{count}}, maximum {{max}})."
+      },
+      "rejections": {
+        "not-an-object": "entrée invalide (un objet est attendu)",
+        "missing-name": "nom manquant",
+        "invalid-colour": "couleur « hex » absente ou invalide (attendu : #RRGGBB)",
+        "duplicate": "doublon dans le fichier (même groupe et même nom)"
+      },
+      "rejected": "Entrée {{position}}{{name}} : {{reason}}",
+      "moreRejected": "… et {{count}} autres entrées refusées.",
+      "noValid": "Aucun tube valide.",
+      "wouldExceed": "Cet import dépasserait {{max}} tubes.",
+      "preview": "{{valid}} · {{groups}} · {{added}} nouveau(x), {{updated}} mis à jour{{removed}}{{rejected}}",
+      "valid_one": "{{count}} tube valide",
+      "valid_other": "{{count}} tubes valides",
+      "groups": "groupe(s) : {{list}}",
+      "removedPart": ", {{count}} retiré(s)",
+      "rejectedPart": " · {{count}} refusé(s)",
+      "noGroup": "sans groupe",
+      "exportGroup": "Groupe (marque)",
+      "allGroups": "Tous les groupes ({{count}})",
+      "groupOption": "{{group}} ({{count}})",
+      "willExport_one": "{{count}} tube sera exporté.",
+      "willExport_other": "{{count}} tubes seront exportés.",
+      "nothingToExport": "Aucun tube à exporter.",
+      "download": "Télécharger (.json)",
+      "copy": "Copier",
+      "fileAll": "tous",
+      "fileNoGroup": "sans-groupe",
+      "formatTitle": "Format du fichier",
+      "fields": {
+        "tubes": "Liste des tubes (1 000 au maximum). <b>Obligatoire.</b>",
+        "name": "Nom commercial du tube, 60 caractères au maximum. <b>Obligatoire.</b>",
+        "hex": "Couleur en sRGB : <code>#RRGGBB</code> (ou <code>#RGB</code>). <b>Obligatoire.</b> Un tube sans couleur valide est refusé.",
+        "group": "Marque, 40 caractères au maximum. Au niveau du fichier, elle s’applique à tous les tubes ; dans un tube, elle est prioritaire.",
+        "pigment": "Code(s) Colour Index : <code>\"PB29\"</code> ou <code>\"PR122/PV19\"</code>, 20 caractères au maximum.",
+        "light": "Durabilité, échelle ASTM : <code>\"I\"</code>, <code>\"II\"</code> ou <code>\"III\"</code>. Autre chose : vide.",
+        "opac": "Transparence / opacité : <code>\"T\"</code> transparente, <code>\"ST\"</code> semi-transparente, <code>\"SO\"</code> semi-opaque, <code>\"O\"</code> opaque.",
+        "effect": "Effet de surface : <code>\"metal\"</code> métallisé, <code>\"iri\"</code> irisé ou nacré, <code>\"fluo\"</code> fluorescent, <code>\"none\"</code> aucun (impose une peinture ordinaire). Vide : l’outil le déduit du nom ou du code pigment.",
+        "type": "Facultatifs : <code>\"nuancier\"</code> et <code>1</code>."
+      },
+      "rulesTitle": "À l’import",
+      "rules": {
+        "update": "Un tube du même groupe et du même nom qu’un tube existant le met à jour (il garde son état coché).",
+        "owned": "Les tubes nouveaux ne sont cochés que si vous le demandez : cochez ceux que vous possédez, seuls ils servent au calcul.",
+        "invalid": "Les entrées invalides sont ignorées et listées avec leur raison avant l’import.",
+        "paste": "Le JSON peut être collé tel quel, même entouré de texte ou de balises <code>```json</code>.",
+        "local": "Rien n’est envoyé nulle part : tout reste sur cet appareil."
+      },
+      "exampleTitle": "Exemple",
+      "copyExample": "Copier l’exemple",
+      "template": "Télécharger un modèle",
+      "promptTitle": "Prompt pour une IA",
+      "promptHelp": "Copiez ce texte dans une IA, puis joignez le document du fabricant (PDF, capture, tableau). Collez sa réponse dans « Importer » et vérifiez l’aperçu.",
+      "copyPrompt": "Copier le prompt",
+      "prompt": "Tu prépares un nuancier de peinture au format JSON pour l’outil « Étude d’image ». À partir du document du fabricant que je te joins (tableau, PDF, texte ou capture), réponds UNIQUEMENT avec un objet JSON valide : aucun texte avant ou après, aucune balise de code.\n\nFormat exact :\n{{format}}\n\nRègles :\n1. N’invente JAMAIS une valeur. Un tube dont la couleur n’est pas fournie dans le document n’est pas inclus. Pour tout autre champ non fourni, mets une chaîne vide \"\".\n2. \"hex\" : la couleur en sRGB sur 7 caractères (#RRGGBB, majuscules). Si le document donne du RVB, convertis-le en hexadécimal. Si le document ne donne que du CMJN, convertis avec R = 255 × (1 − C) × (1 − K), et de même pour V et B, en pourcentages ramenés entre 0 et 1.\n3. \"name\" : le nom commercial tel qu’écrit dans le document, 60 caractères au maximum.\n4. \"pigment\" : le ou les codes Colour Index (ex. \"PB29\", \"PR122/PV19\"), 20 caractères au maximum.\n5. \"light\" : la durabilité sur l’échelle ASTM : \"I\" (excellente), \"II\" (très bonne) ou \"III\" (insuffisante). Si le fabricant utilise une autre échelle (étoiles, Blue Wool, lettres…), ne la convertis pas : \"\".\n6. \"opac\" : \"T\" (transparente), \"ST\" (semi-transparente), \"SO\" (semi-opaque) ou \"O\" (opaque), sinon \"\".\n7. \"effect\" : \"metal\" si le fabricant indique une peinture métallisée (or, argent, cuivre, bronze, métallique), \"iri\" si elle est irisée, nacrée ou à interférence, \"fluo\" si elle est fluorescente, sinon \"\" (peinture ordinaire ou non indiqué).\n8. \"group\" au niveau du fichier : la marque, 40 caractères au maximum. Si le document mélange plusieurs marques, ajoute un champ \"group\" dans chaque tube à la place.\n9. Un seul objet par tube, dans l’ordre du document, sans doublon (même nom dans le même groupe).\n\nMon document :",
+      "promptFormat": {
+        "group": "<nom de la marque>",
+        "name": "<nom commercial>",
+        "pigment": "<codes Colour Index séparés par « / », ou \"\">",
+        "light": "<I, II, III ou \"\">",
+        "opac": "<T, ST, SO, O ou \"\">",
+        "effect": "<metal, iri, fluo ou \"\">"
+      }
+    },
+    "imagePaints": {
+      "title": "Peintures de l’image",
+      "intro": "Vos peintures d’abord, puis celles qui amélioreraient le plus l’image. Calcul indicatif.",
+      "precision": "Précision",
+      "levels": {
+        "colours": "{{count}} couleurs",
+        "all": "tous les points"
+      },
+      "collections": "Collections",
+      "noCollection": "Aucune collection.",
+      "proposals": "Propositions",
+      "key": "Chaque proposition : ΔE moyen (plus il est bas, mieux c’est) et part de l’image reproduite presque à l’identique ; entre parenthèses, ce qu’elle gagne sur la précédente.",
+      "noImage": "Choisissez d’abord une image.",
+      "checkCollection": "Cochez au moins une collection.",
+      "noPaints": "Aucune peinture : importez un nuancier ou ajoutez des tubes.",
+      "computing": "Calcul…",
+      "nothing": "Aucune peinture ne rapproche les couleurs de l’image.",
+      "noPurchase": "Sans achat",
+      "plus_one": "+{{count}} tube",
+      "plus_other": "+{{count}} tubes",
+      "faithful": "{{percent}} % fidèle",
+      "gain": " (+{{percent}} %)",
+      "meanTitle": "Écart moyen avec l’image : ΔE {{value}}",
+      "why": "Avec ces peintures, chaque couleur de l’image est obtenue en moyenne à ΔE {{value}} près ({{quality}}) ; {{percent}} % de l’image est reproduite presque à l’identique (ΔE sous 3). Même échelle que la recette : sous 1 excellent, sous 2,5 très bon, sous 5 bon, sous 10 approximatif, au-delà éloigné.",
+      "owned": "Je les ai",
+      "toBuy": "À acquérir",
+      "nothingToBuy": "Rien à acheter pour cette proposition.",
+      "usedFor": "Sert pour {{percent}} % de l’image",
+      "usedForLittle": "Sert pour moins de 1 % de l’image",
+      "points": "{{count}} couleurs de l’image prises en compte ({{level}}).",
+      "copyAll": "Copier la liste",
+      "wantAll": "Tout ajouter à la liste de courses",
+      "textTitle": "Peintures de l’image{{name}} · ΔE {{value}} ({{quality}}), {{percent}} % fidèle"
+    },
+    "settings": {
+      "calculation": "Calcul",
+      "excludeBlacks": "Pas de tubes noirs (noirs chromatiques uniquement)",
+      "excludeBlacksNote": "Actif par défaut : on ne propose jamais de tube noir, le noir se fabrique en mélangeant des couleurs (noir chromatique).",
+      "excludeBlacksWhy": "<b>Pourquoi ?</b> Un noir en tube tend à paraître plat. Un noir fabriqué avec des couleurs (un bleu foncé et un brun, par exemple) garde une dominante chaude ou froide et s’accorde mieux au reste de la peinture. Et l’outil ne connaît d’un tube que sa couleur : il ne peut pas savoir si un noir est déjà un mélange. Les noirs restent dans votre liste, simplement écartés du calcul.",
+      "excludeEffects": "Pas de tubes métallisés, irisés ni fluorescents",
+      "excludeEffectsNote": "Actif par défaut : on ne propose jamais de peinture métallisée, irisée, nacrée ou fluorescente.",
+      "excludeEffectsWhy": "<b>Pourquoi ?</b> L’aspect d’une peinture métallisée ou irisée change avec l’angle de la lumière, et une peinture fluorescente émet de la lumière en plus de celle qu’elle réfléchit : une seule couleur à l’écran ne peut pas les représenter, et le mélange calculé ne serait pas fiable. Ces peintures restent dans votre liste, simplement écartées du calcul. L’effet est détecté d’après le nom ou le code pigment ; le champ « Effet » du tube le corrige.",
+      "storage": "Stockage",
+      "unavailable": "Indisponible",
+      "storageDetail": "{{tubes}} · sur ~5 Mo",
+      "maintenance": "Maintenance",
+      "clearCache": "Vider le cache",
+      "clearCacheNote": "Efface l’image de référence, le nuancier et la sélection. Vos tubes sont conservés.",
+      "cacheCleared": "Images (référence et nuancier) et sélection effacées. Vos tubes sont conservés.",
+      "backup": "Sauvegarde",
+      "exportTubes": "Exporter les tubes (JSON)",
+      "importTubes": "Importer des tubes (JSON)",
+      "exported": "Tubes exportés ({{tubes}}).",
+      "backupTooBig": "Fichier trop volumineux (2 Mo au maximum).",
+      "backupUnreadable": "Impossible de lire ce fichier.",
+      "backupInvalid": "Ce fichier n’est pas un JSON valide.",
+      "backupNoTubes": "Ce fichier ne contient pas de tubes.",
+      "backupNoValid": "Aucun tube valide dans ce fichier.",
+      "replaceConfirm": "Remplacer les {{current}} tubes actuels par les {{count}} du fichier ?",
+      "importedTubes": "{{tubes}} importé(s).",
+      "danger": "Zone de danger",
+      "wipe": "Supprimer les données sur cet appareil",
+      "wipeNote": "Tubes, réglages de grille et image : définitif.",
+      "wipeConfirm": "Supprimer toutes les données de cet outil sur cet appareil (tubes, réglages de grille, image) ?\n\nCette action est définitive. Pensez à exporter vos tubes avant.",
+      "wiped": "Données supprimées sur cet appareil.",
+      "bytes": "{{value}} octets",
+      "kb": "{{value}} Ko",
+      "mb": "{{value}} Mo",
+      "method": "Méthode de calcul",
+      "methodWarning": "Les résultats sont donnés à titre indicatif et ne peuvent jamais être totalement précis. La seule valeur sûre est la perception objective de plusieurs personnes, devant la peinture réelle sous un même éclairage. L’ordinateur n’est qu’un outil de calcul.",
+      "steps": {
+        "read": [
+          "Couleur lue",
+          "Valeur RVB exacte du pixel pointé, dans l’image réduite à 1 600 px au plus. Elle dépend de l’appareil photo, de la lumière, de l’écran et de son profil : aucune n’est corrigée ici."
+        ],
+        "difference": [
+          "Écart entre deux couleurs",
+          "Les couleurs sont converties en CIE L*a*b* (blanc D65), puis comparées par l’écart ΔE CIEDE2000. Vers 1, la différence est à peine visible ; au-delà de 5, elle se voit nettement."
+        ],
+        "mixing": [
+          "Mélange de peinture",
+          "Modèle de Kubelka-Munk, calculé séparément pour le rouge, le vert et le bleu. Un tube n’est connu que par sa couleur de référence : on en déduit son absorption (K/S), et sa diffusion (S) est estimée d’après sa clarté. Le calcul ignore les spectres réels, la transparence et l’opacité, le liant, l’épaisseur de la couche, et le changement de teinte au séchage."
+        ],
+        "search": [
+          "Recherche de la recette",
+          "Parmi les tubes cochés, l’outil teste les combinaisons de 1 à 3 tubes et cherche les proportions qui minimisent l’écart ΔE. La recette proposée est celle qui a le meilleur ΔE ; si plusieurs l’égalent (à 0,3 près, invisible), il garde celle qui contient le moins de peintures. Les proportions sont des parts relatives. D’autres compositions sont proposées ensuite."
+        ],
+        "blacks": [
+          "Pas de tubes noirs (noir chromatique)",
+          "Par défaut, les tubes noirs (nom « black », « noir »…, pigment uniquement noir PBk, ou couleur neutre très sombre) sont écartés du calcul et du Conseil : le noir se fabrique en mélangeant des couleurs, comme on le fait à l’atelier. Le réglage se change dans Configuration, section Calcul."
+        ],
+        "effects": [
+          "Pas de tubes métallisés, irisés ni fluorescents",
+          "Par défaut, les peintures métallisées, irisées, nacrées ou fluorescentes sont écartées du calcul et du Conseil : leur aspect dépend de la lumière (angle pour les métallisés et irisés, lumière émise pour les fluorescents), ce qu’une couleur unique ne peut pas représenter. Le réglage se change dans Configuration, section Calcul."
+        ],
+        "info": [
+          "Durabilité et transparence / opacité",
+          "Informations saisies d’après la fiche du fabricant (durabilité sur l’échelle ASTM, transparence ou opacité). Elles ne servent pas au calcul : elles s’affichent à côté des tubes et de la recette. La durabilité d’un mélange est celle de son tube le moins durable."
+        ],
+        "cmyk": ["CMJ et CMJN", "Simple conversion à partir du RVB (1 − valeur), sans profil d’impression."],
+        "chart": [
+          "Nuancier du fabricant",
+          "Moyenne d’un carré de 5 × 5 pixels, lue à l’écran ou sur le zoom. Pour un PDF, la page est d’abord dessinée par le lecteur de PDF, qui convertit lui-même les couleurs CMJN en RVB de façon approchée."
+        ],
+        "zone": [
+          "Lecture d’une zone",
+          "Sur un PDF contenant du texte, la zone entourée est lue directement dans le texte du PDF (pas de reconnaissance de caractères) : nom, code pigment, durabilité, transparence ou opacité. Seul le tube en cours d’ajout est rempli, et rien n’est deviné. Une lecture peut se tromper ou se tromper de ligne : vérifiez toujours avant d’enregistrer."
+        ]
+      }
+    }
+  },
+  "mannequin": {
+    "title": "Pantin",
+    "tabs": {
+      "poses": "Poses",
+      "sketch": "Croquis chronométré",
+      "light": "Lumière et valeurs"
+    },
+    "stage": "Pantin",
+    "canvas": "Pantin en 3D : glissez pour tourner autour, molette ou deux doigts pour zoomer, flèches du clavier pour tourner",
+    "noWebgl": "L’affichage 3D n’est pas disponible dans ce navigateur (WebGL désactivé ou non pris en charge).",
+    "random": "Pose au hasard",
+    "export": "Exporter en PNG",
+    "poseInfo": "{{family}} · {{n}} / {{total}}",
+    "pose": {
+      "title": "Pose",
+      "choose": "Choisir une pose",
+      "nav": "Pose précédente ou suivante",
+      "previous": "‹ Précédente",
+      "previousLabel": "Pose précédente",
+      "next": "Suivante ›",
+      "nextLabel": "Pose suivante"
+    },
+    "view": {
+      "title": "Vue",
+      "label": "Points de vue",
+      "note": "Glissez sur le pantin pour tourner autour.",
+      "presets": {
+        "front": "Face",
+        "three-quarter": "Trois-quarts",
+        "profile": "Profil",
+        "back": "Dos",
+        "above": "Dessus"
+      }
+    },
+    "figure": {
+      "title": "Silhouette",
+      "shape": "Forme du pantin",
+      "shapes": {
+        "male": "Masculin",
+        "female": "Féminin"
+      },
+      "heads": "Proportions : <b>{{value}}</b> têtes",
+      "headsLabel": "Proportions, en têtes",
+      "headsNote": "7,5 : réaliste · 8 et plus : idéalisé."
+    },
+    "timer": {
+      "title": "Croquis chronométré",
+      "duration": "Durée par pose",
+      "durations": {
+        "30": "30 s",
+        "60": "1 min",
+        "120": "2 min",
+        "300": "5 min"
+      },
+      "start": "Démarrer",
+      "pause": "Pause",
+      "resume": "Reprendre",
+      "reset": "Remettre à zéro",
+      "left": "Temps restant"
+    },
+    "session": {
+      "title": "Séance",
+      "newPose": "Nouvelle pose à la fin du temps",
+      "drawn_one": "{{count}} pose dessinée",
+      "drawn_other": "{{count}} poses dessinées",
+      "space": "Espace : démarrer ou mettre en pause."
+    },
+    "light": {
+      "title": "Lumière",
+      "presetsLabel": "Éclairages types",
+      "presets": {
+        "left": "Gauche",
+        "right": "Droite",
+        "front": "Face",
+        "back": "Contre-jour",
+        "above": "Dessus",
+        "raking": "Rasante"
+      },
+      "direction": "Direction : <b>{{value}}°</b>",
+      "directionLabel": "Direction de la lumière",
+      "height": "Hauteur : <b>{{value}}°</b>",
+      "heightLabel": "Hauteur de la lumière"
+    },
+    "values": {
+      "title": "Valeurs",
+      "shading": "Rendu",
+      "shadings": {
+        "2": "2 valeurs",
+        "3": "3 valeurs",
+        "smooth": "Modelé"
+      },
+      "material": "Matière",
+      "materials": {
+        "grey": "Gris",
+        "wood": "Bois"
+      },
+      "shadow": "Ombre portée",
+      "floorGrid": "Grille au sol"
+    },
+    "families": {
+      "standing": "Debout",
+      "movement": "Mouvement",
+      "expressive": "Expressif",
+      "foreshortening": "Raccourcis",
+      "screens": "Écrans"
+    },
+    "poses": {
+      "rest": "Debout, au repos",
+      "contrapposto": "Contrapposto",
+      "hands-on-hips": "Mains sur les hanches",
+      "one-leg": "Appui sur une jambe",
+      "stool": "Assis sur un tabouret",
+      "crouch": "Accroupi",
+      "kneel": "À genoux",
+      "walk": "Marche",
+      "run": "Course",
+      "jump": "Saut, bras en l’air",
+      "throw": "Lancer",
+      "kick": "Coup de pied",
+      "pull-rope": "Tirer une corde",
+      "arms-up": "Bras levés",
+      "bend-forward": "Penché en avant",
+      "turn-round": "Se retourner",
+      "stretch": "S’étirer",
+      "think": "Réfléchir, main au menton",
+      "point": "Bras tendu vers vous",
+      "on-back": "Allongé sur le dos",
+      "on-side": "Allongé sur le côté",
+      "phone-standing": "Debout, regarde son téléphone",
+      "phone-sitting": "Assis, au téléphone",
+      "phone-on-back": "Couché sur le dos, téléphone au-dessus",
+      "phone-on-front": "Couché sur le ventre, sur les coudes",
+      "kiosk": "Debout, commande à une borne",
+      "tablet-standing": "Debout, tablette en main",
+      "tablet-sitting": "Assis, tablette en main"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "appearance": {
+      "title": "Apparence",
+      "theme": "Thème",
+      "themeNote": "Gris neutre et Contraste n’ont aucune teinte : l’interface n’influence jamais les couleurs que vous jugez.",
+      "scheme": "Jour ou nuit",
+      "schemes": {
+        "light": "Jour",
+        "dark": "Nuit",
+        "system": "Appareil"
+      },
+      "schemeNote": "Jour par défaut. « Appareil » suit le réglage de votre système."
+    },
+    "language": {
+      "title": "Langue"
+    },
+    "app": {
+      "title": "Application",
+      "desktop": "Vous utilisez l’application de bureau.",
+      "installed": "Opal Atelier est installé sur cet appareil.",
+      "web": "Utilisez Opal Atelier comme une application, même hors ligne.",
+      "computer": "Sur ordinateur",
+      "computerText": "Windows, macOS et Linux",
+      "download": "Télécharger",
+      "phone": "Sur téléphone ou tablette",
+      "phoneText": "Ouvrez <site>bil150.github.io/opal-atelier</site>, puis « Installer » sur Android, ou Partager → « Sur l’écran d’accueil » sur iPhone."
+    },
+    "data": {
+      "title": "Données sur cet appareil",
+      "used": "{{size}} utilisés : vos tubes et vos réglages. Rien n’est envoyé nulle part.",
+      "unavailable": "Le stockage n’est pas disponible dans ce navigateur.",
+      "wipe": "Tout effacer",
+      "wipeConfirm": "Effacer toutes les données d’Opal Atelier sur cet appareil (tubes, réglages de tous les outils) ?\n\nC’est définitif. Pensez à exporter vos tubes avant (Étude d’image → Paramètres).",
+      "wiped": "Toutes les données ont été effacées sur cet appareil."
+    },
+    "about": {
+      "title": "À propos",
+      "version": "Version {{version}}",
+      "built": "Compilée le {{date}}",
+      "madeBy": "Créé par",
+      "source": "Code source",
+      "licenses": "Licences",
+      "codeLicense": "Code : GNU GPL v3.0 ou ultérieure",
+      "contentLicense": "Textes et données (glossaire, théorie des couleurs, poses) : CC BY-NC-SA 4.0",
+      "openSource": "Bibliothèques open source",
+      "openSourceNote": "Opal Atelier repose sur ces projets libres. Merci à leurs auteurs.",
+      "fonts": "Lettrage du logo : Cormorant Garamond et Outfit (SIL Open Font License)."
+    },
+    "tools": {
+      "title": "Outils",
+      "imageStudy": "Configuration de l’Étude d’image",
+      "imageStudyNote": "Calcul (tubes noirs, effets), sauvegarde des tubes, maintenance."
+    }
+  }
+}

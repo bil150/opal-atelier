@@ -1,0 +1,39 @@
+# Desktop packaging. Run `npm run dist` (current OS) or `npm run dist:dir` (unpacked, for a quick check).
+appId: io.github.bil150.opal-atelier
+productName: Opal Atelier
+copyright: bil150 — GPL-3.0-or-later
+
+directories:
+  buildResources: build
+  output: release/${version}
+
+# Everything the app needs is bundled by electron-vite into out/,
+# so node_modules are not shipped.
+files:
+  - out/**/*
+  - package.json
+  - '!node_modules/**/*'
+
+extraResources:
+  - from: LICENSE
+    to: LICENSE
+  - from: LICENSE-CONTENT
+    to: LICENSE-CONTENT
+
+artifactName: ${name}-${version}-${os}-${arch}.${ext}
+
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+
+mac:
+  target: dmg
+  category: public.app-category.graphics-design
+
+linux:
+  target: AppImage
+  category: Graphics
+
+publish: null

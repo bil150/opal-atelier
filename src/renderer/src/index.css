@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+
+/* Theme follows the device; `data-theme` on <html> forces it (theme toggle comes later). */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Page themes (see theme/backdrop.ts) as Tailwind variants, e.g. `contrast:border-ink`. */
+@custom-variant opal (&:where([data-backdrop='opal'], [data-backdrop='opal'] *));
+@custom-variant grey (&:where([data-backdrop='grey'], [data-backdrop='grey'] *));
+@custom-variant paper (&:where([data-backdrop='paper'], [data-backdrop='paper'] *));
+@custom-variant contrast (&:where([data-backdrop='contrast'], [data-backdrop='contrast'] *));
+
+:root {
+  color-scheme: light dark;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+/* Design tokens carried over from the original site. light-dark() resolves against color-scheme. */
+@theme {
+  --color-paper: light-dark(#fafaf8, #0f141d);
+  --color-paper-2: light-dark(#ffffff, #171e2b);
+  --color-ink: light-dark(#14213d, #e8ecf4);
+  --color-muted: light-dark(#5f6980, #9aa5bc);
+  --color-line: light-dark(#dadde3, #2a3445);
+  --color-accent: light-dark(#c8372d, #ff7366);
+  --color-highlight: light-dark(#fff1b0, #3a3517);
+  --color-good: light-dark(#17794a, #6fd6a0);
+  --color-good-bg: light-dark(#e6f4ec, #12352a);
+  --color-bad: light-dark(#b3261e, #ff8f86);
+  --color-bad-bg: light-dark(#fbe9e7, #3d1b1a);
+
+  /* Background of tool panels ("bento" tiles) */
+  --color-panel: var(--color-paper-2);
+
+  /* Home tiles */
+  --color-tile-rose: light-dark(#ffe0dc, #473033);
+  --color-tile-peach: light-dark(#ffebd0, #463a2c);
+  --color-tile-butter: light-dark(#fff4bf, #444030);
+  --color-tile-mint: light-dark(#d9f2df, #2e4136);
+  --color-tile-sky: light-dark(#d6e9ff, #2d3b50);
+  --color-tile-lilac: light-dark(#e8deff, #3a3550);
+
+  /* Brief highlight of an element the user jumped to */
+  --animate-flash: flash 1.6s ease-out;
+  @keyframes flash {
+    from {
+      background: color-mix(in srgb, var(--color-ink) 14%, transparent);
+    }
+    to {
+      background: transparent;
+    }
+  }
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+/*
+ * Page themes, on every page (set by theme/backdrop.ts). "Neutral grey" and "Contrast" have no
+ * hue at all, so the interface never sways the perception of the colours being judged.
+ */
+/* Opal: pearly lavender and blue, on a softly iridescent background. */
+:root[data-backdrop='opal'] {
+  --color-paper: light-dark(#f5f2fb, #131120);
+  --color-paper-2: light-dark(#fdfcff, #1c1a2c);
+  --color-ink: light-dark(#29234f, #ece8ff);
+  --color-muted: light-dark(#696390, #aaa4cc);
+  --color-line: light-dark(#e0daf0, #302b48);
+  --color-highlight: light-dark(#ece4ff, #2b2548);
+  --color-panel: light-dark(#f0ebfa, #221f35);
+}
+:root[data-backdrop='opal'] body {
+  background-image: light-dark(
+    linear-gradient(135deg, #eef3ff 0%, #f5edff 35%, #ffeff4 65%, #eefaf4 100%),
+    linear-gradient(135deg, #12142a 0%, #1a1430 35%, #21142a 65%, #0f1f1e 100%)
+  );
+  background-attachment: fixed;
+}
+:root[data-backdrop='grey'] {
+  --color-paper: light-dark(#f4f4f4, #1b1b1b);
+  --color-paper-2: light-dark(#ffffff, #262626);
+  --color-ink: light-dark(#1d1d1d, #ececec);
+  --color-muted: light-dark(#5e5e5e, #a2a2a2);
+  --color-line: light-dark(#d6d6d6, #3a3a3a);
+  --color-highlight: light-dark(#e6e6e6, #353535);
+  --color-panel: light-dark(#e9e9e9, #2d2d2d);
+}
+:root[data-backdrop='paper'] {
+  --color-paper: light-dark(#f3eee3, #1d1a15);
+  --color-paper-2: light-dark(#fbf8f1, #26221c);
+  --color-ink: light-dark(#2b261e, #eee8dc);
+  --color-muted: light-dark(#6d6455, #aaa190);
+  --color-line: light-dark(#dcd3c2, #3c362c);
+  --color-highlight: light-dark(#eae2d1, #39332a);
+  --color-panel: light-dark(#ece5d6, #2d2922);
+}
+:root[data-backdrop='contrast'] {
+  --color-paper: light-dark(#ffffff, #000000);
+  --color-paper-2: light-dark(#ffffff, #0b0b0b);
+  --color-ink: light-dark(#000000, #ffffff);
+  --color-muted: light-dark(#363636, #cfcfcf);
+  --color-line: light-dark(#8c8c8c, #6a6a6a);
+  --color-highlight: light-dark(#e2e2e2, #2e2e2e);
+  --color-panel: light-dark(#f0f0f0, #161616);
+}
+/* In the studio tools, hover is a neutral grey drawn from the ink, never the yellow highlight. */
+:root[data-studio]:not([data-backdrop]) {
+  --color-highlight: color-mix(in srgb, var(--color-ink) 10%, var(--color-paper-2));
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply min-h-screen bg-paper font-sans text-base/normal text-ink;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ink;
+  }
+}

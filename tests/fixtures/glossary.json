@@ -1,0 +1,2259 @@
+{
+  "source": ["original site: assets/js/glossaire-data.js", "original site: assets/js/pages/glossaire.js"],
+  "themes": [
+    "Couleur",
+    "Méthodes et techniques",
+    "Matériaux et produits",
+    "Supports et outils",
+    "Dessin",
+    "Composition",
+    "Sujets et genres"
+  ],
+  "entries": [
+    {
+      "theme": "Couleur",
+      "term": "Teinte",
+      "definition": "La couleur elle-même (rouge, bleu…), sa place sur le cercle chromatique.",
+      "link": "couleur.html#cercle",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La couleur elle-même (rouge, bleu…), sa place sur le cercle chromatique.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Valeur",
+      "definition": "Le degré de clarté d’une couleur, du clair au foncé.",
+      "link": "etude-image.html#valeurs",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le degré de clarté d’une couleur, du clair au foncé.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Saturation",
+      "definition": "La vivacité d’une couleur, du pur au terne. On dit aussi intensité ou chroma.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La vivacité d’une couleur, du pur au terne. On dit aussi intensité ou chroma.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Ton",
+      "definition": "Une couleur avec sa valeur et sa saturation précises : tons chauds, tons rompus…",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Une couleur avec sa ",
+          "target": null
+        },
+        {
+          "text": "valeur",
+          "target": "Valeur"
+        },
+        {
+          "text": " et sa ",
+          "target": null
+        },
+        {
+          "text": "saturation",
+          "target": "Saturation"
+        },
+        {
+          "text": " précises : tons chauds, tons rompus…",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Nuance",
+      "definition": "Une légère variation d’une couleur.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Une légère variation d’une couleur.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Primaires",
+      "definition": "En peinture, le jaune, le rouge et le bleu : aucun mélange ne permet de les obtenir.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "En peinture, le jaune, le rouge et le bleu : aucun mélange ne permet de les obtenir.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Secondaires",
+      "definition": "Le mélange de deux primaires : orange, violet, vert.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le mélange de deux ",
+          "target": null
+        },
+        {
+          "text": "primaires",
+          "target": "Primaires"
+        },
+        {
+          "text": " : orange, violet, vert.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Tertiaires",
+      "definition": "Une primaire mélangée à la secondaire voisine : jaune orangé, bleu violet…",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une primaire mélangée à la secondaire voisine : jaune orangé, bleu violet…",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Complémentaires",
+      "definition": "Deux couleurs opposées sur le cercle : côte à côte elles s’exaltent, mélangées elles se neutralisent.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Deux couleurs opposées sur le cercle : côte à côte elles s’exaltent, mélangées elles se neutralisent.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Fausse complémentaire",
+      "definition": "Une voisine de la complémentaire : le contraste reste fort, en plus nuancé.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une voisine de la complémentaire : le contraste reste fort, en plus nuancé.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Couleurs analogues",
+      "definition": "Des couleurs voisines sur le cercle ; elles s’accordent sans heurt.",
+      "link": "couleur.html#cercle",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des couleurs voisines sur le cercle ; elles s’accordent sans heurt.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Couleurs chaudes",
+      "definition": "Les couleurs qui tirent vers l’orange ; elles semblent avancer.",
+      "link": "couleur.html#temperature",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les couleurs qui tirent vers l’orange ; elles semblent avancer.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Couleurs froides",
+      "definition": "Les couleurs qui tirent vers le bleu ; elles semblent reculer.",
+      "link": "couleur.html#temperature",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les couleurs qui tirent vers le bleu ; elles semblent reculer.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Ton rompu",
+      "definition": "Une couleur ternie par un peu de sa complémentaire.",
+      "link": "couleur.html#temperature",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une couleur ternie par un peu de sa complémentaire.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Neutre",
+      "definition": "Une couleur presque sans teinte : gris, brun gris.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une couleur presque sans ",
+          "target": null
+        },
+        {
+          "text": "teinte",
+          "target": "Teinte"
+        },
+        {
+          "text": " : gris, brun gris.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Noir chromatique",
+      "definition": "Un noir obtenu en mélangeant des couleurs, plus vivant que le noir du tube.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un noir obtenu en mélangeant des couleurs, plus vivant que le noir du tube.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Camaïeu",
+      "definition": "Une œuvre en plusieurs valeurs d’une seule teinte.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une œuvre en plusieurs valeurs d’une seule ",
+          "target": null
+        },
+        {
+          "text": "teinte",
+          "target": "Teinte"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Grisaille",
+      "definition": "Une peinture en gris seulement, souvent première étape d’un tableau.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture en gris seulement, souvent première étape d’un tableau.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Monochrome",
+      "definition": "Une œuvre d’une seule couleur.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une œuvre d’une seule couleur.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Harmonie",
+      "definition": "Un accord de couleurs qui vont bien ensemble.",
+      "link": "couleur.html#cercle",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un accord de couleurs qui vont bien ensemble.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Gamme",
+      "definition": "L’ensemble des couleurs utilisées dans une œuvre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "L’ensemble des couleurs utilisées dans une œuvre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Palette",
+      "definition": "La plaque où l’on mélange, et aussi le choix des couleurs d’un peintre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La plaque où l’on mélange, et aussi le choix des couleurs d’un peintre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Palette limitée",
+      "definition": "Très peu de tubes ; toutes les autres teintes viennent du mélange.",
+      "link": "couleur.html#palette",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Très peu de tubes ; toutes les autres teintes viennent du mélange.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Synthèse additive",
+      "definition": "Le mélange de lumières (rouge, vert, bleu) : les trois ensemble donnent du blanc.",
+      "link": "couleur.html#cercle",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le mélange de lumières (rouge, vert, bleu) : les trois ensemble donnent du blanc.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Synthèse soustractive",
+      "definition": "Le mélange de matières (pigments) : plus on mélange, plus c’est sombre.",
+      "link": "couleur.html#cercle",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le mélange de matières (pigments) : plus on mélange, plus c’est sombre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Contraste simultané",
+      "definition": "Une couleur paraît changée par celle qui l’entoure.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une couleur paraît changée par celle qui l’entoure.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Masque de gamme",
+      "definition": "Une forme tracée sur le cercle chromatique pour limiter ses couleurs.",
+      "link": "couleur.html#palette",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une forme tracée sur le cercle chromatique pour limiter ses couleurs.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Pigment",
+      "definition": "La poudre colorée qui donne sa couleur à la peinture.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La poudre colorée qui donne sa couleur à la peinture.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Liant",
+      "definition": "Ce qui fixe le pigment : huile, résine acrylique, gomme arabique.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Ce qui fixe le ",
+          "target": null
+        },
+        {
+          "text": "pigment",
+          "target": "Pigment"
+        },
+        {
+          "text": " : ",
+          "target": null
+        },
+        {
+          "text": "huile",
+          "target": "Huile"
+        },
+        {
+          "text": ", résine ",
+          "target": null
+        },
+        {
+          "text": "acrylique",
+          "target": "Acrylique"
+        },
+        {
+          "text": ", ",
+          "target": null
+        },
+        {
+          "text": "gomme arabique",
+          "target": "Gomme arabique"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Pouvoir couvrant",
+      "definition": "La capacité d’une peinture à masquer ce qui est dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La capacité d’une peinture à masquer ce qui est dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Pouvoir colorant",
+      "definition": "La force d’une couleur dans un mélange.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La force d’une couleur dans un mélange.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Transparent",
+      "definition": "Se dit d’une peinture qui laisse voir le dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Se dit d’une peinture qui laisse voir le dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Opaque",
+      "definition": "Se dit d’une peinture qui cache le dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Se dit d’une peinture qui cache le dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Couleur",
+      "term": "Permanence",
+      "definition": "La résistance d’une couleur à la lumière et au temps.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La résistance d’une couleur à la lumière et au temps.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Alla prima",
+      "definition": "Peindre en une seule séance, frais dans frais. On dit aussi « au premier jet ».",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Peindre en une seule séance, ",
+          "target": null
+        },
+        {
+          "text": "frais dans frais",
+          "target": "Frais dans frais"
+        },
+        {
+          "text": ". On dit aussi « au premier jet ».",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Frais dans frais",
+      "definition": "Poser une couleur sur une autre encore humide.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Poser une couleur sur une autre encore humide.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Glacis",
+      "definition": "Une couche fine et transparente qui teinte ce qui est dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une couche fine et transparente qui ",
+          "target": null
+        },
+        {
+          "text": "teinte",
+          "target": "Teinte"
+        },
+        {
+          "text": " ce qui est dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Empâtement",
+      "definition": "Une matière épaisse qui garde la trace du pinceau ou du couteau.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une matière épaisse qui garde la trace du ",
+          "target": null
+        },
+        {
+          "text": "pinceau",
+          "target": "Pinceau"
+        },
+        {
+          "text": " ou du couteau.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Frottis",
+      "definition": "Une couche mince, frottée, qui laisse voir le dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une couche mince, frottée, qui laisse voir le dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Jus",
+      "definition": "Une peinture très diluée, pour les premières couches.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture très diluée, pour les premières couches.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Lavis",
+      "definition": "De l’encre ou de la couleur très diluée à l’eau, posée en aplats transparents.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "De l’encre ou de la couleur très diluée à l’eau, posée en aplats transparents.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Aplat",
+      "definition": "Une surface de couleur uniforme, sans modelé.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une surface de couleur uniforme, sans ",
+          "target": null
+        },
+        {
+          "text": "modelé",
+          "target": "Modelé"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Dégradé",
+      "definition": "Un passage progressif d’une couleur ou d’une valeur à une autre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un passage progressif d’une couleur ou d’une ",
+          "target": null
+        },
+        {
+          "text": "valeur",
+          "target": "Valeur"
+        },
+        {
+          "text": " à une autre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Fondu",
+      "definition": "Un passage doux entre deux zones, sans limite nette.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un passage doux entre deux zones, sans limite nette.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Modelé",
+      "definition": "Le rendu du volume par les ombres et les lumières.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le rendu du volume par les ombres et les lumières.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Clair-obscur",
+      "definition": "Un fort contraste de lumière et d’ombre qui sculpte les formes.",
+      "link": "couleur.html#theorie",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un fort contraste de lumière et d’ombre qui sculpte les formes.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Sfumato",
+      "definition": "Des contours fondus, vaporeux, sans trait net.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des contours fondus, vaporeux, sans trait net.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Ébauche",
+      "definition": "La première mise en place des masses et des couleurs.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La première mise en place des masses et des couleurs.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Dessous",
+      "definition": "Les premières couches, sur lesquelles on construit le tableau.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Les premières couches, sur lesquelles on construit le tableau.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Imprimatura",
+      "definition": "Une teinte légère posée sur toute la toile pour supprimer le blanc.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une ",
+          "target": null
+        },
+        {
+          "text": "teinte",
+          "target": "Teinte"
+        },
+        {
+          "text": " légère posée sur toute la ",
+          "target": null
+        },
+        {
+          "text": "toile",
+          "target": "Toile"
+        },
+        {
+          "text": " pour supprimer le blanc.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Méthode indirecte",
+      "definition": "Peindre par couches successives : ébauche, grisaille, glacis.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Peindre par couches successives : ",
+          "target": null
+        },
+        {
+          "text": "ébauche",
+          "target": "Ébauche"
+        },
+        {
+          "text": ", ",
+          "target": null
+        },
+        {
+          "text": "grisaille",
+          "target": "Grisaille"
+        },
+        {
+          "text": ", ",
+          "target": null
+        },
+        {
+          "text": "glacis",
+          "target": "Glacis"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Méthode directe",
+      "definition": "Peindre la couleur finale d’emblée, sans couches préparatoires.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Peindre la couleur finale d’emblée, sans couches préparatoires.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Gras sur maigre",
+      "definition": "À l’huile, chaque couche doit être plus grasse que la précédente, pour éviter les craquelures.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "À l’",
+          "target": null
+        },
+        {
+          "text": "huile",
+          "target": "Huile"
+        },
+        {
+          "text": ", chaque couche doit être plus grasse que la précédente, pour éviter les craquelures.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Rehaut",
+      "definition": "Une touche claire ajoutée à la fin pour les lumières.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une touche claire ajoutée à la fin pour les lumières.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Réserve",
+      "definition": "En aquarelle, une zone laissée blanche volontairement.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "En ",
+          "target": null
+        },
+        {
+          "text": "aquarelle",
+          "target": "Aquarelle"
+        },
+        {
+          "text": ", une zone laissée blanche volontairement.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Mouillé sur mouillé",
+      "definition": "En aquarelle, la couleur posée sur un papier humide, qui se diffuse.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "En ",
+          "target": null
+        },
+        {
+          "text": "aquarelle",
+          "target": "Aquarelle"
+        },
+        {
+          "text": ", la couleur posée sur un papier humide, qui se diffuse.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Mouillé sur sec",
+      "definition": "En aquarelle, la couleur posée sur papier sec, aux bords nets.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "En ",
+          "target": null
+        },
+        {
+          "text": "aquarelle",
+          "target": "Aquarelle"
+        },
+        {
+          "text": ", la couleur posée sur papier sec, aux bords nets.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Brosse sèche",
+      "definition": "Peu de peinture sur un pinceau presque sec, qui accroche le grain du support.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Peu de peinture sur un ",
+          "target": null
+        },
+        {
+          "text": "pinceau",
+          "target": "Pinceau"
+        },
+        {
+          "text": " presque sec, qui accroche le grain du support.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Pointillisme",
+      "definition": "De petites touches de couleurs pures, que l’œil mélange à distance.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "De petites touches de couleurs pures, que l’œil mélange à distance.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Touche",
+      "definition": "La façon dont le pinceau marque la surface : la signature du geste.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "La façon dont le ",
+          "target": null
+        },
+        {
+          "text": "pinceau",
+          "target": "Pinceau"
+        },
+        {
+          "text": " marque la surface : la signature du geste.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Sgraffite",
+      "definition": "Gratter une couche pour faire apparaître celle du dessous.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Gratter une couche pour faire apparaître celle du dessous.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Tempera",
+      "definition": "Une peinture dont le liant est le jaune d’œuf.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture dont le ",
+          "target": null
+        },
+        {
+          "text": "liant",
+          "target": "Liant"
+        },
+        {
+          "text": " est le jaune d’œuf.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Encaustique",
+      "definition": "Une peinture à la cire, travaillée à chaud.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture à la cire, travaillée à chaud.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Fresque",
+      "definition": "Une peinture sur un enduit de chaux encore frais.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture sur un ",
+          "target": null
+        },
+        {
+          "text": "enduit",
+          "target": "Enduit"
+        },
+        {
+          "text": " de chaux encore frais.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Gouache",
+      "definition": "Une peinture à l’eau opaque et mate.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture à l’eau ",
+          "target": null
+        },
+        {
+          "text": "opaque",
+          "target": "Opaque"
+        },
+        {
+          "text": " et mate.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Acrylique",
+      "definition": "Une peinture à l’eau qui sèche vite et devient insoluble.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture à l’eau qui sèche vite et devient insoluble.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Huile",
+      "definition": "Une peinture dont le liant est une huile ; elle sèche lentement et se travaille longtemps.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture dont le ",
+          "target": null
+        },
+        {
+          "text": "liant",
+          "target": "Liant"
+        },
+        {
+          "text": " est une huile ; elle sèche lentement et se travaille longtemps.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Aquarelle",
+      "definition": "Une peinture à l’eau transparente, sur papier.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une peinture à l’eau transparente, sur papier.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Pastel",
+      "definition": "Un bâtonnet de pigment presque pur, sec ou gras.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un bâtonnet de ",
+          "target": null
+        },
+        {
+          "text": "pigment",
+          "target": "Pigment"
+        },
+        {
+          "text": " presque pur, sec ou gras.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Technique mixte",
+      "definition": "Plusieurs techniques réunies dans une même œuvre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Plusieurs techniques réunies dans une même œuvre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Méthodes et techniques",
+      "term": "Collage",
+      "definition": "Des éléments (papier, tissu…) collés sur le support.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des éléments (papier, tissu…) collés sur le support.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Médium",
+      "definition": "Un produit mêlé à la peinture pour changer sa fluidité, sa brillance ou son séchage.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un produit mêlé à la peinture pour changer sa fluidité, sa brillance ou son séchage.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Diluant",
+      "definition": "Ce qui rend la peinture plus fluide : essence, eau.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Ce qui rend la peinture plus fluide : essence, eau.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Térébenthine",
+      "definition": "Un diluant de la peinture à l’huile, tiré de résine de pin ; l’essence minérale le remplace souvent.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un ",
+          "target": null
+        },
+        {
+          "text": "diluant",
+          "target": "Diluant"
+        },
+        {
+          "text": " de la peinture à l’",
+          "target": null
+        },
+        {
+          "text": "huile",
+          "target": "Huile"
+        },
+        {
+          "text": ", tiré de résine de pin ; l’essence minérale le remplace souvent.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Huile de lin",
+      "definition": "Le liant et médium le plus courant de la peinture à l’huile.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le ",
+          "target": null
+        },
+        {
+          "text": "liant",
+          "target": "Liant"
+        },
+        {
+          "text": " et ",
+          "target": null
+        },
+        {
+          "text": "médium",
+          "target": "Médium"
+        },
+        {
+          "text": " le plus courant de la peinture à l’",
+          "target": null
+        },
+        {
+          "text": "huile",
+          "target": "Huile"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Siccatif",
+      "definition": "Un produit qui accélère le séchage de l’huile.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un produit qui accélère le séchage de l’",
+          "target": null
+        },
+        {
+          "text": "huile",
+          "target": "Huile"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Retardateur",
+      "definition": "Un produit qui ralentit le séchage de l’acrylique.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un produit qui ralentit le séchage de l’",
+          "target": null
+        },
+        {
+          "text": "acrylique",
+          "target": "Acrylique"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Vernis",
+      "definition": "La couche finale qui protège l’œuvre et unifie sa brillance.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La couche finale qui protège l’œuvre et unifie sa brillance.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Vernis à retoucher",
+      "definition": "Un vernis léger, en cours de travail, qui ravive les couleurs ternies.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un ",
+          "target": null
+        },
+        {
+          "text": "vernis",
+          "target": "Vernis"
+        },
+        {
+          "text": " léger, en cours de travail, qui ravive les couleurs ternies.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Gesso",
+      "definition": "La sous-couche blanche qui prépare le support. On dit aussi apprêt.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La sous-couche blanche qui prépare le support. On dit aussi apprêt.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Enduit",
+      "definition": "La préparation du support, en général.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La préparation du support, en général.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Gomme arabique",
+      "definition": "Le liant de l’aquarelle et de la gouache.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le ",
+          "target": null
+        },
+        {
+          "text": "liant",
+          "target": "Liant"
+        },
+        {
+          "text": " de l’",
+          "target": null
+        },
+        {
+          "text": "aquarelle",
+          "target": "Aquarelle"
+        },
+        {
+          "text": " et de la ",
+          "target": null
+        },
+        {
+          "text": "gouache",
+          "target": "Gouache"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Fluide à masquer",
+      "definition": "Un latex qui protège les réserves en aquarelle, retiré une fois sec.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un latex qui protège les réserves en ",
+          "target": null
+        },
+        {
+          "text": "aquarelle",
+          "target": "Aquarelle"
+        },
+        {
+          "text": ", retiré une fois sec.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Matériaux et produits",
+      "term": "Fixatif",
+      "definition": "Un aérosol qui fixe le fusain, le pastel ou le crayon.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un aérosol qui fixe le ",
+          "target": null
+        },
+        {
+          "text": "fusain",
+          "target": "Fusain"
+        },
+        {
+          "text": ", le ",
+          "target": null
+        },
+        {
+          "text": "pastel",
+          "target": "Pastel"
+        },
+        {
+          "text": " ou le crayon.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Châssis",
+      "definition": "Le cadre en bois sur lequel on tend la toile.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le cadre en bois sur lequel on tend la ",
+          "target": null
+        },
+        {
+          "text": "toile",
+          "target": "Toile"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Toile",
+      "definition": "Un tissu de lin, de coton ou mélangé, tendu sur un châssis.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un tissu de lin, de coton ou mélangé, tendu sur un ",
+          "target": null
+        },
+        {
+          "text": "châssis",
+          "target": "Châssis"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Carton toilé",
+      "definition": "Une toile collée sur un carton rigide.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une ",
+          "target": null
+        },
+        {
+          "text": "toile",
+          "target": "Toile"
+        },
+        {
+          "text": " collée sur un carton rigide.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Panneau",
+      "definition": "Un support rigide : bois, médium.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Un support rigide : bois, ",
+          "target": null
+        },
+        {
+          "text": "médium",
+          "target": "Médium"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Grain du papier",
+      "definition": "La texture du papier : satiné (lisse), grain fin, torchon (rugueux).",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La texture du papier : satiné (lisse), grain fin, torchon (rugueux).",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Grammage",
+      "definition": "Le poids du papier en g/m² ; plus il est élevé, plus le papier est épais.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le poids du papier en g/m² ; plus il est élevé, plus le papier est épais.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Brosse",
+      "definition": "Un pinceau à poils raides, souvent plat.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un ",
+          "target": null
+        },
+        {
+          "text": "pinceau",
+          "target": "Pinceau"
+        },
+        {
+          "text": " à poils raides, souvent plat.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Pinceau",
+      "definition": "Un outil à poils souples ; rond, plat, langue de chat, éventail…",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un outil à poils souples ; rond, plat, langue de chat, éventail…",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Couteau à peindre",
+      "definition": "Une lame souple pour poser la peinture en matière.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une lame souple pour poser la peinture en matière.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Couteau à palette",
+      "definition": "Une lame pour mélanger les couleurs sur la palette.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une lame pour mélanger les couleurs sur la ",
+          "target": null
+        },
+        {
+          "text": "palette",
+          "target": "Palette"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Chevalet",
+      "definition": "Le support qui tient la toile pendant le travail.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le support qui tient la ",
+          "target": null
+        },
+        {
+          "text": "toile",
+          "target": "Toile"
+        },
+        {
+          "text": " pendant le travail.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Supports et outils",
+      "term": "Appui-main",
+      "definition": "Une baguette pour poser la main sans toucher la toile.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une baguette pour poser la main sans toucher la ",
+          "target": null
+        },
+        {
+          "text": "toile",
+          "target": "Toile"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Croquis",
+      "definition": "Un dessin rapide, pris sur le vif.",
+      "link": "pantin.html#croquis",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un dessin rapide, pris sur le vif.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Esquisse",
+      "definition": "Un premier projet d’œuvre, plus réfléchi qu’un croquis.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un premier projet d’œuvre, plus réfléchi qu’un ",
+          "target": null
+        },
+        {
+          "text": "croquis",
+          "target": "Croquis"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Étude",
+      "definition": "Un dessin ou une peinture d’entraînement, souvent sur un détail.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Un dessin ou une peinture d’entraînement, souvent sur un détail.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Trait de construction",
+      "definition": "Les lignes qui placent les formes avant les détails.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les lignes qui placent les formes avant les détails.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Hachures",
+      "definition": "Des traits parallèles pour faire les ombres ; croisés, ce sont des contre-hachures.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des traits parallèles pour faire les ombres ; croisés, ce sont des contre-hachures.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Estompe",
+      "definition": "Un outil, ou un geste, pour fondre le crayon ou le fusain.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un outil, ou un geste, pour fondre le crayon ou le ",
+          "target": null
+        },
+        {
+          "text": "fusain",
+          "target": "Fusain"
+        },
+        {
+          "text": ".",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Fusain",
+      "definition": "Du charbon de bois pour dessiner.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Du charbon de bois pour dessiner.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Sanguine",
+      "definition": "Une craie rouge-brun.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une craie rouge-brun.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Mise au carreau",
+      "definition": "Quadriller un modèle pour le reporter à une autre échelle.",
+      "link": "etude-image.html#grille",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Quadriller un modèle pour le reporter à une autre échelle.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Proportions",
+      "definition": "Les rapports de taille entre les parties ; le corps se mesure souvent en « têtes ».",
+      "link": "pantin.html#poses",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les rapports de taille entre les parties ; le corps se mesure souvent en « têtes ».",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Canon",
+      "definition": "Un système de proportions idéal.",
+      "link": "pantin.html#poses",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un système de ",
+          "target": null
+        },
+        {
+          "text": "proportions",
+          "target": "Proportions"
+        },
+        {
+          "text": " idéal.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Raccourci",
+      "definition": "Une forme vue en profondeur, qui paraît écrasée.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une forme vue en profondeur, qui paraît écrasée.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Contour",
+      "definition": "La ligne qui délimite une forme.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "La ligne qui délimite une forme.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Ombre propre",
+      "definition": "L’ombre sur l’objet lui-même.",
+      "link": "pantin.html#lumiere",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "L’ombre sur l’objet lui-même.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Ombre portée",
+      "definition": "L’ombre que l’objet projette autour de lui.",
+      "link": "pantin.html#lumiere",
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "L’ombre que l’objet projette autour de lui.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Dessin",
+      "term": "Reflet",
+      "definition": "La lumière renvoyée dans une zone d’ombre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La lumière renvoyée dans une zone d’ombre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Cadrage",
+      "definition": "Le choix de ce qui entre dans l’image.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le choix de ce qui entre dans l’image.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Format",
+      "definition": "La forme du support : portrait, paysage, carré.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "La forme du support : ",
+          "target": null
+        },
+        {
+          "text": "portrait",
+          "target": "Portrait"
+        },
+        {
+          "text": ", ",
+          "target": null
+        },
+        {
+          "text": "paysage",
+          "target": "Paysage"
+        },
+        {
+          "text": ", carré.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Plans",
+      "definition": "Les zones de profondeur : premier plan, plan moyen, arrière-plan.",
+      "link": null,
+      "crossReferenced": false,
+      "segments": [
+        {
+          "text": "Les zones de profondeur : premier plan, plan moyen, arrière-plan.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Ligne d’horizon",
+      "definition": "La hauteur des yeux de l’observateur.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La hauteur des yeux de l’observateur.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Point de fuite",
+      "definition": "Le point où les parallèles semblent se rejoindre.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le point où les parallèles semblent se rejoindre.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Perspective linéaire",
+      "definition": "La profondeur rendue par les lignes de fuite.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La profondeur rendue par les lignes de fuite.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Perspective atmosphérique",
+      "definition": "Les lointains plus clairs, plus bleus et moins contrastés.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les lointains plus clairs, plus bleus et moins contrastés.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Règle des tiers",
+      "definition": "Placer les éléments forts sur les tiers de l’image.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Placer les éléments forts sur les tiers de l’image.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Nombre d’or",
+      "definition": "Une proportion (environ 1,618) jugée harmonieuse.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une proportion (environ 1,618) jugée harmonieuse.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Diagonale",
+      "definition": "Une ligne de force qui dynamise la composition.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une ligne de force qui dynamise la composition.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Point focal",
+      "definition": "L’endroit où le regard se pose en premier.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "L’endroit où le regard se pose en premier.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Lignes de force",
+      "definition": "Les directions principales qui guident l’œil.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Les directions principales qui guident l’œil.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Équilibre",
+      "definition": "La répartition des masses, symétrique ou non.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La répartition des masses, symétrique ou non.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Rythme",
+      "definition": "La répétition et la variation des formes et des couleurs.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La répétition et la variation des formes et des couleurs.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Espace négatif",
+      "definition": "Le vide autour des formes, qui compte autant qu’elles.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Le vide autour des formes, qui compte autant qu’elles.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Composition",
+      "term": "Hors-champ",
+      "definition": "Ce qui existe hors du cadre et qu’on devine.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Ce qui existe hors du cadre et qu’on devine.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Nature morte",
+      "definition": "Des objets inanimés.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des objets inanimés.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Portrait",
+      "definition": "La représentation d’une personne ; de soi-même, c’est un autoportrait.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La représentation d’une personne ; de soi-même, c’est un autoportrait.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Paysage",
+      "definition": "La représentation de la nature.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "La représentation de la nature.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Marine",
+      "definition": "Un paysage de mer.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Un ",
+          "target": null
+        },
+        {
+          "text": "paysage",
+          "target": "Paysage"
+        },
+        {
+          "text": " de mer.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Scène de genre",
+      "definition": "Une scène de la vie quotidienne.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une scène de la vie quotidienne.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Peinture d’histoire",
+      "definition": "Des scènes historiques, mythologiques ou religieuses.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Des scènes historiques, mythologiques ou religieuses.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Abstraction",
+      "definition": "Une œuvre sans représentation reconnaissable.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une œuvre sans représentation reconnaissable.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "Figuration",
+      "definition": "Une œuvre qui représente le réel.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Une œuvre qui représente le réel.",
+          "target": null
+        }
+      ]
+    },
+    {
+      "theme": "Sujets et genres",
+      "term": "D’après nature",
+      "definition": "Travailler devant le sujet réel ; d’après modèle, devant une personne qui pose.",
+      "link": null,
+      "crossReferenced": true,
+      "segments": [
+        {
+          "text": "Travailler devant le sujet réel ; d’après modèle, devant une personne qui pose.",
+          "target": null
+        }
+      ]
+    }
+  ]
+}

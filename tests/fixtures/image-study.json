@@ -1,0 +1,2114 @@
+{
+  "source": "original site: assets/js/pages/etude-image.js",
+  "cleanGrid": [
+    {
+      "raw": null,
+      "grid": {
+        "cols": 4,
+        "cell": 0.25,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "raw": {
+        "cols": 6
+      },
+      "grid": {
+        "cols": 6,
+        "cell": 0.16666666666666666,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "raw": {
+        "cols": 0,
+        "cell": 5,
+        "ox": -3,
+        "oy": 12,
+        "color": "red",
+        "width": 20,
+        "dash": "wavy",
+        "letters": "yes"
+      },
+      "grid": {
+        "cols": 1,
+        "cell": 1,
+        "ox": -1,
+        "oy": 10,
+        "color": "#000000",
+        "width": 8,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "raw": {
+        "cols": 7,
+        "cell": 0.13,
+        "ox": 0.05,
+        "oy": 0.31,
+        "color": "#AbC",
+        "width": 1.5,
+        "dash": "dot",
+        "letters": true
+      },
+      "grid": {
+        "cols": 7,
+        "cell": 0.13,
+        "ox": 0.05,
+        "oy": 0.31,
+        "color": "#aabbcc",
+        "width": 1,
+        "dash": "dot",
+        "letters": true,
+        "v": 2
+      }
+    },
+    {
+      "raw": {
+        "cols": 7,
+        "cell": 0.13,
+        "ox": 0.05,
+        "oy": 0.31,
+        "width": 1.5,
+        "v": 2
+      },
+      "grid": {
+        "cols": 7,
+        "cell": 0.13,
+        "ox": 0.05,
+        "oy": 0.31,
+        "color": "#000000",
+        "width": 1.5,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "raw": {
+        "cols": "12",
+        "cell": "0.0833",
+        "ox": "x",
+        "width": "2.5",
+        "dash": "dash"
+      },
+      "grid": {
+        "cols": 12,
+        "cell": 0.0833,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 2.5,
+        "dash": "dash",
+        "letters": false,
+        "v": 2
+      }
+    }
+  ],
+  "geometry": [
+    {
+      "grid": {
+        "cols": 4,
+        "cell": 0.25,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 1600,
+      "h": 1200,
+      "geom": {
+        "cell": 400,
+        "fx": 0,
+        "fy": 0,
+        "cols": 4,
+        "rows": 3
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          1,
+          0,
+          {
+            "x0": 400,
+            "y0": 0,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          2,
+          0,
+          {
+            "x0": 800,
+            "y0": 0,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 400,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          1,
+          1,
+          {
+            "x0": 400,
+            "y0": 400,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          2,
+          1,
+          {
+            "x0": 800,
+            "y0": 400,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 800,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          1,
+          2,
+          {
+            "x0": 400,
+            "y0": 800,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          2,
+          2,
+          {
+            "x0": 800,
+            "y0": 800,
+            "w": 400,
+            "h": 400
+          }
+        ],
+        [
+          3,
+          2,
+          {
+            "x0": 1200,
+            "y0": 800,
+            "w": 400,
+            "h": 400
+          }
+        ]
+      ],
+      "adjusted": false
+    },
+    {
+      "grid": {
+        "cols": 7,
+        "cell": 0.14285714285714285,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 1000,
+      "h": 1414,
+      "geom": {
+        "cell": 142.85714285714286,
+        "fx": 0,
+        "fy": 0,
+        "cols": 7,
+        "rows": 10
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          1,
+          0,
+          {
+            "x0": 143,
+            "y0": 0,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          2,
+          0,
+          {
+            "x0": 286,
+            "y0": 0,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 143,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          1,
+          1,
+          {
+            "x0": 143,
+            "y0": 143,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          2,
+          1,
+          {
+            "x0": 286,
+            "y0": 143,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 286,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          1,
+          2,
+          {
+            "x0": 143,
+            "y0": 286,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          2,
+          2,
+          {
+            "x0": 286,
+            "y0": 286,
+            "w": 143,
+            "h": 143
+          }
+        ],
+        [
+          6,
+          9,
+          {
+            "x0": 857,
+            "y0": 1286,
+            "w": 143,
+            "h": 128
+          }
+        ]
+      ],
+      "adjusted": false
+    },
+    {
+      "grid": {
+        "cols": 7,
+        "cell": 0.13,
+        "ox": 0.05,
+        "oy": 0.31,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 1600,
+      "h": 900,
+      "geom": {
+        "cell": 208,
+        "fx": -128,
+        "fy": -128,
+        "cols": 9,
+        "rows": 5
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 80,
+            "h": 80
+          }
+        ],
+        [
+          1,
+          0,
+          {
+            "x0": 80,
+            "y0": 0,
+            "w": 208,
+            "h": 80
+          }
+        ],
+        [
+          2,
+          0,
+          {
+            "x0": 288,
+            "y0": 0,
+            "w": 208,
+            "h": 80
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 80,
+            "w": 80,
+            "h": 208
+          }
+        ],
+        [
+          1,
+          1,
+          {
+            "x0": 80,
+            "y0": 80,
+            "w": 208,
+            "h": 208
+          }
+        ],
+        [
+          2,
+          1,
+          {
+            "x0": 288,
+            "y0": 80,
+            "w": 208,
+            "h": 208
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 288,
+            "w": 80,
+            "h": 208
+          }
+        ],
+        [
+          1,
+          2,
+          {
+            "x0": 80,
+            "y0": 288,
+            "w": 208,
+            "h": 208
+          }
+        ],
+        [
+          2,
+          2,
+          {
+            "x0": 288,
+            "y0": 288,
+            "w": 208,
+            "h": 208
+          }
+        ],
+        [
+          8,
+          4,
+          {
+            "x0": 1536,
+            "y0": 704,
+            "w": 64,
+            "h": 196
+          }
+        ]
+      ],
+      "adjusted": true
+    },
+    {
+      "grid": {
+        "cols": 3,
+        "cell": 0.2857142857142857,
+        "ox": 0.1,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 800,
+      "h": 800,
+      "geom": {
+        "cell": 228.57142857142856,
+        "fx": -148.57142857142856,
+        "fy": 0,
+        "cols": 5,
+        "rows": 4
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 80,
+            "h": 229
+          }
+        ],
+        [
+          1,
+          0,
+          {
+            "x0": 80,
+            "y0": 0,
+            "w": 229,
+            "h": 229
+          }
+        ],
+        [
+          2,
+          0,
+          {
+            "x0": 309,
+            "y0": 0,
+            "w": 228,
+            "h": 229
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 229,
+            "w": 80,
+            "h": 228
+          }
+        ],
+        [
+          1,
+          1,
+          {
+            "x0": 80,
+            "y0": 229,
+            "w": 229,
+            "h": 228
+          }
+        ],
+        [
+          2,
+          1,
+          {
+            "x0": 309,
+            "y0": 229,
+            "w": 228,
+            "h": 228
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 457,
+            "w": 80,
+            "h": 229
+          }
+        ],
+        [
+          1,
+          2,
+          {
+            "x0": 80,
+            "y0": 457,
+            "w": 229,
+            "h": 229
+          }
+        ],
+        [
+          2,
+          2,
+          {
+            "x0": 309,
+            "y0": 457,
+            "w": 228,
+            "h": 229
+          }
+        ],
+        [
+          4,
+          3,
+          {
+            "x0": 766,
+            "y0": 686,
+            "w": 34,
+            "h": 114
+          }
+        ]
+      ],
+      "adjusted": true
+    },
+    {
+      "grid": {
+        "cols": 30,
+        "cell": 0.03333333333333333,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 1600,
+      "h": 1067,
+      "geom": {
+        "cell": 53.333333333333336,
+        "fx": 0,
+        "fy": 0,
+        "cols": 30,
+        "rows": 20
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 53,
+            "h": 53
+          }
+        ],
+        [
+          1,
+          0,
+          {
+            "x0": 53,
+            "y0": 0,
+            "w": 54,
+            "h": 53
+          }
+        ],
+        [
+          2,
+          0,
+          {
+            "x0": 107,
+            "y0": 0,
+            "w": 53,
+            "h": 53
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 53,
+            "w": 53,
+            "h": 54
+          }
+        ],
+        [
+          1,
+          1,
+          {
+            "x0": 53,
+            "y0": 53,
+            "w": 54,
+            "h": 54
+          }
+        ],
+        [
+          2,
+          1,
+          {
+            "x0": 107,
+            "y0": 53,
+            "w": 53,
+            "h": 54
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 107,
+            "w": 53,
+            "h": 53
+          }
+        ],
+        [
+          1,
+          2,
+          {
+            "x0": 53,
+            "y0": 107,
+            "w": 54,
+            "h": 53
+          }
+        ],
+        [
+          2,
+          2,
+          {
+            "x0": 107,
+            "y0": 107,
+            "w": 53,
+            "h": 53
+          }
+        ],
+        [
+          29,
+          19,
+          {
+            "x0": 1547,
+            "y0": 1013,
+            "w": 53,
+            "h": 54
+          }
+        ]
+      ],
+      "adjusted": false
+    },
+    {
+      "grid": {
+        "cols": 1,
+        "cell": 1,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      },
+      "w": 37,
+      "h": 1600,
+      "geom": {
+        "cell": 37,
+        "fx": 0,
+        "fy": 0,
+        "cols": 1,
+        "rows": 44
+      },
+      "rects": [
+        [
+          0,
+          0,
+          {
+            "x0": 0,
+            "y0": 0,
+            "w": 37,
+            "h": 37
+          }
+        ],
+        [
+          0,
+          1,
+          {
+            "x0": 0,
+            "y0": 37,
+            "w": 37,
+            "h": 37
+          }
+        ],
+        [
+          0,
+          2,
+          {
+            "x0": 0,
+            "y0": 74,
+            "w": 37,
+            "h": 37
+          }
+        ],
+        [
+          0,
+          43,
+          {
+            "x0": 0,
+            "y0": 1591,
+            "w": 37,
+            "h": 9
+          }
+        ]
+      ],
+      "adjusted": false
+    }
+  ],
+  "columns": [
+    {
+      "c": 0,
+      "label": "A",
+      "back": 0
+    },
+    {
+      "c": 1,
+      "label": "B",
+      "back": 1
+    },
+    {
+      "c": 25,
+      "label": "Z",
+      "back": 25
+    },
+    {
+      "c": 26,
+      "label": "AA",
+      "back": 26
+    },
+    {
+      "c": 27,
+      "label": "AB",
+      "back": 27
+    },
+    {
+      "c": 51,
+      "label": "AZ",
+      "back": 51
+    },
+    {
+      "c": 52,
+      "label": "BA",
+      "back": 52
+    },
+    {
+      "c": 701,
+      "label": "ZZ",
+      "back": 701
+    },
+    {
+      "c": 702,
+      "label": "AAA",
+      "back": 702
+    }
+  ],
+  "refs": [
+    {
+      "text": "A1",
+      "cells": ["0,0"],
+      "bad": []
+    },
+    {
+      "text": "b2, c3",
+      "cells": ["1,1", "2,2"],
+      "bad": []
+    },
+    {
+      "text": "A1:C2",
+      "cells": ["0,0", "1,0", "2,0", "0,1", "1,1", "2,1"],
+      "bad": []
+    },
+    {
+      "text": "C2:A1",
+      "cells": ["0,0", "1,0", "2,0", "0,1", "1,1", "2,1"],
+      "bad": []
+    },
+    {
+      "text": " a1 ; B1  C1 ",
+      "cells": ["0,0", "1,0", "2,0"],
+      "bad": []
+    },
+    {
+      "text": "Z1",
+      "cells": [],
+      "bad": ["Z1"]
+    },
+    {
+      "text": "A99",
+      "cells": [],
+      "bad": ["A99"]
+    },
+    {
+      "text": "A1:Z9",
+      "cells": [],
+      "bad": ["A1:Z9"]
+    },
+    {
+      "text": "AA1",
+      "cells": [],
+      "bad": ["AA1"]
+    },
+    {
+      "text": "A0",
+      "cells": [],
+      "bad": ["A0"]
+    },
+    {
+      "text": "1A",
+      "cells": [],
+      "bad": ["1A"]
+    },
+    {
+      "text": "B2:B2, B2",
+      "cells": ["1,1"],
+      "bad": []
+    },
+    {
+      "text": "",
+      "cells": [],
+      "bad": []
+    }
+  ],
+  "setColumns": [
+    {
+      "n": 4,
+      "grid": {
+        "cols": 4,
+        "cell": 0.25,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "n": 4.5,
+      "grid": {
+        "cols": 5,
+        "cell": 0.2222222222222222,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "n": 0.2,
+      "grid": {
+        "cols": 1,
+        "cell": 1,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "n": 150,
+      "grid": {
+        "cols": 100,
+        "cell": 0.01,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    },
+    {
+      "n": 7.25,
+      "grid": {
+        "cols": 7,
+        "cell": 0.13793103448275862,
+        "ox": 0,
+        "oy": 0,
+        "color": "#000000",
+        "width": 1,
+        "dash": "solid",
+        "letters": false,
+        "v": 2
+      }
+    }
+  ],
+  "crc32": [
+    {
+      "s": "",
+      "crc": 0
+    },
+    {
+      "s": "a",
+      "crc": 3904355907
+    },
+    {
+      "s": "Opal Atelier",
+      "crc": 158219636
+    },
+    {
+      "s": "é",
+      "crc": 235179326
+    }
+  ],
+  "zip": {
+    "files": [
+      {
+        "name": "image-A1.png",
+        "data": [137, 80, 78, 71, 1, 2, 3]
+      },
+      {
+        "name": "image-é B2.png",
+        "data": [0, 255, 128, 64]
+      }
+    ],
+    "bytes": [
+      80, 75, 3, 4, 20, 0, 0, 8, 0, 0, 213, 83, 111, 93, 11, 167, 145, 199, 7, 0, 0, 0, 7, 0, 0, 0, 12, 0, 0,
+      0, 105, 109, 97, 103, 101, 45, 65, 49, 46, 112, 110, 103, 137, 80, 78, 71, 1, 2, 3, 80, 75, 3, 4, 20, 0,
+      0, 8, 0, 0, 213, 83, 111, 93, 42, 50, 131, 210, 4, 0, 0, 0, 4, 0, 0, 0, 15, 0, 0, 0, 105, 109, 97, 103,
+      101, 45, 195, 169, 32, 66, 50, 46, 112, 110, 103, 0, 255, 128, 64, 80, 75, 1, 2, 20, 0, 20, 0, 0, 8, 0,
+      0, 213, 83, 111, 93, 11, 167, 145, 199, 7, 0, 0, 0, 7, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 105, 109, 97, 103, 101, 45, 65, 49, 46, 112, 110, 103, 80, 75, 1, 2, 20, 0, 20, 0, 0, 8,
+      0, 0, 213, 83, 111, 93, 42, 50, 131, 210, 4, 0, 0, 0, 4, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 49, 0, 0, 0, 105, 109, 97, 103, 101, 45, 195, 169, 32, 66, 50, 46, 112, 110, 103, 80, 75, 5, 6, 0,
+      0, 0, 0, 2, 0, 2, 0, 119, 0, 0, 0, 98, 0, 0, 0, 0, 0
+    ]
+  },
+  "cmyk": [
+    {
+      "c": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "cmy": [1, 1, 1],
+      "cmyk": [0, 0, 0, 1]
+    },
+    {
+      "c": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "cmy": [0, 0, 0],
+      "cmyk": [0, 0, 0, 0]
+    },
+    {
+      "c": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "cmy": [0, 1, 1],
+      "cmyk": [0, 1, 1, 0]
+    },
+    {
+      "c": {
+        "r": 30,
+        "g": 120,
+        "b": 200
+      },
+      "cmy": [0.8823529411764706, 0.5294117647058824, 0.21568627450980393],
+      "cmyk": [0.85, 0.4, 0, 0.21568627450980393]
+    },
+    {
+      "c": {
+        "r": 128,
+        "g": 128,
+        "b": 128
+      },
+      "cmy": [0.4980392156862745, 0.4980392156862745, 0.4980392156862745],
+      "cmyk": [0, 0, 0, 0.4980392156862745]
+    }
+  ],
+  "cleanTubeList": {
+    "raw": [
+      {
+        "id": "a",
+        "name": "Ivory Black",
+        "pigment": "PBk9",
+        "hex": "#24221f",
+        "group": "My brand",
+        "active": true
+      },
+      {
+        "id": "b",
+        "name": "Mars noir",
+        "pigment": "",
+        "hex": "#2a2a2a",
+        "group": "My brand",
+        "active": true
+      },
+      {
+        "id": "c",
+        "name": "Deep shadow",
+        "pigment": "PBk11",
+        "hex": "#1c1c1e",
+        "group": "",
+        "active": false,
+        "want": true
+      },
+      {
+        "id": "d",
+        "name": "Payne mix",
+        "pigment": "PB29/PBk9",
+        "hex": "#3d4752",
+        "group": "",
+        "active": true
+      },
+      {
+        "id": "e",
+        "name": "Very dark grey",
+        "pigment": "",
+        "hex": "#151515",
+        "group": "Other",
+        "active": true
+      },
+      {
+        "id": "f",
+        "name": "Dark blue",
+        "pigment": "PB15",
+        "hex": "#101a3a",
+        "group": "Other",
+        "active": false
+      },
+      {
+        "id": "g",
+        "name": "Silver",
+        "pigment": "PBk7",
+        "hex": "#a0a0a0",
+        "group": "Other",
+        "active": true
+      },
+      {
+        "id": "h",
+        "name": "Graphite black metal",
+        "pigment": "PBk10",
+        "hex": "#303030",
+        "group": "Other",
+        "active": true
+      },
+      {
+        "id": "i",
+        "name": "Gold",
+        "pigment": "PM1",
+        "hex": "#c9a227",
+        "group": "Other",
+        "active": true
+      },
+      {
+        "id": "j",
+        "name": "Lemon",
+        "pigment": "PY3",
+        "hex": "#f3e23b",
+        "group": "My brand",
+        "active": true
+      },
+      {
+        "id": "k",
+        "name": "Schwarz tief",
+        "pigment": "",
+        "hex": "#202020",
+        "group": "",
+        "active": true
+      },
+      {
+        "id": "l",
+        "name": "Noire de vigne",
+        "pigment": "PBk8",
+        "hex": "#27272a",
+        "group": "",
+        "active": true
+      },
+      {
+        "id": "a",
+        "name": "Duplicate id",
+        "hex": "#123456"
+      },
+      {
+        "name": "No id",
+        "hex": "#abcdef",
+        "active": false
+      },
+      {
+        "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "name": "Long id",
+        "hex": "#abcdef",
+        "want": true,
+        "active": true
+      },
+      {
+        "id": "w",
+        "name": "Wanted only",
+        "hex": "#abcdef",
+        "want": true,
+        "active": false
+      },
+      {
+        "id": "bad",
+        "name": "",
+        "hex": "#abcdef"
+      },
+      null,
+      "text"
+    ],
+    "tubes": [
+      {
+        "name": "Ivory Black",
+        "pigment": "PBk9",
+        "hex": "#24221f",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "My brand",
+        "id": "a",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Mars noir",
+        "pigment": "",
+        "hex": "#2a2a2a",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "My brand",
+        "id": "b",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Deep shadow",
+        "pigment": "PBk11",
+        "hex": "#1c1c1e",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "c",
+        "active": false,
+        "want": true
+      },
+      {
+        "name": "Payne mix",
+        "pigment": "PB29/PBk9",
+        "hex": "#3d4752",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "d",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Very dark grey",
+        "pigment": "",
+        "hex": "#151515",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "Other",
+        "id": "e",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Dark blue",
+        "pigment": "PB15",
+        "hex": "#101a3a",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "Other",
+        "id": "f",
+        "active": false,
+        "want": false
+      },
+      {
+        "name": "Silver",
+        "pigment": "PBk7",
+        "hex": "#a0a0a0",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "Other",
+        "id": "g",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Graphite black metal",
+        "pigment": "PBk10",
+        "hex": "#303030",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "Other",
+        "id": "h",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Gold",
+        "pigment": "PM1",
+        "hex": "#c9a227",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "Other",
+        "id": "i",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Lemon",
+        "pigment": "PY3",
+        "hex": "#f3e23b",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "My brand",
+        "id": "j",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Schwarz tief",
+        "pigment": "",
+        "hex": "#202020",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "k",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Noire de vigne",
+        "pigment": "PBk8",
+        "hex": "#27272a",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "l",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Duplicate id",
+        "pigment": "",
+        "hex": "#123456",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "<new>",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "No id",
+        "pigment": "",
+        "hex": "#abcdef",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "<new>",
+        "active": false,
+        "want": false
+      },
+      {
+        "name": "Long id",
+        "pigment": "",
+        "hex": "#abcdef",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "<new>",
+        "active": true,
+        "want": false
+      },
+      {
+        "name": "Wanted only",
+        "pigment": "",
+        "hex": "#abcdef",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": "",
+        "id": "w",
+        "active": false,
+        "want": true
+      }
+    ]
+  },
+  "black": [
+    {
+      "name": "Ivory Black",
+      "black": true
+    },
+    {
+      "name": "Mars noir",
+      "black": true
+    },
+    {
+      "name": "Deep shadow",
+      "black": true
+    },
+    {
+      "name": "Payne mix",
+      "black": false
+    },
+    {
+      "name": "Very dark grey",
+      "black": true
+    },
+    {
+      "name": "Dark blue",
+      "black": false
+    },
+    {
+      "name": "Silver",
+      "black": false
+    },
+    {
+      "name": "Graphite black metal",
+      "black": true
+    },
+    {
+      "name": "Gold",
+      "black": false
+    },
+    {
+      "name": "Lemon",
+      "black": false
+    },
+    {
+      "name": "Schwarz tief",
+      "black": true
+    },
+    {
+      "name": "Noire de vigne",
+      "black": true
+    }
+  ],
+  "quality": [
+    {
+      "de": 0,
+      "quality": ["Excellent", "good"]
+    },
+    {
+      "de": 0.99,
+      "quality": ["Excellent", "good"]
+    },
+    {
+      "de": 1,
+      "quality": ["Très bon", "good"]
+    },
+    {
+      "de": 2.49,
+      "quality": ["Très bon", "good"]
+    },
+    {
+      "de": 2.5,
+      "quality": ["Bon", ""]
+    },
+    {
+      "de": 4.99,
+      "quality": ["Bon", ""]
+    },
+    {
+      "de": 5,
+      "quality": ["Approximatif", ""]
+    },
+    {
+      "de": 9.99,
+      "quality": ["Approximatif", ""]
+    },
+    {
+      "de": 10,
+      "quality": ["Éloigné", "bad"]
+    },
+    {
+      "de": 25,
+      "quality": ["Éloigné", "bad"]
+    }
+  ],
+  "sortPaints": ["g", "d", "h", "b", "l", "a", "k", "c", "e", "i", "j", "f"],
+  "imports": [
+    {
+      "opts": {
+        "activate": false,
+        "replace": false
+      },
+      "added": 2,
+      "updated": 2,
+      "removed": 0,
+      "next": [
+        {
+          "name": "Ivory Black",
+          "pigment": "PBk9",
+          "hex": "#24221f",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "My brand",
+          "id": "a",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Mars noir",
+          "pigment": "",
+          "hex": "#2a2a2a",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "My brand",
+          "id": "b",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Deep shadow",
+          "pigment": "PBk11",
+          "hex": "#1c1c1e",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "c",
+          "active": false,
+          "want": true
+        },
+        {
+          "name": "Payne mix",
+          "pigment": "PB29/PBk9",
+          "hex": "#3d4752",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "d",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Very dark grey",
+          "pigment": "",
+          "hex": "#151515",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "e",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Dark blue",
+          "pigment": "PB15",
+          "hex": "#101a3a",
+          "light": "II",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "f",
+          "active": false,
+          "want": false
+        },
+        {
+          "name": "Silver",
+          "pigment": "PBk7",
+          "hex": "#a0a0a0",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "g",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Graphite black metal",
+          "pigment": "PBk10",
+          "hex": "#303030",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "h",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Gold",
+          "pigment": "PM1",
+          "hex": "#c9a227",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "i",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Lemon",
+          "pigment": "PY3",
+          "hex": "#f2e03a",
+          "light": "I",
+          "opac": "T",
+          "effect": "",
+          "group": "My brand",
+          "id": "j",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Schwarz tief",
+          "pigment": "",
+          "hex": "#202020",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "k",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Noire de vigne",
+          "pigment": "PBk8",
+          "hex": "#27272a",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "l",
+          "active": true,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "New red",
+          "pigment": "PR254",
+          "hex": "#d7262b",
+          "light": "",
+          "opac": "O",
+          "effect": "",
+          "group": "My brand",
+          "active": false,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "Loose",
+          "pigment": "",
+          "hex": "#777777",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "active": false,
+          "want": false
+        }
+      ]
+    },
+    {
+      "opts": {
+        "activate": true,
+        "replace": false
+      },
+      "added": 2,
+      "updated": 2,
+      "removed": 0,
+      "next": [
+        {
+          "name": "Ivory Black",
+          "pigment": "PBk9",
+          "hex": "#24221f",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "My brand",
+          "id": "a",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Mars noir",
+          "pigment": "",
+          "hex": "#2a2a2a",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "My brand",
+          "id": "b",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Deep shadow",
+          "pigment": "PBk11",
+          "hex": "#1c1c1e",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "c",
+          "active": false,
+          "want": true
+        },
+        {
+          "name": "Payne mix",
+          "pigment": "PB29/PBk9",
+          "hex": "#3d4752",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "d",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Very dark grey",
+          "pigment": "",
+          "hex": "#151515",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "e",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Dark blue",
+          "pigment": "PB15",
+          "hex": "#101a3a",
+          "light": "II",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "f",
+          "active": false,
+          "want": false
+        },
+        {
+          "name": "Silver",
+          "pigment": "PBk7",
+          "hex": "#a0a0a0",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "g",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Graphite black metal",
+          "pigment": "PBk10",
+          "hex": "#303030",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "h",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Gold",
+          "pigment": "PM1",
+          "hex": "#c9a227",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "id": "i",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Lemon",
+          "pigment": "PY3",
+          "hex": "#f2e03a",
+          "light": "I",
+          "opac": "T",
+          "effect": "",
+          "group": "My brand",
+          "id": "j",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Schwarz tief",
+          "pigment": "",
+          "hex": "#202020",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "k",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Noire de vigne",
+          "pigment": "PBk8",
+          "hex": "#27272a",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "l",
+          "active": true,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "New red",
+          "pigment": "PR254",
+          "hex": "#d7262b",
+          "light": "",
+          "opac": "O",
+          "effect": "",
+          "group": "My brand",
+          "active": true,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "Loose",
+          "pigment": "",
+          "hex": "#777777",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "active": true,
+          "want": false
+        }
+      ]
+    },
+    {
+      "opts": {
+        "activate": false,
+        "replace": true
+      },
+      "added": 2,
+      "updated": 2,
+      "removed": 6,
+      "next": [
+        {
+          "name": "Deep shadow",
+          "pigment": "PBk11",
+          "hex": "#1c1c1e",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "c",
+          "active": false,
+          "want": true
+        },
+        {
+          "name": "Payne mix",
+          "pigment": "PB29/PBk9",
+          "hex": "#3d4752",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "d",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Schwarz tief",
+          "pigment": "",
+          "hex": "#202020",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "k",
+          "active": true,
+          "want": false
+        },
+        {
+          "name": "Noire de vigne",
+          "pigment": "PBk8",
+          "hex": "#27272a",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "id": "l",
+          "active": true,
+          "want": false
+        },
+        {
+          "id": "j",
+          "name": "Lemon",
+          "pigment": "PY3",
+          "hex": "#f2e03a",
+          "light": "I",
+          "opac": "T",
+          "effect": "",
+          "group": "My brand",
+          "active": true,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "New red",
+          "pigment": "PR254",
+          "hex": "#d7262b",
+          "light": "",
+          "opac": "O",
+          "effect": "",
+          "group": "My brand",
+          "active": false,
+          "want": false
+        },
+        {
+          "id": "f",
+          "name": "Dark blue",
+          "pigment": "PB15",
+          "hex": "#101a3a",
+          "light": "II",
+          "opac": "",
+          "effect": "",
+          "group": "Other",
+          "active": false,
+          "want": false
+        },
+        {
+          "id": "<new>",
+          "name": "Loose",
+          "pigment": "",
+          "hex": "#777777",
+          "light": "",
+          "opac": "",
+          "effect": "",
+          "group": "",
+          "active": false,
+          "want": false
+        }
+      ]
+    }
+  ],
+  "importParsed": {
+    "tubes": [
+      {
+        "name": "Lemon",
+        "pigment": "PY3",
+        "hex": "#f2e03a",
+        "light": "I",
+        "opac": "T",
+        "effect": "",
+        "group": "My brand"
+      },
+      {
+        "name": "New red",
+        "pigment": "PR254",
+        "hex": "#d7262b",
+        "light": "",
+        "opac": "O",
+        "effect": "",
+        "group": "My brand"
+      },
+      {
+        "name": "Dark blue",
+        "pigment": "PB15",
+        "hex": "#101a3a",
+        "light": "II",
+        "opac": "",
+        "effect": "",
+        "group": "Other"
+      },
+      {
+        "name": "Loose",
+        "pigment": "",
+        "hex": "#777777",
+        "light": "",
+        "opac": "",
+        "effect": "",
+        "group": ""
+      }
+    ],
+    "groups": ["My brand", "Other", ""]
+  },
+  "tubes": [
+    {
+      "id": "a",
+      "name": "Ivory Black",
+      "pigment": "PBk9",
+      "hex": "#24221f",
+      "group": "My brand",
+      "active": true
+    },
+    {
+      "id": "b",
+      "name": "Mars noir",
+      "pigment": "",
+      "hex": "#2a2a2a",
+      "group": "My brand",
+      "active": true
+    },
+    {
+      "id": "c",
+      "name": "Deep shadow",
+      "pigment": "PBk11",
+      "hex": "#1c1c1e",
+      "group": "",
+      "active": false,
+      "want": true
+    },
+    {
+      "id": "d",
+      "name": "Payne mix",
+      "pigment": "PB29/PBk9",
+      "hex": "#3d4752",
+      "group": "",
+      "active": true
+    },
+    {
+      "id": "e",
+      "name": "Very dark grey",
+      "pigment": "",
+      "hex": "#151515",
+      "group": "Other",
+      "active": true
+    },
+    {
+      "id": "f",
+      "name": "Dark blue",
+      "pigment": "PB15",
+      "hex": "#101a3a",
+      "group": "Other",
+      "active": false
+    },
+    {
+      "id": "g",
+      "name": "Silver",
+      "pigment": "PBk7",
+      "hex": "#a0a0a0",
+      "group": "Other",
+      "active": true
+    },
+    {
+      "id": "h",
+      "name": "Graphite black metal",
+      "pigment": "PBk10",
+      "hex": "#303030",
+      "group": "Other",
+      "active": true
+    },
+    {
+      "id": "i",
+      "name": "Gold",
+      "pigment": "PM1",
+      "hex": "#c9a227",
+      "group": "Other",
+      "active": true
+    },
+    {
+      "id": "j",
+      "name": "Lemon",
+      "pigment": "PY3",
+      "hex": "#f3e23b",
+      "group": "My brand",
+      "active": true
+    },
+    {
+      "id": "k",
+      "name": "Schwarz tief",
+      "pigment": "",
+      "hex": "#202020",
+      "group": "",
+      "active": true
+    },
+    {
+      "id": "l",
+      "name": "Noire de vigne",
+      "pigment": "PBk8",
+      "hex": "#27272a",
+      "group": "",
+      "active": true
+    }
+  ]
+}

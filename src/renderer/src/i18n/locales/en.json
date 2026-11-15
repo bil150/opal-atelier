@@ -1,0 +1,1172 @@
+{
+  "app": {
+    "name": "Opal Atelier",
+    "tagline": "Learn, simulate, research, study: studio tools for the visual arts."
+  },
+  "language": {
+    "label": "Language"
+  },
+  "nav": {
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "main": "Main menu",
+    "menu": "Open the menu",
+    "close": "Close the menu",
+    "settings": "Settings"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "footer": {
+    "privacy": "This app collects no data: everything stays on your device.",
+    "license": "Code under GPL-3.0, texts under CC BY-NC-SA 4.0"
+  },
+  "install": {
+    "action": "Install the app",
+    "iosHint": "In Safari, tap Share, then “Add to Home Screen”."
+  },
+  "status": {
+    "offline": "Offline — everything keeps working."
+  },
+  "home": {
+    "sections": {
+      "imageStudy": "Image study",
+      "color": "Colour",
+      "mannequin": "Mannequin",
+      "reference": "Reference"
+    },
+    "tiles": {
+      "grid": {
+        "title": "Grid",
+        "description": "Divide an image into square cells to draw it."
+      },
+      "values": {
+        "title": "Seeing values",
+        "description": "View the image in shades of grey."
+      },
+      "picker": {
+        "title": "Preview & picker",
+        "description": "Point at a colour, get the mixing recipe."
+      },
+      "paints": {
+        "title": "Physical colours – Paint",
+        "description": "Enter your tubes and load the manufacturer’s chart."
+      },
+      "wheel": {
+        "title": "Colour wheel",
+        "description": "Complementaries, triads, analogous colours: painter’s wheel (RYB) or light wheel (RGB)."
+      },
+      "mix": {
+        "title": "Mixing simulator",
+        "description": "2 or 3 colours, their shares, the result and the whole range."
+      },
+      "palette": {
+        "title": "Limited palette",
+        "description": "2 to 8 tubes + white: everything they can reach, and what escapes them."
+      },
+      "temperature": {
+        "title": "Temperature and neutrals",
+        "description": "Make a colour warmer, cooler or greyer, with the recipe."
+      },
+      "theory": {
+        "title": "Colour theory",
+        "description": "Primaries, complementaries, warm and cool, value, the 7 contrasts."
+      },
+      "poses": {
+        "title": "Poses",
+        "description": "The wooden studio mannequin in 3D, male or female: 28 poses to draw from every angle."
+      },
+      "sketch": {
+        "title": "Timed sketching",
+        "description": "30 s to 5 min per pose; the next pose comes on its own."
+      },
+      "light": {
+        "title": "Light and values",
+        "description": "Light the mannequin and see its values in 2 or 3 tones."
+      },
+      "glossary": {
+        "title": "Glossary",
+        "description": "Studio vocabulary: colour, techniques, materials, drawing, composition."
+      }
+    },
+    "welcome": "Welcome to the studio",
+    "badges": {
+      "offline": "Works offline",
+      "private": "Nothing leaves your device",
+      "free": "Free and open source"
+    },
+    "intros": {
+      "imageStudy": "Take a reference image apart: square it up, read its values, find its colours in paint.",
+      "color": "Understand and mix colours: wheel, harmonies, mixes, palettes, temperatures.",
+      "mannequin": "A wooden figure in 3D to draw from every angle, against the clock or under a chosen light.",
+      "reference": "The words of the studio, explained simply."
+    },
+    "tools_one": "{{count}} tool",
+    "tools_other": "{{count}} tools"
+  },
+  "glossary": {
+    "title": "Glossary",
+    "searchLabel": "Search the glossary",
+    "searchPlaceholder": "Search a term or a definition",
+    "themesLabel": "Themes",
+    "allThemes": "All",
+    "count_one": "{{count}} term",
+    "count_other": "{{count}} terms",
+    "empty": "No term found.",
+    "seeInTool": "See in the tool →",
+    "themes": {
+      "colour": "Colour",
+      "techniques": "Methods and techniques",
+      "materials": "Materials and products",
+      "supports-and-tools": "Supports and tools",
+      "drawing": "Drawing",
+      "composition": "Composition",
+      "subjects-and-genres": "Subjects and genres"
+    }
+  },
+  "studio": {
+    "sections": "Sections",
+    "layout": "Layout",
+    "layouts": {
+      "above": "Settings above",
+      "below": "Settings below",
+      "right": "Settings on the right",
+      "focus": "Main view only"
+    },
+    "backdrop": "Theme",
+    "backdrops": {
+      "neutral": "Neutral",
+      "grey": "Neutral grey",
+      "paper": "Paper",
+      "contrast": "Contrast",
+      "opal": "Opal"
+    },
+    "greyView": "See as values (grey)",
+    "indicative": "Indicative: simplified mixing model, to check on your palette.",
+    "backdropCurrent": "Theme: {{name}}"
+  },
+  "paints": {
+    "source": "Colour source",
+    "sources": {
+      "generic": "Generic colours",
+      "inventory": "My inventory"
+    },
+    "genericNote": "Common colours, generic name and pigment code; approximate shades.",
+    "noTubes": "Your tubes from Physical colours will appear here.",
+    "noTube": "No tube",
+    "families": {
+      "white": "White",
+      "primaries": "Primaries",
+      "yellows-and-oranges": "Yellows and oranges",
+      "reds-and-violets": "Reds and violets",
+      "blues": "Blues",
+      "greens": "Greens",
+      "earths": "Earths",
+      "greys-and-black": "Greys and black"
+    },
+    "picker": {
+      "label": "Choose a colour",
+      "search": "Search: name, pigment, group",
+      "list": "Colours",
+      "owned": "I have it",
+      "others": "Other tubes",
+      "emptyInventory": "No tube in the inventory.",
+      "none": "No colour found."
+    }
+  },
+  "color": {
+    "title": "Colour",
+    "tabs": {
+      "wheel": "Colour wheel",
+      "mix": "Mixing simulator",
+      "temperature": "Temperature and neutrals",
+      "theory": "Colour theory"
+    },
+    "hues": {
+      "ryb": [
+        "Yellow",
+        "Yellow-orange",
+        "Orange",
+        "Red-orange",
+        "Red",
+        "Red-violet",
+        "Violet",
+        "Blue-violet",
+        "Blue",
+        "Blue-green",
+        "Green",
+        "Yellow-green"
+      ],
+      "rgb": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Chartreuse",
+        "Green",
+        "Spring green",
+        "Cyan",
+        "Azure",
+        "Blue",
+        "Violet",
+        "Magenta",
+        "Rose"
+      ]
+    },
+    "ranks": {
+      "primary": "primary",
+      "secondary": "secondary",
+      "tertiary": "tertiary"
+    },
+    "wheel": {
+      "label": "Colour wheel, {{harmony}}: {{colors}}. Drag on the ring or use the arrow keys to rotate.",
+      "fixedLabel": "Overlapping discs: {{colors}}.",
+      "settings": "Wheel settings",
+      "type": "Wheel type",
+      "types": {
+        "ryb": "Painter: subtractive mixing",
+        "rgb": "Light: additive mixing"
+      },
+      "style": "Style",
+      "styles": {
+        "ring": "Ring",
+        "centre": "Primaries in the centre",
+        "discs": "Overlapping discs"
+      },
+      "segments": "Divisions",
+      "segmentsCount": "{{count}} sectors",
+      "continuous": "Continuous",
+      "harmony": "Harmony",
+      "harmonies": {
+        "comp": "Complementary",
+        "fausse": "Near-complementary (one)",
+        "split": "Split complementary (two)",
+        "triade": "Triad",
+        "analogue": "Analogous",
+        "carre": "Square",
+        "rect": "Rectangle"
+      },
+      "start": "Starting colour",
+      "saturation": "Saturation",
+      "colours": "Colours",
+      "coloursSub": "and values towards white (indicative)",
+      "tints": "{{name}}, lighter and lighter values",
+      "white": "White",
+      "blackTop": "Chromatic",
+      "blackBottom": "black",
+      "synthesis": {
+        "ryb": {
+          "title": "Subtractive mixing · paint",
+          "text": "Each pigment absorbs part of the light: the more you mix, the darker it gets, and the three primaries make a chromatic black. Complementaries cancel out into grey or brown. Printing uses cyan, magenta and yellow; painters, red, yellow and blue."
+        },
+        "rgb": {
+          "title": "Additive mixing · light",
+          "text": "Lights are added together: red + green = yellow, and the three primaries make white. Complementaries add up to white. Screens, projectors, stage lighting."
+        }
+      },
+      "screenNote": "On screen: the relationships between colours, not the exact shade of a tube."
+    },
+    "mix": {
+      "modes": "Simulator mode",
+      "single": "One mix",
+      "singleSub": "Dose a precise shade",
+      "palette": "Whole palette",
+      "paletteSub": "What your tubes allow",
+      "result": "Result",
+      "resultLabel": "Mix result, {{ratio}}",
+      "chart": "Mix proportions",
+      "bandHelp": "Drag along the band to dose.",
+      "triangleHelp": "Drag inside the triangle to dose: the closer the marker is to a colour, the more it dominates.",
+      "moreOf": "More {{name}}",
+      "settings": "Mix settings",
+      "count": "Number of colours",
+      "colours_one": "{{count}} colour",
+      "colours_other": "{{count}} colours",
+      "fewer": "One colour fewer",
+      "more": "One colour more",
+      "white": "+ white",
+      "whiteTitle": "Add white to the palette",
+      "presets": "Ready-made palettes",
+      "presetNames": {
+        "cmy": "CMY primaries",
+        "ryb": "RYB primaries",
+        "earths": "Earths"
+      },
+      "presetTitles": {
+        "cmy": "Primary cyan, magenta and yellow + white",
+        "ryb": "Primary yellow, red and blue + white",
+        "earths": "Yellow ochre, burnt sienna, ultramarine + white"
+      },
+      "slot": "Colour {{n}}: {{name}}. Change",
+      "partFewer": "One part less of {{name}}",
+      "partMore": "One part more of {{name}}",
+      "parts_one": "{{count}} part",
+      "parts_other": "{{count}} parts",
+      "value": "Value",
+      "valueOf": "{{value}} / 100",
+      "paletteTitle": "Limited palette",
+      "paletteIntro": "Few tubes, every hue by mixing: the painting stays harmonious, because everything comes from the same colours.",
+      "vivid": "Clear hues: {{list}}.",
+      "noVivid": "No clear hue: a muted palette.",
+      "missing": "Out of reach or very dull: {{list}}.",
+      "allReachable": "Every hue can be reached, at least dull.",
+      "plate": "Mixing chart of {{list}}",
+      "plateWithWhite": "Mixing chart of {{list}} and white",
+      "plateHelp": "Each band mixes two colours; below, more and more white.",
+      "reach": "Reachable area on the wheel",
+      "reachHelp": "The dots: everything the palette allows. Outside the shape: out of reach.",
+      "sectors": [
+        "yellow",
+        "yellow-orange",
+        "orange",
+        "red",
+        "crimson",
+        "magenta",
+        "violet",
+        "blue",
+        "azure",
+        "blue-green",
+        "green-blue",
+        "green"
+      ]
+    },
+    "temperature": {
+      "actions": "Action",
+      "warm": "Warm up",
+      "warmSub": "Towards orange",
+      "cool": "Cool down",
+      "coolSub": "Towards blue",
+      "grey": "Grey down",
+      "greySub": "With the complementary",
+      "verbs": {
+        "warm": "warm",
+        "cool": "cool",
+        "grey": "grey"
+      },
+      "dose": "Dose",
+      "aLittle": "A little",
+      "aLot": "A lot",
+      "coolEnd": "Cool",
+      "warmEnd": "Warm",
+      "kinds": {
+        "warm": "warm",
+        "cool": "cool",
+        "intermediate": "intermediate",
+        "neutral": "grey"
+      },
+      "yourColour": "Your colour",
+      "pick": "Your colour: {{name}}. Change",
+      "result": "Result",
+      "sentence": "To {{verb}} it: add {{added}} of {{agent}} to {{base}} of your colour.",
+      "impossible": {
+        "warm": "This colour can’t be made warmer.",
+        "cool": "This colour can’t be made cooler.",
+        "grey": "This colour can’t be greyed."
+      },
+      "reasons": {
+        "already-warmest": "It is already on the warmest side.",
+        "already-coolest": "It is already on the coolest side.",
+        "already-neutral": "It is already neutral.",
+        "no-complement": "No complementary in this list."
+      },
+      "step": "{{added}} of {{agent}} for {{base}}",
+      "noInventory": "No tube in the inventory",
+      "settings": "Settings",
+      "infoTitle": "Warm, cool, neutral",
+      "info": "Warming a colour pushes it towards orange; cooling it, towards blue. To grey it without making it muddy, add a little of its complementary."
+    },
+    "theory": {
+      "primaries": {
+        "title": "Primary, secondary, tertiary",
+        "text": "In paint, three colours cannot be mixed from others: yellow, red and blue, the <b>primaries</b>. Two primaries mixed make a <b>secondary</b> (orange, violet, green); a primary and its neighbouring secondary, a <b>tertiary</b>.",
+        "rank": "Rank to show",
+        "ranks": {
+          "primary": "Primaries",
+          "secondary": "Secondaries",
+          "tertiary": "Tertiaries"
+        },
+        "lines": {
+          "primary": ["Yellow, red, blue", "cannot be mixed"],
+          "secondary": ["Yellow + red = orange", "Red + blue = violet", "Blue + yellow = green"],
+          "tertiary": ["Primary + neighbouring secondary", "e.g. yellow + orange = yellow-orange"]
+        },
+        "figure": "Painter’s wheel; highlighted: {{list}}"
+      },
+      "complements": {
+        "title": "The complementary dilemma",
+        "intro": "Facing a colour, from the strongest contrast to the softest:",
+        "items": {
+          "complementary": "<b>Complementary</b>: the opposite colour. Maximum contrast, sometimes garish.",
+          "near": "<b>Near-complementary</b>: its neighbour. Strong contrast, but softer.",
+          "shifted": "<b>Shifted</b>: further still, pastel or greyed. Light, harmonious contrast."
+        },
+        "note": "Stripes and checks: the more finely the colours intertwine, the more they vibrate.",
+        "colour": "Colour",
+        "pattern": "Pattern",
+        "patterns": {
+          "square": "Square",
+          "stripes": "Stripes",
+          "checks": "Checks"
+        },
+        "shift": "Shift",
+        "shiftLabel": "Shift of the shifted near-complementary",
+        "nuance": "Nuance",
+        "nuanceLabel": "Nuance of the shifted near-complementary",
+        "nuances": {
+          "pure": "Pure",
+          "pastel": "Pastel",
+          "broken": "Broken"
+        },
+        "pale": "pale {{name}}",
+        "broken": "broken {{name}}",
+        "complementary": "Complementary",
+        "near": "Near-complementary",
+        "shifted": "Shifted near-complementary",
+        "pair": "{{a}} and {{b}}"
+      },
+      "temperature": {
+        "title": "Warm and cool, a matter of neighbours",
+        "text": "Colours close to orange are <b>warm</b>, those close to blue <b>cool</b>. But temperature is relative: the same colour looks cooler next to a warmer one, and warmer next to a cooler one.",
+        "colour": "Middle colour",
+        "amongWarmer": "Surrounded by a warmer colour, it looks cooler.",
+        "amongCooler": "Surrounded by a cooler colour, it looks warmer.",
+        "warmest": "It is already the warmest colour.",
+        "coolest": "It is already the coolest colour."
+      },
+      "values": {
+        "title": "Value and saturation",
+        "text": "A colour has a <b>hue</b> (red, blue…), a <b>value</b> (light or dark) and a <b>saturation</b> (vivid or dull). Two colours of the same value merge in black and white: value is what builds a painting.",
+        "hue": "Hue",
+        "figure": "Value from top to bottom, saturation from left to right",
+        "lighter": "↑ lighter · ↓ darker",
+        "duller": "← duller · more vivid →"
+      },
+      "contrasts": {
+        "title": "The 7 colour contrasts",
+        "intro": "Seven ways for colours to talk to each other.",
+        "hue": {
+          "title": "Of hue",
+          "text": "Pure, clear colours side by side: the simplest, most brilliant contrast."
+        },
+        "lightDark": {
+          "title": "Light-dark",
+          "text": "Light against dark; it works even without colour."
+        },
+        "warmCool": {
+          "title": "Warm-cool",
+          "text": "A warm colour against a cool one: one comes forward, the other recedes."
+        },
+        "complementary": {
+          "title": "Complementary",
+          "text": "Two opposites on the wheel: they enhance each other side by side and cancel out when mixed."
+        },
+        "saturation": {
+          "title": "Of saturation",
+          "text": "A vivid colour surrounded by its dulled versions looks even brighter."
+        },
+        "extension": {
+          "title": "Of extension",
+          "text": "Balance comes from areas: a bright colour in small quantity holds its own against a larger dark one."
+        },
+        "simultaneous": {
+          "title": "Simultaneous",
+          "lead": "The eye never sees a colour on its own: it compares it with its surroundings and adds the complementary of the background by itself.",
+          "text": "The same grey on red seems to turn green; on green, it seems to turn pink. Tick “Connect”: it really is the same grey.",
+          "extra": "Between complementaries the effect adds up: orange on blue gains in brilliance.",
+          "onRed": "Grey on vivid red: it leans towards green",
+          "onGreen": "The same grey on vivid green: it leans towards red",
+          "orangeOnBlue": "Orange on deep blue: more brilliant",
+          "connect": "Connect the two greys"
+        }
+      },
+      "source": "To go further: Johannes Itten, <i>The Art of Color</i> (1961), which inspired the 7 contrasts. Texts and illustrations on this page are original."
+    }
+  },
+  "imageStudy": {
+    "title": "Image study",
+    "tabs": {
+      "grid": "Grid",
+      "values": "Seeing values",
+      "picker": "Preview and picker",
+      "paints": "Physical colours – Paint",
+      "settings": "Configuration"
+    },
+    "image": {
+      "label": "Reference image",
+      "drop": "Drop an image",
+      "choose": "Choose an image",
+      "change": "Change image",
+      "export": "Export as PNG",
+      "paintsOfImage": "Paints for this image",
+      "notImage": "This file is not an image.",
+      "unreadable": "This image can’t be read.",
+      "info": "{{name}} — {{width}} × {{height}} px",
+      "infoReduced": "{{name}} — {{width}} × {{height}} px (reduced to {{w}} × {{h}})",
+      "canvas": "Reference image"
+    },
+    "grid": {
+      "title": "Grid",
+      "columns": "Columns",
+      "columnsUnit": "columns",
+      "fewer": "Fewer columns",
+      "more": "More columns",
+      "rows_one": "× {{count}} row",
+      "rows_other": "× {{count}} rows",
+      "cell": "Cell",
+      "cellLabel": "Cell size",
+      "smaller": "Smaller cell (Shift: ×10)",
+      "bigger": "Bigger cell (Shift: ×10)",
+      "shift": "Shift",
+      "shiftLabel": "Shift the grid",
+      "left": "Shift left (Shift: ×10)",
+      "right": "Shift right (Shift: ×10)",
+      "up": "Shift up (Shift: ×10)",
+      "down": "Shift down (Shift: ×10)",
+      "letters": "Labels",
+      "reset": "Reset",
+      "colour": "Colour",
+      "line": "Line",
+      "width": "Line width",
+      "style": "Line style",
+      "styles": {
+        "solid": "Solid line",
+        "dash": "Dashes",
+        "dot": "Dots"
+      }
+    },
+    "cells": {
+      "title": "Cells",
+      "refs": "Selected cells",
+      "placeholder": "A1, B2, C1:C3",
+      "chosen_one": "{{count}} cell selected out of {{total}}",
+      "chosen_other": "{{count}} cells selected out of {{total}}",
+      "none": "No cell selected out of {{total}}",
+      "unknown": "Unknown reference: {{refs}}",
+      "clear": "Clear",
+      "exportSelection": "Export selection",
+      "exportSelectionTitle": "Export the selection as PNG",
+      "exportAll": "Export all",
+      "tooMany": "Too many cells ({{max}} at most): reduce the number of columns.",
+      "failed": "Exporting the cells failed.",
+      "zipName": "cells"
+    },
+    "nav": {
+      "title": "Navigation",
+      "empty": "No image.",
+      "map": "Thumbnail: tap or drag to move around the image",
+      "zoom": "Image zoom",
+      "zoomOut": "Zoom out (−)",
+      "zoomIn": "Zoom in (+, wheel or two fingers)",
+      "fit": "Whole image (0)"
+    },
+    "target": {
+      "title": "Target colour",
+      "empty": "Click or tap the image.",
+      "swatch": "Preview of the target colour",
+      "pixel": "Pixel",
+      "note": "CMY and CMYK: indicative only."
+    },
+    "recipe": {
+      "title": "Recipe",
+      "pickColour": "Pick a colour.",
+      "addTubes": "Add some tubes.",
+      "activateTubes": "Tick some tubes.",
+      "noBlacksNoEffects": "No blacks and no effects (metallic, iridescent, fluorescent): tick some colours.",
+      "noBlacks": "No black tubes: tick some colours.",
+      "noEffects": "No metallic, iridescent or fluorescent tubes: tick some colours.",
+      "openPaints": "Open Physical colours",
+      "target": "Target",
+      "mix": "Mix",
+      "targetLabel": "Target colour",
+      "mixLabel": "Colour of the mix",
+      "quality": {
+        "excellent": "Excellent",
+        "very-good": "Very good",
+        "good": "Good",
+        "approximate": "Approximate",
+        "far": "Far off"
+      },
+      "lightfastness": "Lightfastness {{rating}}",
+      "lightfastnessTitle": "That of the least lightfast tube in the mix ({{label}})",
+      "lightfastnessPartial": "; * some tubes have no rating",
+      "parts_one": "{{count}} part",
+      "parts_other": "{{count}} parts",
+      "next": "Suggest another mix",
+      "nextNone": "No other mix with your ticked paints",
+      "nextTitle": "Mix {{n}} of {{total}}: click for the next one",
+      "edit": "Edit the mix",
+      "editTitle": "Change paints and parts by hand",
+      "done": "Done",
+      "doneTitle": "Finish editing",
+      "addPaint": "Add a paint…",
+      "addPaintLabel": "Add a paint to the mix",
+      "reset": "Restore",
+      "row": "Paint of row {{n}}",
+      "remove": "Remove “{{name}}” from the mix",
+      "fewerParts": "Fewer parts",
+      "moreParts": "More parts",
+      "partsOf": "Parts of {{name}}",
+      "modified": "Edited",
+      "count": "{{n}} of {{total}}",
+      "note": "Indicative values (see Configuration)."
+    },
+    "advice": {
+      "title": "Advice",
+      "import": "Import a swatch chart to get advice.",
+      "importHelp": "The paints of your charts that you haven’t ticked are compared with the target colour.",
+      "searching": "Looking for paints…",
+      "progress": "Looking for paints… {{percent}} %",
+      "none": "No paint from your charts brings the colour closer.",
+      "best": "Add “{{name}}”: ΔE {{from}} → {{to}}",
+      "note": "Indicative: same calculation as the recipe, with one more paint."
+    },
+    "actions": {
+      "copy": "Copy the name",
+      "copyLabel": "Copy “{{name}}”",
+      "copied": "Copied",
+      "copyFailed": "Couldn’t copy",
+      "addInventory": "Add to inventory",
+      "addInventoryLabel": "Add “{{name}}” to the inventory: use it in the recipe",
+      "addShopping": "Add to shopping list",
+      "addShoppingLabel": "Add “{{name}}” to the shopping list"
+    },
+    "tags": {
+      "blackExcluded": "Black left out",
+      "blackExcludedTitle": "No black tubes (Configuration): this tube is neither used nor suggested",
+      "metal": "Metallic",
+      "iri": "Iridescent",
+      "fluo": "Fluorescent",
+      "excluded": "{{effect}} left out",
+      "effectTitle": "Its look depends on the light: one colour can’t represent it",
+      "effectExcludedTitle": "Its look depends on the light: one colour can’t represent it (Configuration: no metallic, iridescent or fluorescent tubes) — this tube is neither used nor suggested",
+      "wanted": "To buy",
+      "wantedTitle": "Paint to buy: it isn’t used in the calculations until it is ticked",
+      "astm": "ASTM {{rating}}",
+      "lightfastnessTitle": "Lightfastness: ASTM {{rating}} – {{label}}",
+      "opacityTitle": "Transparency / opacity: {{label}}"
+    },
+    "lightfastness": {
+      "I": "Excellent",
+      "II": "Very good",
+      "III": "Not permanent",
+      "none": "Not stated"
+    },
+    "opacity": {
+      "T": "Transparent",
+      "ST": "Semi-transparent",
+      "SO": "Semi-opaque",
+      "O": "Opaque",
+      "none": "Not stated"
+    },
+    "effect": {
+      "auto": "Automatic",
+      "none": "No effect",
+      "metal": "Metallic",
+      "iri": "Iridescent",
+      "fluo": "Fluorescent"
+    },
+    "status": {
+      "owned": "I have it",
+      "wanted": "To buy",
+      "catalogue": "Catalogue only"
+    },
+    "paints": {
+      "title": "Physical colours – Paint",
+      "storageWarning": "Browser storage is unavailable: tubes won’t be kept.",
+      "add": "Add a tube",
+      "charts": "Swatch charts",
+      "count": "{{tubes}} · {{owned}}",
+      "countWanted": "{{tubes}} · {{owned}} · {{wanted}} to buy",
+      "tubes_one": "{{count}} tube",
+      "tubes_other": "{{count}} tubes",
+      "owned_one": "{{count}} ticked",
+      "owned_other": "{{count}} ticked",
+      "noTubes": "No tube yet.",
+      "limit": "Limit of {{max}} tubes reached.",
+      "search": "Search: name, group, pigment, code",
+      "searchLabel": "Search a paint",
+      "filter": "Filter the paints",
+      "filters": {
+        "all": "All",
+        "owned": "I have them",
+        "wanted": "To buy",
+        "catalogue": "Catalogue"
+      },
+      "copyOwned": "Copy my paints",
+      "copyWanted": "Copy the shopping list",
+      "noMatch": "No paint matches the search.",
+      "emptyList": "No tube in this list.",
+      "noGroup": "No group",
+      "useGroup": "Use every tube of “{{group}}”",
+      "groupCount": "{{owned}} / {{total}}",
+      "groupWanted": " · {{count}} to buy",
+      "exportGroup": "Export",
+      "exportGroupLabel": "Export the “{{group}}” chart",
+      "use": "I own “{{name}}”: use it in the calculations",
+      "want": "To buy",
+      "wantOn": "Mark “{{name}}” as to buy",
+      "wantOff": "Remove “{{name}}” from the paints to buy",
+      "rebuy": "Buy again",
+      "rebuyTitle": "Tube finished: put it on the shopping list",
+      "rebuyLabel": "“{{name}}” is finished: put it on the shopping list",
+      "edit": "Edit",
+      "editLabel": "Edit “{{name}}”",
+      "delete": "Delete",
+      "deleteLabel": "Delete “{{name}}”",
+      "deleteConfirm": "Delete the tube “{{name}}”?",
+      "imported": "{{added}}, {{updated}} updated.",
+      "importedRemoved": "{{added}}, {{updated}} updated, {{removed}}.",
+      "added_one": "{{count}} tube added",
+      "added_other": "{{count}} tubes added",
+      "removed_one": "{{count}} removed",
+      "removed_other": "{{count}} removed",
+      "checkOwned": " Tick the ones you own."
+    },
+    "form": {
+      "new": "New tube",
+      "edit": "Edit the tube",
+      "name": "Name",
+      "group": "Group (brand)",
+      "optional": "Optional",
+      "pigment": "CI pigment",
+      "pigmentPlaceholder": "PB29 (optional)",
+      "lightfastness": "Lightfastness (ASTM scale)",
+      "status": "Status",
+      "opacity": "Transparency / opacity",
+      "effect": "Effect",
+      "colour": "Colour",
+      "hex": "HEX",
+      "r": "R",
+      "g": "G",
+      "b": "B",
+      "save": "Save",
+      "add": "Add the tube",
+      "cancel": "Cancel",
+      "nameMissing": "Give the tube a name.",
+      "colourInvalid": "The colour isn’t valid."
+    },
+    "chart": {
+      "title": "Manufacturer’s chart",
+      "drop": "Drop the chart",
+      "dropHint": "Image or PDF",
+      "choose": "Choose the chart",
+      "change": "Change chart",
+      "canvas": "Manufacturer’s chart",
+      "pages": "PDF pages",
+      "previous": "Previous page",
+      "nextPage": "Next page",
+      "zoom": "Chart zoom",
+      "zoomOut": "Zoom out",
+      "zoomIn": "Zoom in (Ctrl + wheel, or two fingers)",
+      "fit": "Fit to the window",
+      "zone": "Read an area: fills in the current tube",
+      "zoneTitle": "Read an area: fills in the tube being added",
+      "wide": "Enlarge the chart",
+      "reading": "Reading the PDF…",
+      "notChart": "This file is neither an image nor a PDF.",
+      "tooBig": "PDF too large (60 MB at most).",
+      "password": "This PDF is password-protected.",
+      "invalid": "This file isn’t a valid PDF.",
+      "unreadable": "This PDF can’t be read.",
+      "pageUnreadable": "This page can’t be read.",
+      "zoneHelp": "Draw around a tube. A click still reads the colour.",
+      "zonePdfOnly": "Automatic reading: only for PDFs that contain text.",
+      "zoneNoText": "This image has no text the tool can read: automatic reading only works on a PDF that contains text.",
+      "zoneFailed": "The text of this area can’t be read.",
+      "zoneNothing": "No tube name or code recognised in this area.",
+      "zoneEmpty": "No text in this area.",
+      "zoneRead": "Read: {{text}}"
+    },
+    "charts": {
+      "title": "Swatch charts",
+      "close": "Close",
+      "intro": "A swatch chart gathers the tubes of one brand (the “group”). It is exchanged as JSON.",
+      "tabs": {
+        "import": "Import",
+        "export": "Export",
+        "format": "Format and prompt"
+      },
+      "pick": "Choose a JSON file",
+      "orDrop": "or drop it here",
+      "paste": "Or paste the JSON",
+      "markOwned": "Tick the imported tubes",
+      "replace": "Replace the tubes of these groups",
+      "import": "Import",
+      "importCount_one": "Import {{count}} tube",
+      "importCount_other": "Import {{count}} tubes",
+      "clear": "Clear",
+      "tooBig": "File too large (4 MB at most).",
+      "unreadable": "This file can’t be read.",
+      "failures": {
+        "empty": "Nothing to import.",
+        "invalid-json": "Invalid JSON.",
+        "no-tube-list": "No “tubes” list in this JSON.",
+        "too-many-tubes": "Too many tubes ({{count}}, {{max}} at most)."
+      },
+      "rejections": {
+        "not-an-object": "invalid entry (an object is expected)",
+        "missing-name": "missing name",
+        "invalid-colour": "“hex” colour missing or invalid (expected: #RRGGBB)",
+        "duplicate": "duplicate in the file (same group and same name)"
+      },
+      "rejected": "Entry {{position}}{{name}}: {{reason}}",
+      "moreRejected": "… and {{count}} more rejected entries.",
+      "noValid": "No valid tube.",
+      "wouldExceed": "This import would exceed {{max}} tubes.",
+      "preview": "{{valid}} · {{groups}} · {{added}} new, {{updated}} updated{{removed}}{{rejected}}",
+      "valid_one": "{{count}} valid tube",
+      "valid_other": "{{count}} valid tubes",
+      "groups": "group(s): {{list}}",
+      "removedPart": ", {{count}} removed",
+      "rejectedPart": " · {{count}} rejected",
+      "noGroup": "no group",
+      "exportGroup": "Group (brand)",
+      "allGroups": "All groups ({{count}})",
+      "groupOption": "{{group}} ({{count}})",
+      "willExport_one": "{{count}} tube will be exported.",
+      "willExport_other": "{{count}} tubes will be exported.",
+      "nothingToExport": "No tube to export.",
+      "download": "Download (.json)",
+      "copy": "Copy",
+      "fileAll": "all",
+      "fileNoGroup": "no-group",
+      "formatTitle": "File format",
+      "fields": {
+        "tubes": "List of tubes (1,000 at most). <b>Required.</b>",
+        "name": "Trade name of the tube, 60 characters at most. <b>Required.</b>",
+        "hex": "Colour in sRGB: <code>#RRGGBB</code> (or <code>#RGB</code>). <b>Required.</b> A tube without a valid colour is rejected.",
+        "group": "Brand, 40 characters at most. At file level it applies to every tube; in a tube, it takes precedence.",
+        "pigment": "Colour Index code(s): <code>\"PB29\"</code> or <code>\"PR122/PV19\"</code>, 20 characters at most.",
+        "light": "Lightfastness, ASTM scale: <code>\"I\"</code>, <code>\"II\"</code> or <code>\"III\"</code>. Anything else: empty.",
+        "opac": "Transparency / opacity: <code>\"T\"</code> transparent, <code>\"ST\"</code> semi-transparent, <code>\"SO\"</code> semi-opaque, <code>\"O\"</code> opaque.",
+        "effect": "Surface effect: <code>\"metal\"</code> metallic, <code>\"iri\"</code> iridescent or pearlescent, <code>\"fluo\"</code> fluorescent, <code>\"none\"</code> none (forces an ordinary paint). Empty: the tool infers it from the name or pigment code.",
+        "type": "Optional: <code>\"nuancier\"</code> and <code>1</code>."
+      },
+      "rulesTitle": "On import",
+      "rules": {
+        "update": "A tube with the same group and name as an existing tube updates it (it keeps its ticked state).",
+        "owned": "New tubes are ticked only if you ask: tick the ones you own, only they are used in the calculations.",
+        "invalid": "Invalid entries are skipped and listed with their reason before importing.",
+        "paste": "The JSON can be pasted as is, even surrounded by text or <code>```json</code> fences.",
+        "local": "Nothing is sent anywhere: everything stays on this device."
+      },
+      "exampleTitle": "Example",
+      "copyExample": "Copy the example",
+      "template": "Download a template",
+      "promptTitle": "Prompt for an AI",
+      "promptHelp": "Copy this text into an AI, then attach the manufacturer’s document (PDF, screenshot, table). Paste its answer into “Import” and check the preview.",
+      "copyPrompt": "Copy the prompt",
+      "prompt": "You are preparing a paint swatch chart in JSON for the “Image study” tool. From the manufacturer’s document I attach (table, PDF, text or screenshot), reply ONLY with a valid JSON object: no text before or after, no code fences.\n\nExact format:\n{{format}}\n\nRules:\n1. NEVER invent a value. A tube whose colour is not given in the document is not included. For any other field not given, use an empty string \"\".\n2. \"hex\": the colour in sRGB on 7 characters (#RRGGBB, upper case). If the document gives RGB, convert it to hexadecimal. If it only gives CMYK, convert with R = 255 × (1 − C) × (1 − K), and likewise for G and B, with percentages brought between 0 and 1.\n3. \"name\": the trade name as written in the document, 60 characters at most.\n4. \"pigment\": the Colour Index code(s) (e.g. \"PB29\", \"PR122/PV19\"), 20 characters at most.\n5. \"light\": lightfastness on the ASTM scale: \"I\" (excellent), \"II\" (very good) or \"III\" (not permanent). If the manufacturer uses another scale (stars, Blue Wool, letters…), don’t convert it: \"\".\n6. \"opac\": \"T\" (transparent), \"ST\" (semi-transparent), \"SO\" (semi-opaque) or \"O\" (opaque), otherwise \"\".\n7. \"effect\": \"metal\" if the manufacturer states a metallic paint (gold, silver, copper, bronze, metallic), \"iri\" if it is iridescent, pearlescent or interference, \"fluo\" if it is fluorescent, otherwise \"\" (ordinary paint or not stated).\n8. File-level \"group\": the brand, 40 characters at most. If the document mixes several brands, add a \"group\" field in each tube instead.\n9. One object per tube, in the document’s order, no duplicates (same name in the same group).\n\nMy document:",
+      "promptFormat": {
+        "group": "<brand name>",
+        "name": "<trade name>",
+        "pigment": "<Colour Index codes separated by “/”, or \"\">",
+        "light": "<I, II, III or \"\">",
+        "opac": "<T, ST, SO, O or \"\">",
+        "effect": "<metal, iri, fluo or \"\">"
+      }
+    },
+    "imagePaints": {
+      "title": "Paints for this image",
+      "intro": "Your paints first, then those that would improve the image most. Indicative calculation.",
+      "precision": "Precision",
+      "levels": {
+        "colours": "{{count}} colours",
+        "all": "every point"
+      },
+      "collections": "Collections",
+      "noCollection": "No collection.",
+      "proposals": "Proposals",
+      "key": "Each proposal: mean ΔE (the lower the better) and share of the image reproduced almost exactly; in brackets, its gain over the previous one.",
+      "noImage": "Choose an image first.",
+      "checkCollection": "Tick at least one collection.",
+      "noPaints": "No paint: import a swatch chart or add tubes.",
+      "computing": "Calculating…",
+      "nothing": "No paint brings the image’s colours closer.",
+      "noPurchase": "No purchase",
+      "plus_one": "+{{count}} tube",
+      "plus_other": "+{{count}} tubes",
+      "faithful": "{{percent}} % faithful",
+      "gain": " (+{{percent}} %)",
+      "meanTitle": "Mean difference from the image: ΔE {{value}}",
+      "why": "With these paints, each colour of the image is reached on average within ΔE {{value}} ({{quality}}); {{percent}} % of the image is reproduced almost exactly (ΔE under 3). Same scale as the recipe: under 1 excellent, under 2.5 very good, under 5 good, under 10 approximate, beyond that far off.",
+      "owned": "I have them",
+      "toBuy": "To buy",
+      "nothingToBuy": "Nothing to buy for this proposal.",
+      "usedFor": "Used for {{percent}} % of the image",
+      "usedForLittle": "Used for less than 1 % of the image",
+      "points": "{{count}} colours of the image taken into account ({{level}}).",
+      "copyAll": "Copy the list",
+      "wantAll": "Add all to the shopping list",
+      "textTitle": "Paints for the image{{name}} · ΔE {{value}} ({{quality}}), {{percent}} % faithful"
+    },
+    "settings": {
+      "calculation": "Calculation",
+      "excludeBlacks": "No black tubes (chromatic blacks only)",
+      "excludeBlacksNote": "On by default: a black tube is never suggested; black is mixed from colours (chromatic black).",
+      "excludeBlacksWhy": "<b>Why?</b> A tube black tends to look flat. A black mixed from colours (a dark blue and a brown, for example) keeps a warm or cool bias and blends better with the rest of the painting. And the tool only knows a tube’s colour: it can’t tell whether a black is already a mix. Blacks stay in your list, simply left out of the calculations.",
+      "excludeEffects": "No metallic, iridescent or fluorescent tubes",
+      "excludeEffectsNote": "On by default: metallic, iridescent, pearlescent or fluorescent paints are never suggested.",
+      "excludeEffectsWhy": "<b>Why?</b> A metallic or iridescent paint changes with the angle of the light, and a fluorescent paint emits light on top of what it reflects: a single colour on screen can’t represent them, and the computed mix wouldn’t be reliable. These paints stay in your list, simply left out of the calculations. The effect is detected from the name or pigment code; the tube’s “Effect” field corrects it.",
+      "storage": "Storage",
+      "unavailable": "Unavailable",
+      "storageDetail": "{{tubes}} · of ~5 MB",
+      "maintenance": "Maintenance",
+      "clearCache": "Clear the cache",
+      "clearCacheNote": "Removes the reference image, the chart and the selection. Your tubes are kept.",
+      "cacheCleared": "Images (reference and chart) and selection cleared. Your tubes are kept.",
+      "backup": "Backup",
+      "exportTubes": "Export tubes (JSON)",
+      "importTubes": "Import tubes (JSON)",
+      "exported": "Tubes exported ({{tubes}}).",
+      "backupTooBig": "File too large (2 MB at most).",
+      "backupUnreadable": "This file can’t be read.",
+      "backupInvalid": "This file isn’t valid JSON.",
+      "backupNoTubes": "This file contains no tubes.",
+      "backupNoValid": "No valid tube in this file.",
+      "replaceConfirm": "Replace the {{current}} current tubes with the {{count}} from the file?",
+      "importedTubes": "{{tubes}} imported.",
+      "danger": "Danger zone",
+      "wipe": "Delete the data on this device",
+      "wipeNote": "Tubes, grid settings and image: permanent.",
+      "wipeConfirm": "Delete all of this tool’s data on this device (tubes, grid settings, image)?\n\nThis can’t be undone. Consider exporting your tubes first.",
+      "wiped": "Data deleted on this device.",
+      "bytes": "{{value}} bytes",
+      "kb": "{{value}} KB",
+      "mb": "{{value}} MB",
+      "method": "How it’s calculated",
+      "methodWarning": "Results are indicative and can never be fully accurate. The only reliable judge is the objective perception of several people, in front of the real paint under the same light. The computer is only a calculating tool.",
+      "steps": {
+        "read": [
+          "Colour read",
+          "Exact RGB value of the pixel pointed at, in the image reduced to 1,600 px at most. It depends on the camera, the light, the screen and its profile: none of them is corrected here."
+        ],
+        "difference": [
+          "Difference between two colours",
+          "Colours are converted to CIE L*a*b* (D65 white), then compared with the CIEDE2000 ΔE difference. Around 1, the difference is barely visible; beyond 5, it shows clearly."
+        ],
+        "mixing": [
+          "Paint mixing",
+          "Kubelka-Munk model, computed separately for red, green and blue. A tube is known only by its reference colour: its absorption (K/S) is derived from it, and its scattering (S) is estimated from its lightness. The calculation ignores real spectra, transparency and opacity, the binder, layer thickness and colour shift on drying."
+        ],
+        "search": [
+          "Finding the recipe",
+          "Among the ticked tubes, the tool tries combinations of 1 to 3 tubes and looks for the proportions that minimise ΔE. The recipe shown has the best ΔE; if several match it (within 0.3, invisible), it keeps the one with the fewest paints. Proportions are relative parts. Other mixes are offered next."
+        ],
+        "blacks": [
+          "No black tubes (chromatic black)",
+          "By default, black tubes (named “black”, “noir”…, pigment only black PBk, or a very dark neutral colour) are left out of the calculations and the Advice: black is mixed from colours, as in the studio. Change it in Configuration, Calculation section."
+        ],
+        "effects": [
+          "No metallic, iridescent or fluorescent tubes",
+          "By default, metallic, iridescent, pearlescent or fluorescent paints are left out of the calculations and the Advice: their look depends on the light (angle for metallics and iridescents, emitted light for fluorescents), which a single colour can’t represent. Change it in Configuration, Calculation section."
+        ],
+        "info": [
+          "Lightfastness and transparency / opacity",
+          "Information entered from the manufacturer’s sheet (lightfastness on the ASTM scale, transparency or opacity). Not used in the calculations: shown next to the tubes and the recipe. A mix’s lightfastness is that of its least lightfast tube."
+        ],
+        "cmyk": ["CMY and CMYK", "Simple conversion from RGB (1 − value), without a print profile."],
+        "chart": [
+          "Manufacturer’s chart",
+          "Average of a 5 × 5 pixel square, read on screen or on the zoom. For a PDF, the page is first drawn by the PDF reader, which converts CMYK colours to RGB approximately."
+        ],
+        "zone": [
+          "Reading an area",
+          "On a PDF that contains text, the area drawn around is read straight from the PDF’s text (no character recognition): name, pigment code, lightfastness, transparency or opacity. Only the tube being added is filled in, and nothing is guessed. A reading can be wrong or pick the wrong line: always check before saving."
+        ]
+      }
+    }
+  },
+  "mannequin": {
+    "title": "Mannequin",
+    "tabs": {
+      "poses": "Poses",
+      "sketch": "Timed sketch",
+      "light": "Light and values"
+    },
+    "stage": "Mannequin",
+    "canvas": "3D mannequin: drag to turn around it, wheel or two fingers to zoom, arrow keys to turn",
+    "noWebgl": "3D display isn’t available in this browser (WebGL is off or unsupported).",
+    "random": "Random pose",
+    "export": "Export as PNG",
+    "poseInfo": "{{family}} · {{n}} / {{total}}",
+    "pose": {
+      "title": "Pose",
+      "choose": "Choose a pose",
+      "nav": "Previous or next pose",
+      "previous": "‹ Previous",
+      "previousLabel": "Previous pose",
+      "next": "Next ›",
+      "nextLabel": "Next pose"
+    },
+    "view": {
+      "title": "View",
+      "label": "Viewpoints",
+      "note": "Drag on the mannequin to turn around it.",
+      "presets": {
+        "front": "Front",
+        "three-quarter": "Three-quarter",
+        "profile": "Profile",
+        "back": "Back",
+        "above": "Above"
+      }
+    },
+    "figure": {
+      "title": "Figure",
+      "shape": "Shape of the mannequin",
+      "shapes": {
+        "male": "Male",
+        "female": "Female"
+      },
+      "heads": "Proportions: <b>{{value}}</b> heads",
+      "headsLabel": "Proportions, in heads",
+      "headsNote": "7.5: realistic · 8 and more: idealised."
+    },
+    "timer": {
+      "title": "Timed sketch",
+      "duration": "Time per pose",
+      "durations": {
+        "30": "30 s",
+        "60": "1 min",
+        "120": "2 min",
+        "300": "5 min"
+      },
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "left": "Time left"
+    },
+    "session": {
+      "title": "Session",
+      "newPose": "New pose when the time is up",
+      "drawn_one": "{{count}} pose drawn",
+      "drawn_other": "{{count}} poses drawn",
+      "space": "Space: start or pause."
+    },
+    "light": {
+      "title": "Light",
+      "presetsLabel": "Typical lighting",
+      "presets": {
+        "left": "Left",
+        "right": "Right",
+        "front": "Front",
+        "back": "Backlight",
+        "above": "Above",
+        "raking": "Raking"
+      },
+      "direction": "Direction: <b>{{value}}°</b>",
+      "directionLabel": "Light direction",
+      "height": "Height: <b>{{value}}°</b>",
+      "heightLabel": "Light height"
+    },
+    "values": {
+      "title": "Values",
+      "shading": "Rendering",
+      "shadings": {
+        "2": "2 values",
+        "3": "3 values",
+        "smooth": "Modelled"
+      },
+      "material": "Material",
+      "materials": {
+        "grey": "Grey",
+        "wood": "Wood"
+      },
+      "shadow": "Cast shadow",
+      "floorGrid": "Floor grid"
+    },
+    "families": {
+      "standing": "Standing",
+      "movement": "Movement",
+      "expressive": "Expressive",
+      "foreshortening": "Foreshortening",
+      "screens": "Screens"
+    },
+    "poses": {
+      "rest": "Standing at rest",
+      "contrapposto": "Contrapposto",
+      "hands-on-hips": "Hands on hips",
+      "one-leg": "Standing on one leg",
+      "stool": "Sitting on a stool",
+      "crouch": "Crouching",
+      "kneel": "Kneeling",
+      "walk": "Walking",
+      "run": "Running",
+      "jump": "Jumping, arms up",
+      "throw": "Throwing",
+      "kick": "Kicking",
+      "pull-rope": "Pulling a rope",
+      "arms-up": "Arms raised",
+      "bend-forward": "Bending forward",
+      "turn-round": "Turning round",
+      "stretch": "Stretching",
+      "think": "Thinking, hand on chin",
+      "point": "Arm stretched towards you",
+      "on-back": "Lying on the back",
+      "on-side": "Lying on the side",
+      "phone-standing": "Standing, looking at a phone",
+      "phone-sitting": "Sitting, on the phone",
+      "phone-on-back": "Lying on the back, phone above",
+      "phone-on-front": "Lying on the front, on the elbows",
+      "kiosk": "Standing, ordering at a kiosk",
+      "tablet-standing": "Standing, tablet in hand",
+      "tablet-sitting": "Sitting, tablet in hand"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "themeNote": "Neutral grey and Contrast have no hue at all: the interface never sways the colours you judge.",
+      "scheme": "Day or night",
+      "schemes": {
+        "light": "Day",
+        "dark": "Night",
+        "system": "Device"
+      },
+      "schemeNote": "Day by default. “Device” follows your system setting."
+    },
+    "language": {
+      "title": "Language"
+    },
+    "app": {
+      "title": "Application",
+      "desktop": "You are using the desktop app.",
+      "installed": "Opal Atelier is installed on this device.",
+      "web": "Use Opal Atelier as an application, even offline.",
+      "computer": "On a computer",
+      "computerText": "Windows, macOS and Linux",
+      "download": "Download",
+      "phone": "On a phone or tablet",
+      "phoneText": "Open <site>bil150.github.io/opal-atelier</site>, then “Install” on Android, or Share → “Add to Home Screen” on iPhone."
+    },
+    "data": {
+      "title": "Data on this device",
+      "used": "{{size}} used: your tubes and settings. Nothing is sent anywhere.",
+      "unavailable": "Storage is unavailable in this browser.",
+      "wipe": "Delete all data",
+      "wipeConfirm": "Delete all Opal Atelier data on this device (tubes, settings of every tool)?\n\nThis can’t be undone. Consider exporting your tubes first (Image study → Settings).",
+      "wiped": "All data deleted on this device."
+    },
+    "about": {
+      "title": "About",
+      "version": "Version {{version}}",
+      "built": "Built on {{date}}",
+      "madeBy": "Made by",
+      "source": "Source code",
+      "licenses": "Licenses",
+      "codeLicense": "Code: GNU GPL v3.0 or later",
+      "contentLicense": "Texts and data (glossary, colour theory, poses): CC BY-NC-SA 4.0",
+      "openSource": "Open-source libraries",
+      "openSourceNote": "Opal Atelier is built on these free projects. Thanks to their authors.",
+      "fonts": "Logo lettering: Cormorant Garamond and Outfit (SIL Open Font License)."
+    },
+    "tools": {
+      "title": "Tools",
+      "imageStudy": "Image study configuration",
+      "imageStudyNote": "Calculation (black tubes, effects), tube backup, maintenance."
+    }
+  }
+}
