@@ -1,0 +1,163 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# CD — Continuous Delivery, started by hand: publish what CI built and tested. Nothing is rebuilt.
+#
+#   Actions → CD → Run workflow (branch: main)
+#        │
+#        ▼
+#   find-build ─┬─► website ──► GitHub Pages updated          (CI artifact "website")
+#               └─► release ──► draft release <version>     (CI artifacts "installer-<system>")
+#
+# find-build: takes the commit chosen (the latest of main), checks that its CI run succeeded, reads
+#             the version in package.json and checks that no release has that version yet.
+# website:    publishes that CI run's site + PWA on GitHub Pages: https://bil150.github.io/opal-atelier/
+#             (Settings → Pages → Source: GitHub Actions)
+# release:    creates a DRAFT release <version> (e.g. 0.2.0) of that commit, with that CI
+#             run's installers (Windows .exe, macOS .dmg, Linux .AppImage). Nothing is public until it
+#             is published by hand (Releases → Edit → Publish release); the tag is created then.
+#
+# What is published is exactly what CI built and tested: build once, deploy many.
+# To release a new version: set "version" in package.json, merge to main, wait for CI, run CD.
+# ──────────────────────────────────────────────────────────────────────────────
+name: CD
+
+on:
+  workflow_dispatch:
+    inputs:
+      website:
+        description: Publish the website on GitHub Pages
+        type: boolean
+        default: true
+      release:
+        description: Create the draft release with the desktop installers
+        type: boolean
+        default: true
+
+# Read-only by default; the publishing jobs ask for more below.
+permissions:
+  contents: read
+
+jobs:
+  # ── 1. Find the CI build of the chosen commit ──────────────────────────────
+
+  find-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      run-id: ${{ steps.ci.outputs.run-id }}
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # Releases come from main only (the website too: it is the public version).
+      - name: Started on main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "::error::Run CD on main (it was started on $GITHUB_REF_NAME)."
+          exit 1
+
+      # The version to publish, from package.json. For a release, it must be new.
+      - name: Version of package.json
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.release }}" = "true" ] && gh release view "$version" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            echo "::error::A release $version already exists: raise \"version\" in package.json, merge, then run CD again."
+            exit 1
+          fi
+          echo "Publishing version $version"
+
+      # The CI run of main for this very commit: waits up to 30 minutes if it is still running,
+      # stops if it failed or doesn't exist.
+      - name: Successful CI run of this commit
+        id: ci
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 60); do
+            run="$(gh run list --repo "$GITHUB_REPOSITORY" --workflow ci.yml --branch main --event push \
+              --commit "$GITHUB_SHA" --limit 1 --json databaseId,status,conclusion --jq '.[0]')"
+            if [ -z "$run" ]; then
+              echo "::error::No CI run on main for $GITHUB_SHA."
+              exit 1
+            fi
+            status="$(echo "$run" | jq -r .status)"
+            conclusion="$(echo "$run" | jq -r .conclusion)"
+            if [ "$status" = "completed" ]; then
+              if [ "$conclusion" != "success" ]; then
+                echo "::error::The CI run of $GITHUB_SHA ended with \"$conclusion\": fix main first."
+                exit 1
+              fi
+              echo "run-id=$(echo "$run" | jq -r .databaseId)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "CI is still running ($status), waiting…"
+            sleep 30
+          done
+          echo "::error::CI didn't finish within 30 minutes."
+          exit 1
+
+  # ── 2a. Website ─────────────────────────────────────────────────────────────
+
+  # Publishes the CI artifact "website" as is on GitHub Pages.
+  website:
+    if: inputs.website
+    needs: find-build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    # One deployment at a time; a newer one waits instead of cancelling one already running.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: website
+          path: dist-web
+          run-id: ${{ needs.find-build.outputs.run-id }}
+          github-token: ${{ github.token }}
+      # Pages takes its files in its own package format: the same files, repackaged, not rebuilt.
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist-web
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ── 2b. Release ─────────────────────────────────────────────────────────────
+
+  # Creates the draft release <version> of the commit (its tag comes with publication), with the CI artifacts
+  # "installer-<system>", with notes generated from the merged pull requests.
+  release:
+    if: inputs.release
+    needs: find-build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          pattern: installer-*
+          path: installers
+          merge-multiple: true
+          run-id: ${{ needs.find-build.outputs.run-id }}
+          github-token: ${{ github.token }}
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ needs.find-build.outputs.version }}
+          target_commitish: ${{ github.sha }}
+          name: ${{ needs.find-build.outputs.version }}
+          draft: true
+          generate_release_notes: true
+          files: installers/**/*

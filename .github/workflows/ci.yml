@@ -1,20 +1,64 @@
-# Type checking, lint, formatting and tests on every push and pull request.
+# ──────────────────────────────────────────────────────────────────────────────
+# CI — Continuous Integration: check, build and store, on every change.
+#
+#   pull request to main ─┐                ┌─► website  (no-deploy only artifact "website": the site + PWA)
+#                         ├─► check ──► build
+#   push to main ─────────┘                └─► desktop   (no-deploy only artifacts "installer-<system>":
+#                                                         Windows .exe, macOS .dmg, Linux .AppImage)
+#
+# check:   exact dependencies, then `npm run check` = type checking + lint + formatting + tests.
+# build:   only once the checks pass. The results are stored as artifacts of this run (kept 90 days).
+#g
+# Nothing is published here. CD, started by hand (Actions → CD → Run workflow), takes the artifacts
+# this workflow built for the latest commit of main and publishes those very files: the website on
+# GitHub Pages, the installers in a draft release. Build once, deploy many.
+# The artifacts of every run are also downloadable from its page (Actions → the run → Artifacts),
+# e.g. to try the installers of a pull request before merging it.
+# ──────────────────────────────────────────────────────────────────────────────
 name: CI
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
-  pull_request:
 
+# Read-only: CI never writes to the repository.
 permissions:
   contents: read
 
+# On a pull request, a new push cancels the run in progress (only the latest code matters).
+# On main, every run goes to the end: its artifacts may become a release.
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  # ── 1. Checks ───────────────────────────────────────────────────────────────
+
   check:
+    runs-on: ubuntu-latest
+    steps:
+      # Get the code (of the pull request, or of main).
+      - uses: actions/checkout@v5
+
+      # Node.js in the version of .nvmrc, with the npm cache for faster installs.
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      # Exact dependencies from package-lock.json (a clean install, like on a fresh machine).
+      - run: npm ci
+
+      # Type checking, lint, formatting and tests: the run stops here if any of them fails.
+      - run: npm run check
+
+  # ── 2a. Website build ───────────────────────────────────────────────────────
+
+  # The website + installable PWA, in dist-web/, stored as the artifact "website".
+  website:
+    needs: check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -23,4 +67,42 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - run: npm run check
+      - run: npm run build:web
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: dist-web
+          if-no-files-found: error
+
+  # ── 2b. Desktop builds ──────────────────────────────────────────────────────
+
+  # One machine per system (a .dmg can only be built on a Mac). fail-fast off: if one system
+  # fails, the others still finish, to see every problem at once.
+  desktop:
+    needs: check
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # electron-builder writes the installer to release/<version>/ (see electron-builder.yml).
+      - run: npm run dist
+        env:
+          # The builds are not code-signed: skip looking for a signing identity.
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      # Stores the installer of this system as the artifact "installer-<system>".
+      - uses: actions/upload-artifact@v4
+        with:
+          name: installer-${{ matrix.os }}
+          path: |
+            release/*/*.exe
+            release/*/*.dmg
+            release/*/*.AppImage
+          if-no-files-found: error
