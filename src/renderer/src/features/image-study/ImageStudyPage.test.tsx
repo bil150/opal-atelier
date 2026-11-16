@@ -160,7 +160,7 @@ describe('Image study', () => {
       const dialog = screen.getByRole('dialog', { name: 'Paints for this image' })
       expect(within(dialog).getByRole('checkbox', { name: 'Mine' })).toBeChecked()
       expect(await within(dialog).findByRole('group', { name: 'Proposals' })).toBeInTheDocument()
-      expect(within(dialog).getByRole('heading', { name: /^I have them · \d/ })).toBeInTheDocument()
+      expect(within(dialog).getByRole('heading', { name: /^I have them\s*\d+$/ })).toBeInTheDocument()
       expect(
         within(dialog).getByText(/colours of the image taken into account \(32 colours\)/),
       ).toBeInTheDocument()

@@ -95,7 +95,9 @@ export function ImageStage({
     const fit = () => {
       const fill = typeof matchMedia === 'function' && matchMedia(FILL_QUERY).matches
       const availW = area.clientWidth
-      const availH = fill ? area.clientHeight : Math.round(innerHeight * 0.8)
+      // Wide screens and phones give the area a fixed height; tablets in portrait, up to 80 % of the screen.
+      const phone = typeof matchMedia === 'function' && matchMedia('(max-width: 640px)').matches
+      const availH = fill || phone ? area.clientHeight : Math.round(innerHeight * 0.8)
       const ratio = image.source.width / image.source.height
       const w = Math.max(1, Math.min(availW || image.source.width, (availH || image.source.height) * ratio))
       setFrameSize({ width: Math.floor(w), height: Math.floor(w / ratio) })
@@ -298,7 +300,7 @@ export function ImageStage({
       ref={areaRef}
       onDragOver={(e) => e.preventDefault()}
       onDrop={onDrop}
-      className="grid min-h-[280px] place-items-center overflow-hidden rounded-lg border border-line bg-paper sm:h-[min(70vh,760px)]"
+      className="grid min-h-[280px] place-items-center overflow-hidden rounded-lg border border-line bg-paper max-sm:h-auto max-sm:min-h-0 max-sm:flex-1 sm:h-[min(70vh,760px)]"
     >
       {image ? (
         <div

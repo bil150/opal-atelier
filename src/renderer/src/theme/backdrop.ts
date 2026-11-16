@@ -1,5 +1,5 @@
 /**
- * Page theme ("backdrop"), on every page: Neutral (white, the default), Opal (the site's own), or a theme with no hue. "Neutral grey" and
+ * Page theme ("backdrop"), on every page: Opal (the site's own, the default), Neutral (white), or a theme with no hue. "Neutral grey" and
  * "Contrast" have no hue at all, so the interface never sways the perception of the colours being judged.
  * Independent of light / dark: each theme has both.
  */
@@ -7,16 +7,19 @@ import { useSyncExternalStore } from 'react'
 import { isOneOf, readStored, writeStored } from '@renderer/hooks/use-local-storage'
 
 export enum Backdrop {
-  /** White, the default: the app's plain colours. */
+  /** White: the app's plain colours. */
   Neutral = 'neutral',
   Grey = 'grey',
   Paper = 'paper',
   Contrast = 'contrast',
-  /** Pearly, iridescent: the site's own theme, after the opal. */
+  /** Pearly, iridescent: the site's own theme, after the opal, and the default. */
   Opal = 'opal',
 }
 
 export const BACKDROPS: readonly Backdrop[] = Object.values(Backdrop)
+
+/** Until the user picks another one: the site's own theme. */
+export const DEFAULT_BACKDROP = Backdrop.Opal
 
 /** Kept from when the theme was a studio option, so the choice already made is not lost. */
 export const BACKDROP_KEY = 'studio:backdrop'
@@ -34,7 +37,7 @@ const listeners = new Set<() => void>()
 let current: Backdrop | null = null
 
 export function readBackdrop(): Backdrop {
-  current ??= readStored(BACKDROP_KEY, Backdrop.Neutral, isOneOf(BACKDROPS))
+  current ??= readStored(BACKDROP_KEY, DEFAULT_BACKDROP, isOneOf(BACKDROPS))
   return current
 }
 

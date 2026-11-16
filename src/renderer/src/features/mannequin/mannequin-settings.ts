@@ -66,7 +66,6 @@ export const LIGHT_ELEVATION = { min: 5, max: 85 } as const
 
 export const SETTINGS_KEY = 'mannequin:settings'
 export const POSE_KEY = 'mannequin:pose'
-export const LAYOUT_KEY = 'mannequin:layout'
 
 const number = (raw: unknown, key: string, min: number, max: number, fallback: number, step = 0): number => {
   const v = field(raw, key, (x): x is number => typeof x === 'number' && Number.isFinite(x), fallback)

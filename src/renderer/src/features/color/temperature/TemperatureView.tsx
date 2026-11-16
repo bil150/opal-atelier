@@ -237,7 +237,7 @@ export function TemperatureView({ layout }: { readonly layout: StudioLayout }) {
 
   const panels = (
     <>
-      <Panel title={t('color.temperature.yourColour')}>
+      <Panel title={t('color.temperature.yourColour')} defaultOpen>
         <PaintSelect
           label={base ? t('color.temperature.pick', { name: base.name }) : t('color.temperature.noInventory')}
           value={base}

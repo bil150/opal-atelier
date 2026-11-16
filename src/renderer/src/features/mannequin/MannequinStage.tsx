@@ -165,7 +165,7 @@ export function MannequinStage({ settings, pose, view, onScene, overlay }: Manne
   return (
     <div
       ref={frameRef}
-      className="relative grid min-h-[320px] place-items-center overflow-hidden rounded-lg border border-line bg-paper max-sm:aspect-[3/4] sm:h-[min(70vh,760px)]"
+      className="relative grid min-h-[320px] place-items-center overflow-hidden rounded-lg border border-line bg-paper max-sm:h-auto max-sm:min-h-0 max-sm:flex-1 sm:h-[min(70vh,760px)]"
     >
       {supported ? (
         <canvas

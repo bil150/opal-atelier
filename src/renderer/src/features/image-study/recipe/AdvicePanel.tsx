@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Note } from '@renderer/components/ui/Panel'
+import { Note, Panel } from '@renderer/components/ui/Panel'
+import { usePhone } from '@renderer/components/ui/panel-collapse'
 import { BUTTON_GHOST, TOOL_BUTTON } from '@renderer/components/ui/buttons'
 import { TubeStatus, tubeLabel, type PaintTube } from '@renderer/features/paints/paint-tube'
 import type { CalculationOptions } from '@renderer/features/paints/tube-classification'
@@ -47,10 +48,13 @@ export function AdvicePanel({
   const { t, i18n } = useTranslation()
   const locale = i18n.resolvedLanguage ?? 'en'
   const [open, setOpen] = useState(false)
+  // Folded on a phone until opened (nothing is searched meanwhile); always open on a large screen.
+  const phone = usePhone()
+  const searching = !phone || open
   const [search, setSearch] = useState<Search | null>(null)
 
   useEffect(() => {
-    if (!open || !candidates.length) return
+    if (!searching || !candidates.length) return
     const run = searchAdvice(target, base, active, candidates)
     let timer = 0
     const step = () => {
@@ -70,7 +74,7 @@ export function AdvicePanel({
     }
     timer = window.setTimeout(step, 0)
     return () => clearTimeout(timer) // closed, or the colour changed: this search is stale
-  }, [open, target, base, active, candidates])
+  }, [searching, target, base, active, candidates])
 
   const current = search?.base === base ? search : null
   const byId = new Map([...active, ...candidates].map((tube) => [tube.id, tube]))
@@ -79,7 +83,7 @@ export function AdvicePanel({
 
   const teaser = !candidates.length
     ? t('imageStudy.advice.import')
-    : !open
+    : !searching
       ? ''
       : !current?.found
         ? current?.progress
@@ -94,15 +98,9 @@ export function AdvicePanel({
           : t('imageStudy.advice.none')
 
   return (
-    <details
-      open={open}
-      onToggle={(e) => setOpen(e.currentTarget.open)}
-      className="flex min-w-0 flex-col gap-2.5 rounded-[18px] bg-panel px-4 py-3.5"
-    >
-      <summary className="cursor-pointer text-[13px]/snug font-semibold opacity-70">
-        {t('imageStudy.advice.title')}
-      </summary>
-      <div className="mt-2.5 flex flex-col gap-2.5">
+    // Folded at first, like the other panels can be: nothing is searched until it is unfolded.
+    <Panel title={t('imageStudy.advice.title')} defaultOpen={false} onToggle={setOpen}>
+      <div className="flex flex-col gap-2.5">
         <p aria-live="polite" className="text-[13px]">
           {teaser}
         </p>
@@ -162,6 +160,6 @@ export function AdvicePanel({
           </>
         ) : null}
       </div>
-    </details>
+    </Panel>
   )
 }

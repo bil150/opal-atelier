@@ -26,7 +26,7 @@ import {
 export function TheoryView() {
   const { t } = useTranslation()
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,340px),1fr))] content-start gap-3 pb-2">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,340px),1fr))] content-start gap-5 pb-2">
       <PrimariesCard />
       <ComplementsCard />
       <TemperatureCard />
@@ -413,7 +413,8 @@ function Contrast({
 }) {
   return (
     <article className="flex flex-col gap-2.5 rounded-[14px] border border-line bg-paper-2 p-3.5">
-      <div className="flex h-[150px] flex-col justify-center gap-1.5">{children}</div>
+      {/* Fixed figure area: whatever is drawn in it never spills onto the neighbouring cards. */}
+      <div className="flex h-[150px] flex-col justify-center gap-1.5 overflow-hidden">{children}</div>
       <div className="flex items-center gap-2.5">
         <span className="grid size-[26px] flex-none place-items-center rounded-full bg-ink text-[13px] font-bold text-paper">
           {n}
@@ -449,7 +450,7 @@ function ContrastsCard() {
   return (
     <Panel as="article" title={t('color.theory.contrasts.title')} className={`${card} col-span-full`}>
       <p className={text}>{t('color.theory.contrasts.intro')}</p>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-3.5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-5">
         <Contrast n={1} {...c('hue')}>
           <Strip colors={[painterColor(0), painterColor(120), painterColor(240)]} />
         </Contrast>
@@ -485,11 +486,14 @@ function ContrastsCard() {
           </div>
         </Contrast>
         <Contrast n={5} {...c('saturation')}>
-          <Surround
-            outer={desaturate(painterColor(120), 0.3)}
-            inner={painterColor(120)}
-            className="w-[150px] self-center rounded-[10px]"
-          />
+          {/* A square as tall as the figure area (150 px), whatever the card's width. */}
+          <div className="aspect-square h-full self-center">
+            <Surround
+              outer={desaturate(painterColor(120), 0.3)}
+              inner={painterColor(120)}
+              className="rounded-[10px]"
+            />
+          </div>
         </Contrast>
         <Contrast n={6} {...c('extension')}>
           <Strip colors={[painterColor(0), painterColor(180)]} flex={[1, 3]} labels={['1', '3']} />

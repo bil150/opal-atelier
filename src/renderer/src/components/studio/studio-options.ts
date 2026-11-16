@@ -1,8 +1,8 @@
 /** Options shared by the studio tools (Image study, Colour, Mannequin). */
+import { isPhone } from '@renderer/components/ui/panel-collapse'
 
 /** Where the settings panels sit relative to the main view. */
 export enum StudioLayout {
-  /** Panels first: the default, so on a phone the settings aren't a long scroll away. */
   Above = 'above',
   Below = 'below',
   Right = 'right',
@@ -11,3 +11,8 @@ export enum StudioLayout {
 }
 
 export const STUDIO_LAYOUTS: readonly StudioLayout[] = Object.values(StudioLayout)
+
+/** Until the user picks one: settings on the right on large screens, below the main view on phones. */
+export function defaultLayout(): StudioLayout {
+  return isPhone() ? StudioLayout.Below : StudioLayout.Right
+}

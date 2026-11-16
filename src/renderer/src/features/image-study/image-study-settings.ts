@@ -27,9 +27,8 @@ export function isImageStudySection(value: unknown): value is ImageStudySection 
 
 export const GRID_KEY = 'image-study:grid'
 export const CALCULATION_KEY = 'image-study:calculation'
-export const LAYOUT_KEY = 'image-study:layout'
 /** Every key of this tool (for "delete the data on this device"). */
-export const IMAGE_STUDY_KEYS: readonly string[] = [GRID_KEY, CALCULATION_KEY, LAYOUT_KEY]
+export const IMAGE_STUDY_KEYS: readonly string[] = [GRID_KEY, CALCULATION_KEY]
 
 export function sanitizeCalculation(raw: unknown): CalculationOptions {
   return {

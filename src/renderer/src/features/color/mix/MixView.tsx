@@ -181,7 +181,7 @@ export function MixView({ layout, mode }: MixViewProps) {
         ]}
       />
       {palette && reach ? (
-        <div className="grid gap-3 rounded-lg border border-line bg-paper p-3 sm:h-[min(62vh,640px)] sm:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
+        <div className="grid gap-3 rounded-lg border border-line bg-paper p-3 max-sm:h-auto max-sm:min-h-0 max-sm:flex-1 max-sm:grid-cols-2 max-sm:gap-2 max-sm:p-2 sm:h-[min(62vh,640px)] sm:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
           <div className="flex min-h-0 min-w-0 flex-col justify-center gap-2">
             <MixingPlate hexes={hexes} names={names} white={settings.white} shown={shown} />
             <p className="text-center text-[13px] opacity-70">{t('color.mix.plateHelp')}</p>
@@ -192,7 +192,7 @@ export function MixView({ layout, mode }: MixViewProps) {
           </div>
         </div>
       ) : (
-        <div className="grid gap-3 rounded-lg border border-line bg-paper p-3 sm:h-[min(62vh,640px)] sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
+        <div className="grid gap-3 rounded-lg border border-line bg-paper p-3 max-sm:h-auto max-sm:min-h-0 max-sm:flex-1 max-sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] max-sm:gap-2 max-sm:p-2 sm:h-[min(62vh,640px)] sm:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
           <div
             role="img"
             aria-label={t('color.mix.resultLabel', { ratio })}

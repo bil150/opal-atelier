@@ -1,7 +1,7 @@
 /** Everything Opal Atelier keeps on this device, measured and deleted as a whole. */
 import { LEGACY_TUBES_KEY, getTubeStore } from '@renderer/features/paints/tube-store'
 import { STORAGE_PREFIX } from '@renderer/hooks/use-local-storage'
-import { Backdrop, setBackdrop } from '@renderer/theme/backdrop'
+import { DEFAULT_BACKDROP, setBackdrop } from '@renderer/theme/backdrop'
 import { DEFAULT_COLOR_SCHEME, setColorScheme } from '@renderer/theme/color-scheme'
 
 function appKeys(storage: Storage): string[] {
@@ -37,6 +37,6 @@ export function wipeAppData(storage: Storage = localStorage): void {
     // storage blocked: nothing was kept anyway
   }
   getTubeStore().update(() => [])
-  setBackdrop(Backdrop.Neutral)
+  setBackdrop(DEFAULT_BACKDROP)
   setColorScheme(DEFAULT_COLOR_SCHEME)
 }

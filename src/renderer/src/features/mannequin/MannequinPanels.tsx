@@ -31,7 +31,7 @@ export function PosePanel({
 }) {
   const { t } = useTranslation()
   return (
-    <Panel title={t('mannequin.pose.title')}>
+    <Panel title={t('mannequin.pose.title')} defaultOpen>
       <select
         value={pose.id}
         aria-label={t('mannequin.pose.choose')}
@@ -137,7 +137,7 @@ export function TimerPanel({
 }) {
   const { t } = useTranslation()
   return (
-    <Panel title={t('mannequin.timer.title')}>
+    <Panel title={t('mannequin.timer.title')} defaultOpen>
       <output aria-label={t('mannequin.timer.left')} className="text-center text-4xl font-bold tabular-nums">
         {formatTime(timer.left)}
       </output>
@@ -201,7 +201,7 @@ export function LightPanel({
 }) {
   const { t } = useTranslation()
   return (
-    <Panel title={t('mannequin.light.title')}>
+    <Panel title={t('mannequin.light.title')} defaultOpen>
       <div role="group" aria-label={t('mannequin.light.presetsLabel')} className="flex flex-wrap gap-1.5">
         {Object.values(LightPreset).map((preset) => {
           const [lightAzimuth, lightElevation] = LIGHT_ANGLES[preset]

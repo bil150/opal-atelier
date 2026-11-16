@@ -121,7 +121,7 @@ export function WheelView({ layout }: { readonly layout: StudioLayout }) {
   const panels = (
     <>
       {discs ? null : (
-        <Panel title={t('color.wheel.harmony')}>
+        <Panel title={t('color.wheel.harmony')} defaultOpen>
           <select
             aria-label={t('color.wheel.harmony')}
             value={settings.harmony}
