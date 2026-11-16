@@ -17,7 +17,7 @@ import { appStorageBytes, wipeAppData } from './app-data'
 
 const AUTHOR_URL = 'https://github.com/bil150'
 const SOURCE_URL = 'https://github.com/bil150/opal-atelier'
-/** Installers for Windows, macOS and Linux are attached to each release (see .github/workflows/release.yml). */
+/** Installers for Windows, macOS and Linux are attached to each release (see .github/workflows/cd.yml). */
 const RELEASES_URL = 'https://github.com/bil150/opal-atelier/releases/latest'
 const SITE_URL = 'https://bil150.github.io/opal-atelier/'
 

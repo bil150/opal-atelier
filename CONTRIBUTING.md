@@ -30,13 +30,18 @@ npm run dev:web    # in the browser
 npm run dev        # in Electron
 ```
 
-Before opening a pull request, run everything the CI runs:
+Before opening a pull request, run the checks that CI runs first:
 
 ```sh
 npm run check      # type checking, lint, formatting, tests
 ```
 
 and keep it green. `npm run format` fixes the formatting.
+
+On a pull request, CI then builds the website and the Windows, macOS and Linux installers: they can be
+downloaded from the run (Actions → the run → Artifacts) to try the change before it is merged.
+
+Releases are published by the maintainer, by hand (see **Publishing** in the README).
 
 ## Project rules
 

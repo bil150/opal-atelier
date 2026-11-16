@@ -41,7 +41,7 @@ Point at any colour of a reference image: the picker gives the mix your own tube
 
 <p align="center">
   <img src="docs/screenshots/image-study-picker.png" alt="Picker: the recipe from your inventory, in parts" width="49%" />
-  <img src="docs/screenshots/colour-mix.png" alt="Mixing simulator: magenta and yellow in 1 : 3, a bright orange" width="49%" />
+  <img src="docs/screenshots/colour-mix.png" alt="Mixing simulator: magenta, yellow and white in 1 : 1 : 14, a soft apricot" width="49%" />
 </p>
 
 ### A wooden mannequin in 3D
@@ -107,7 +107,7 @@ npm run dev:web    # same app in the browser
 | `lint` / `lint:fix`       | ESLint (typescript-eslint strict, type-checked)            |
 | `format` / `format:check` | Prettier                                                   |
 | `test` / `test:watch`     | Vitest                                                     |
-| `check`                   | Everything CI runs: typecheck, lint, format, tests         |
+| `check`                   | The checks CI runs first: typecheck, lint, format, tests   |
 | `icons`                   | Regenerate every icon from `build/icon.svg`                |
 
 ## Project layout
@@ -131,8 +131,10 @@ tests/
   helpers/     Shared test helpers (render the app, fake window, fake 2D canvas)
   fixtures/    Frozen outputs of the original site, used by characterisation tests
 build/         Packaging resources (icons, logos)
+docs/          Screenshots of this README
 scripts/       Tooling (icon generation, test runner)
-.github/       CI, GitHub Pages deployment, desktop builds, Dependabot
+.github/       CI (check and build), CD (publish by hand), Dependabot
+CONTRIBUTING.md  How to report a problem and propose a change
 ```
 
 ## Tests
@@ -145,13 +147,38 @@ by a stand-in and the canvas by `tests/helpers/fake-canvas.ts`.
 
 ## Publishing
 
-| Workflow      | When                        | What                                                             |
-| ------------- | --------------------------- | ---------------------------------------------------------------- |
-| `ci.yml`      | Every push and pull request | `npm run check`                                                  |
-| `pages.yml`   | Push to `main`              | Builds the website + PWA and deploys it to GitHub Pages          |
-| `release.yml` | Tag `v*` (or run by hand)   | Windows, macOS and Linux installers, attached to a draft release |
+Build once, deploy many: CI checks and builds every change; CD, started by hand, publishes those very files.
+Nothing is rebuilt between the test and the publication.
 
-GitHub Pages must use **GitHub Actions** as its source (Settings → Pages). Desktop builds are not code-signed.
+### CI — `.github/workflows/ci.yml` (automatic)
+
+- **When:** every pull request to `main`, and every push to `main` (a merged pull request).
+- **Check:** `npm ci`, then `npm run check` (types, lint, formatting, tests). If it fails, nothing is built.
+- **Build:** the website + PWA (artifact `website`) and the Windows, macOS and Linux installers (artifacts
+  `installer-<system>`), each system on its own machine.
+- **Stored:** as artifacts of the run (Actions → the run → _Artifacts_), kept 90 days. Nothing is published.
+
+### CD — `.github/workflows/cd.yml` (by hand)
+
+- **When:** Actions → **CD** → **Run workflow**, on `main`, with two options (both ticked by default): publish
+  the website, create the release.
+- **Find the build:** the CI run of the latest commit of `main` must have succeeded (CD waits if it is still
+  running); the version is read from `package.json` and must not have a release yet.
+- **Website:** that run's `website` artifact is published on GitHub Pages.
+- **Release:** a **draft** release `<version>` is created with that run's installers and notes generated from
+  the merged pull requests; its tag is created when the draft is published.
+
+### Releasing a version
+
+1. Set `version` in `package.json` (e.g. `0.2.0`: three numbers, no `v`), in a pull request, and merge it.
+2. Wait for CI to be green on `main`.
+3. Run **CD**.
+4. In **Releases**, review the draft (three installers, notes), then **Publish release**.
+
+The website alone can be republished any time by running CD with only _Publish the website_ ticked.
+
+GitHub Pages must use **GitHub Actions** as its source (Settings → Pages). Installers are not code-signed: Windows
+and macOS warn on first launch.
 
 ## Conventions
 
