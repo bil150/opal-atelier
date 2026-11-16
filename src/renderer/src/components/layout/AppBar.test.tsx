@@ -21,7 +21,7 @@ describe('app bar', () => {
   it('groups theme, day/night, language and settings', async () => {
     await renderApp('/', Locale.English)
     const b = within(bar())
-    expect(b.getByRole('button', { name: 'Theme: Neutral' })).toBeInTheDocument()
+    expect(b.getByRole('button', { name: 'Theme: Opal' })).toBeInTheDocument()
     expect(b.getByRole('button', { name: /Switch to (dark|light) theme/ })).toBeInTheDocument()
     expect(b.getByRole('group', { name: 'Language' })).toBeInTheDocument()
     expect(b.getByRole('link', { name: 'Settings' })).toHaveAttribute('href', '/settings')

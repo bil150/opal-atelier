@@ -5,19 +5,15 @@ import { PageShell } from '@renderer/components/layout/PageShell'
 import { PageWidth } from '@renderer/components/layout/page-width'
 import { Dashboard } from '@renderer/components/studio/Dashboard'
 import { StudioFrame, type StudioTab } from '@renderer/components/studio/StudioFrame'
-import { STUDIO_LAYOUTS, StudioLayout } from '@renderer/components/studio/studio-options'
+import { defaultLayout } from '@renderer/components/studio/studio-options'
+import { useStudioLayout } from '@renderer/components/studio/use-studio-layout'
 import { BUTTON, BUTTON_GHOST } from '@renderer/components/ui/buttons'
 import { setStatus } from '@renderer/features/paints/tube-draft'
 import { DEFAULT_CALCULATION_OPTIONS } from '@renderer/features/paints/tube-classification'
 import type { TubeStatus } from '@renderer/features/paints/paint-tube'
 import { LEGACY_TUBES_KEY, TUBES_KEY, getTubeStore, useTubes } from '@renderer/features/paints/tube-store'
 import { ALL_GROUPS, ChartsTab } from '@renderer/features/paints/ui/charts-tab'
-import {
-  STORAGE_PREFIX,
-  isOneOf,
-  useLocalStorage,
-  useStoredSettings,
-} from '@renderer/hooks/use-local-storage'
+import { STORAGE_PREFIX, useStoredSettings } from '@renderer/hooks/use-local-storage'
 import { saveFile } from '@renderer/platform/save-file'
 import { AppRoute } from '@renderer/routes'
 import { CellsPanel } from './grid/CellsPanel'
@@ -31,7 +27,6 @@ import {
   IMAGE_SECTIONS,
   IMAGE_STUDY_KEYS,
   ImageStudySection,
-  LAYOUT_KEY,
   isImageStudySection,
   sanitizeCalculation,
 } from './image-study-settings'
@@ -50,6 +45,20 @@ import { createReferenceImage, pixelAt, type ReferenceImage } from './view/refer
 import { useZoomPan } from './view/use-zoom-pan'
 
 const MAX_ZOOM = 16
+/** Image actions on phones: three equal icon buttons on one line. */
+const IMAGE_ACTION = 'max-sm:min-h-10 max-sm:flex-1 max-sm:px-0'
+
+function ActionIcon({ d }: { readonly d: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="size-[18px] flex-none fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]"
+    >
+      <path d={d} />
+    </svg>
+  )
+}
 /** The recipe is computed once the picker has paused this long (as on the original page), or on release. */
 const RECIPE_PAUSE_MS = 90
 
@@ -113,7 +122,7 @@ export function ImageStudyPage() {
   const section = isImageStudySection(param) ? param : ImageStudySection.Grid
   const showsImage = IMAGE_SECTIONS.includes(section)
 
-  const [layout, setLayout] = useLocalStorage(LAYOUT_KEY, StudioLayout.Above, isOneOf(STUDIO_LAYOUTS))
+  const [layout, setLayout] = useStudioLayout()
   const [grid, setGrid] = useStoredSettings(GRID_KEY, sanitizeGrid)
   const [options, setOptions] = useStoredSettings(CALCULATION_KEY, sanitizeCalculation)
   const { tubes } = useTubes()
@@ -271,7 +280,7 @@ export function ImageStudyPage() {
     }
     setGrid(() => sanitizeGrid(null))
     setOptions(() => DEFAULT_CALCULATION_OPTIONS)
-    setLayout(StudioLayout.Above)
+    setLayout(defaultLayout())
     clearCache()
   }
 
@@ -311,9 +320,16 @@ export function ImageStudyPage() {
           {imageError}
         </p>
       ) : null}
-      <div className="flex flex-wrap items-center justify-center gap-2">
-        <label className={`${image ? BUTTON_GHOST : BUTTON} cursor-pointer`}>
-          {image ? t('imageStudy.image.change') : t('imageStudy.image.choose')}
+      {/* Phones: one row of icon buttons (the names stay as labels and tooltips); text elsewhere. */}
+      <div className="flex flex-wrap items-center justify-center gap-2 max-sm:flex-nowrap max-sm:gap-1.5">
+        <label
+          title={image ? t('imageStudy.image.change') : t('imageStudy.image.choose')}
+          className={`${image ? BUTTON_GHOST : BUTTON} cursor-pointer gap-2 ${image ? IMAGE_ACTION : ''}`}
+        >
+          <ActionIcon d="M4 16l4-4 3 3 5-6 4 5M4 5h16v14H4z" />
+          <span className={image ? 'max-sm:sr-only' : ''}>
+            {image ? t('imageStudy.image.change') : t('imageStudy.image.choose')}
+          </span>
           <input
             type="file"
             accept="image/*"
@@ -326,16 +342,32 @@ export function ImageStudyPage() {
         </label>
         {image ? (
           <>
-            <button type="button" onClick={() => void exportView()} className={BUTTON_GHOST}>
-              {t('imageStudy.image.export')}
+            <button
+              type="button"
+              title={t('imageStudy.image.export')}
+              onClick={() => void exportView()}
+              className={`${BUTTON_GHOST} gap-2 ${IMAGE_ACTION}`}
+            >
+              <ActionIcon d="M12 4v11M7 10l5 5 5-5M5 20h14" />
+              <span className="max-sm:sr-only">{t('imageStudy.image.export')}</span>
             </button>
-            <button type="button" onClick={() => setImagePaintsOpen(true)} className={BUTTON_GHOST}>
-              {t('imageStudy.image.paintsOfImage')}
+            <button
+              type="button"
+              title={t('imageStudy.image.paintsOfImage')}
+              onClick={() => setImagePaintsOpen(true)}
+              className={`${BUTTON_GHOST} gap-2 ${IMAGE_ACTION}`}
+            >
+              <ActionIcon d="M12 3a9 9 0 1 0 0 18c1 0 1.6-.8 1.6-1.6 0-.9-.6-1.3-.6-2.1 0-.9.7-1.6 1.6-1.6H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3zM7.5 11h.01M10 7h.01M15 7h.01" />
+              <span className="max-sm:sr-only">{t('imageStudy.image.paintsOfImage')}</span>
             </button>
           </>
         ) : null}
       </div>
-      {info ? <p className="text-center text-[13px] text-muted">{info}</p> : null}
+      {info ? (
+        <p title={info} className="text-center text-[13px] text-muted max-sm:truncate max-sm:text-xs">
+          {info}
+        </p>
+      ) : null}
     </>
   )
 

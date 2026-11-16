@@ -18,14 +18,14 @@ describe('theme menu', () => {
   it('is one discreet button on every page, showing the current theme', async () => {
     for (const path of ['/', '/glossary', '/image-study', '/color', '/mannequin', '/settings']) {
       const { unmount } = await renderApp(path, Locale.English)
-      const button = bar().getByRole('button', { name: 'Theme: Neutral' })
+      const button = bar().getByRole('button', { name: 'Theme: Opal' })
       expect(button).toHaveAttribute('aria-expanded', 'false')
       expect(bar().queryByRole('group', { name: 'Theme' })).toBeNull()
       unmount()
     }
   })
 
-  it('lists the five themes, Neutral first and Opal, the site theme, last, and closes once one is chosen', async () => {
+  it('lists the five themes, Opal (the default) last, and closes once one is chosen', async () => {
     await renderApp('/', Locale.English)
     const list = await openThemes()
     expect(list.getAllByRole('button').map((b) => b.textContent)).toEqual([
@@ -35,11 +35,11 @@ describe('theme menu', () => {
       'Contrast',
       'Opal',
     ])
-    expect(list.getByRole('button', { name: 'Neutral' })).toHaveAttribute('aria-pressed', 'true')
-    await userEvent.click(list.getByRole('button', { name: 'Opal' }))
-    expect(root.dataset.backdrop).toBe('opal')
+    expect(list.getByRole('button', { name: 'Opal' })).toHaveAttribute('aria-pressed', 'true')
+    await userEvent.click(list.getByRole('button', { name: 'Neutral' }))
+    expect(root.dataset.backdrop).toBeUndefined()
     expect(bar().queryByRole('group', { name: 'Theme' })).toBeNull()
-    expect(bar().getByRole('button', { name: 'Theme: Opal' })).toBeInTheDocument()
+    expect(bar().getByRole('button', { name: 'Theme: Neutral' })).toBeInTheDocument()
   })
 
   it('closes with Escape or a click elsewhere', async () => {

@@ -92,9 +92,9 @@ describe('Settings', () => {
     expect(confirm).toHaveBeenCalled()
     expect(screen.getByRole('status')).toHaveTextContent('All data deleted on this device.')
     expect(JSON.parse(localStorage.getItem('opal:tubes') ?? 'null')).toMatchObject({ tubes: [] })
-    expect(localStorage.getItem('opal:studio:backdrop')).toBe('"neutral"')
+    expect(localStorage.getItem('opal:studio:backdrop')).toBe('"opal"')
     expect(localStorage.getItem('elsewhere')).toBe('kept')
-    expect(root.dataset.backdrop).toBeUndefined()
+    expect(root.dataset.backdrop).toBe('opal') // back to the default theme
   })
 
   it('shows the version, build date, author, licenses and open-source libraries', async () => {

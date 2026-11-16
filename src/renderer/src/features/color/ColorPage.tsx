@@ -4,8 +4,7 @@ import { useNavigate, useParams } from 'react-router'
 import { PageShell } from '@renderer/components/layout/PageShell'
 import { PageWidth } from '@renderer/components/layout/page-width'
 import { StudioFrame, type StudioTab } from '@renderer/components/studio/StudioFrame'
-import { STUDIO_LAYOUTS, StudioLayout } from '@renderer/components/studio/studio-options'
-import { isOneOf, useLocalStorage } from '@renderer/hooks/use-local-storage'
+import { useStudioLayout } from '@renderer/components/studio/use-studio-layout'
 import { AppRoute } from '@renderer/routes'
 import { ColorSection, ColorTab, MixMode, isColorSection, lastMixMode } from './color-settings'
 import { MixView } from './mix/MixView'
@@ -57,7 +56,7 @@ export function ColorPage() {
   const { section: param } = useParams()
   const section = isColorSection(param) ? param : ColorSection.Wheel
   const tab = TAB_OF_SECTION[section]
-  const [layout, setLayout] = useLocalStorage('color:layout', StudioLayout.Above, isOneOf(STUDIO_LAYOUTS))
+  const [layout, setLayout] = useStudioLayout()
 
   const tabs: StudioTab<ColorTab>[] = Object.values(ColorTab).map((id) => ({
     id,

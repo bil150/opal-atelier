@@ -92,7 +92,7 @@ export function GridPanel({ grid, onGrid, rows, originalWidth }: GridPanelProps)
   )
 
   return (
-    <Panel title={t('imageStudy.grid.title')}>
+    <Panel title={t('imageStudy.grid.title')} defaultOpen>
       <div className="flex flex-wrap items-center gap-2">
         <div className="flex items-center overflow-hidden rounded-lg border border-line bg-paper-2">
           <button

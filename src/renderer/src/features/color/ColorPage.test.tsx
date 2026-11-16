@@ -1,6 +1,6 @@
 import { screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { Locale } from '@renderer/i18n/locale'
 import { renderApp } from '@tests/helpers/render-app'
 
@@ -99,18 +99,48 @@ describe('Colour tool', () => {
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(7)
   })
 
-  it('puts the settings above the main view by default, and remembers another layout', async () => {
+  it('puts the settings on the right by default on a large screen, and remembers another layout', async () => {
     await renderApp('/color/wheel', Locale.English)
     const layouts = screen.getByRole('group', { name: 'Layout' })
-    expect(within(layouts).getByRole('button', { name: 'Settings above' })).toHaveAttribute(
+    expect(within(layouts).getByRole('button', { name: 'Settings on the right' })).toHaveAttribute(
       'aria-pressed',
       'true',
     )
     const stage = screen.getByRole('region', { name: /wheel/i })
+    await userEvent.click(within(layouts).getByRole('button', { name: 'Settings above' }))
+    expect(localStorage.getItem('opal:studio:layout')).toBe('"above"')
     expect(stage.nextElementSibling?.className).toContain('order-first')
-    await userEvent.click(within(layouts).getByRole('button', { name: 'Settings below' }))
-    expect(localStorage.getItem('opal:color:layout')).toBe('"below"')
-    expect(stage.nextElementSibling?.className).not.toContain('order-first')
+  })
+
+  it('shares the layout with Image study and Mannequin', async () => {
+    const { unmount } = await renderApp('/color/wheel', Locale.English)
+    await userEvent.click(
+      within(screen.getByRole('group', { name: 'Layout' })).getByRole('button', { name: 'Settings below' }),
+    )
+    unmount()
+    for (const path of ['/image-study/grid', '/mannequin/poses']) {
+      const view = await renderApp(path, Locale.English)
+      expect(
+        within(screen.getByRole('group', { name: 'Layout' })).getByRole('button', { name: 'Settings below' }),
+      ).toHaveAttribute('aria-pressed', 'true')
+      view.unmount()
+    }
+  })
+
+  it('puts the settings below the main view by default on a phone', async () => {
+    vi.stubGlobal('matchMedia', (query: string) => ({
+      matches: query.includes('max-width'),
+      media: query,
+      addEventListener: () => undefined,
+      removeEventListener: () => undefined,
+    }))
+    await renderApp('/color/wheel', Locale.English)
+    const layouts = screen.getByRole('group', { name: 'Layout' })
+    expect(within(layouts).getByRole('button', { name: 'Settings below' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    )
+    vi.unstubAllGlobals()
   })
 
   it('marks the page as a studio tool while it is open (neutral hover)', async () => {

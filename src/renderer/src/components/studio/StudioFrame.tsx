@@ -20,11 +20,11 @@ interface StudioFrameProps<T extends string> {
 }
 
 const RAIL =
-  'flex items-center gap-1.5 rounded-xl border border-line bg-paper-2 p-1.5 max-sm:flex-row sm:flex-col'
+  'flex items-center gap-1.5 rounded-xl border border-line bg-paper-2 p-1.5 max-sm:flex-row max-sm:p-1 sm:flex-col'
 const TAB =
-  'group relative grid size-11 place-items-center rounded-lg text-muted hover:bg-highlight hover:text-ink aria-selected:bg-ink aria-selected:text-paper max-sm:h-11 max-sm:w-auto max-sm:max-w-11 max-sm:flex-1'
+  'group relative grid size-11 place-items-center rounded-lg text-muted hover:bg-highlight hover:text-ink aria-selected:bg-ink aria-selected:text-paper max-sm:h-9 max-sm:w-auto max-sm:max-w-9 max-sm:flex-1'
 const OPTION =
-  'group relative grid size-9 place-items-center rounded-lg text-muted hover:bg-highlight hover:text-ink aria-pressed:bg-ink/15 aria-pressed:text-ink aria-pressed:shadow-[inset_0_0_0_1.5px_var(--color-ink)] max-sm:w-8'
+  'group relative grid size-9 place-items-center rounded-lg text-muted hover:bg-highlight hover:text-ink aria-pressed:bg-ink/15 aria-pressed:text-ink aria-pressed:shadow-[inset_0_0_0_1.5px_var(--color-ink)] max-sm:size-8 max-sm:w-7'
 const TOOLTIP =
   'pointer-events-none absolute top-1/2 left-[calc(100%+12px)] z-10 -translate-y-1/2 rounded-md bg-ink px-2 py-1 text-[13px] font-medium whitespace-nowrap text-paper opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 max-sm:hidden'
 const ICON = 'fill-none stroke-current stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]'
@@ -95,9 +95,9 @@ export function StudioFrame<T extends string>({
   }
 
   return (
-    <div className="grid items-start gap-4 sm:grid-cols-[56px_minmax(0,1fr)]">
-      <div className="sticky top-[var(--app-header,0px)] z-30 flex flex-wrap gap-2 sm:top-[calc(var(--app-header,0px)+16px)] sm:flex-col">
-        <div className={`${RAIL} max-sm:basis-full`}>
+    <div className="grid items-start gap-4 max-sm:gap-2 sm:grid-cols-[56px_minmax(0,1fr)]">
+      <div className="sticky top-[var(--app-header,0px)] z-30 flex flex-wrap gap-2 max-sm:-mx-1 max-sm:bg-paper max-sm:px-1 max-sm:py-1.5 sm:top-[calc(var(--app-header,0px)+16px)] max-sm:flex-nowrap max-sm:gap-1.5 sm:flex-col">
+        <div className={`${RAIL} max-sm:min-w-0 max-sm:flex-1`}>
           <div
             role="tablist"
             aria-orientation="vertical"

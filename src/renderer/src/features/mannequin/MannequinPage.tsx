@@ -5,9 +5,9 @@ import { PageShell } from '@renderer/components/layout/PageShell'
 import { PageWidth } from '@renderer/components/layout/page-width'
 import { Dashboard } from '@renderer/components/studio/Dashboard'
 import { StudioFrame, type StudioTab } from '@renderer/components/studio/StudioFrame'
-import { STUDIO_LAYOUTS, StudioLayout } from '@renderer/components/studio/studio-options'
+import { useStudioLayout } from '@renderer/components/studio/use-studio-layout'
 import { BUTTON, BUTTON_GHOST } from '@renderer/components/ui/buttons'
-import { isOneOf, useLocalStorage, useStoredSettings } from '@renderer/hooks/use-local-storage'
+import { useLocalStorage, useStoredSettings } from '@renderer/hooks/use-local-storage'
 import { saveFile } from '@renderer/platform/save-file'
 import { AppRoute } from '@renderer/routes'
 import {
@@ -21,7 +21,6 @@ import {
 } from './MannequinPanels'
 import { MannequinStage } from './MannequinStage'
 import {
-  LAYOUT_KEY,
   MannequinSection,
   POSE_KEY,
   SETTINGS_KEY,
@@ -72,7 +71,7 @@ export function MannequinPage() {
   const { section: param } = useParams()
   const section = isMannequinSection(param) ? param : MannequinSection.Poses
 
-  const [layout, setLayout] = useLocalStorage(LAYOUT_KEY, StudioLayout.Above, isOneOf(STUDIO_LAYOUTS))
+  const [layout, setLayout] = useStudioLayout()
   const [settings, setSettings] = useStoredSettings(SETTINGS_KEY, sanitizeSettings)
   const [poseId, setPoseId] = useLocalStorage(POSE_KEY, DEFAULT_POSE.id, isPoseId)
   const pose = poseById(poseId) ?? DEFAULT_POSE

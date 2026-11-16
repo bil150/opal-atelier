@@ -59,7 +59,7 @@ export function RecipePanel({ target, state, options, onOpenPaints, ...advice }:
   const { t } = useTranslation()
   if (state.blocker !== null || !target)
     return (
-      <Panel title={t('imageStudy.recipe.title')}>
+      <Panel title={t('imageStudy.recipe.title')} defaultOpen>
         <p className="text-[13px] text-muted">{t(BLOCKER_TEXT[state.blocker ?? RecipeBlocker.NoTarget])}</p>
         {state.blocker === RecipeBlocker.NoTarget || state.blocker === null ? null : (
           <button type="button" onClick={onOpenPaints} className={`${BUTTON_GHOST} self-start`}>
@@ -112,13 +112,13 @@ function Recipe({ target, solution, active, options, candidates, onStatus, onImp
 
   return (
     <>
-      <Panel title={t('imageStudy.recipe.title')}>
+      <Panel title={t('imageStudy.recipe.title')} defaultOpen>
         <div className="flex items-center gap-1.5">
           <figure className="m-0 flex flex-col items-center gap-0.5">
             <span
               role="img"
               aria-label={t('imageStudy.recipe.targetLabel')}
-              className="size-14 rounded-lg border border-line"
+              className="size-14 rounded-lg border border-line max-sm:size-11"
               style={{ background: rgbCss(target) }}
             />
             <figcaption className="text-[11px] text-muted">{t('imageStudy.recipe.target')}</figcaption>
@@ -127,7 +127,7 @@ function Recipe({ target, solution, active, options, candidates, onStatus, onImp
             <span
               role="img"
               aria-label={t('imageStudy.recipe.mixLabel')}
-              className="size-14 rounded-lg border border-line"
+              className="size-14 rounded-lg border border-line max-sm:size-11"
               style={{ background: rgbCss(recipe.mixRgb) }}
             />
             <figcaption className="text-[11px] text-muted">{t('imageStudy.recipe.mix')}</figcaption>
@@ -155,9 +155,12 @@ function Recipe({ target, solution, active, options, candidates, onStatus, onImp
             const percent = Math.round(item.weight * 100)
             const row = rows[i]
             return (
-              <li key={item.id} className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-x-3 gap-y-1.5">
+              <li
+                key={item.id}
+                className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-x-3 gap-y-1.5 max-sm:gap-x-2 max-sm:gap-y-1"
+              >
                 <span
-                  className="mt-0.5 size-8 rounded-md border border-line"
+                  className="mt-0.5 size-8 rounded-md border border-line max-sm:size-6"
                   style={{ background: tube.hex }}
                 />
                 {editing && row ? (
@@ -190,7 +193,7 @@ function Recipe({ target, solution, active, options, candidates, onStatus, onImp
                   </div>
                 ) : (
                   <div className="flex min-w-0 flex-col gap-1">
-                    <span className="text-base/tight font-bold">{tube.name}</span>
+                    <span className="text-base/tight font-bold max-sm:text-sm/tight">{tube.name}</span>
                     <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-muted">
                       {tube.group ? <span>{tube.group}</span> : null}
                       <TubeTags tube={tube} options={options} />
